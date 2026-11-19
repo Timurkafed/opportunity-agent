@@ -172,8 +172,8 @@ def main():
     pending = [e for e in events if not e["sent_at"] and not is_stale(e, today)
                and e["score"] >= MIN_SCORE and not (set(e["flags"]) & DROP_FLAGS)]
     pending.sort(key=lambda e: -e["score"])
-    main_c = [e for e in pending if not (e["is_freebie"] or e["kind"] == "freebie")][:40]
-    free_c = [e for e in pending if e["is_freebie"] or e["kind"] == "freebie"]
+    main_c = [e for e in pending if e["kind"] != "freebie"][:40]
+    free_c = [e for e in pending if e["kind"] == "freebie"]  # a free hackathon is still a hackathon
     recent_cut = (store.now() - timedelta(days=30)).isoformat()
     sent_titles = [e["title"] for e in events if e["sent_at"] and e["sent_at"] != "dupe" and e["sent_at"] >= recent_cut]
     if main_c:
