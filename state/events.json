@@ -44,15 +44,16 @@
   "is_freebie": false,
   "score": 9,
   "why": "Очный креатон в Алматы от AIESEC, прямо указан в приоритетах пользователя, дает командный опыт.",
-  "link": "",
+  "link": "https://www.jasa.dev/opportunities/am-project",
   "post_url": "https://t.me/aiesecinalmaty/478",
   "source": "@aiesecinalmaty",
   "id": "c0befcce7f",
   "sources": [
-   "@aiesecinalmaty"
+   "@aiesecinalmaty",
+   "@mentoria_organization"
   ],
   "first_seen": "2026-11-19T12:23:22.003443+00:00",
-  "sent_at": "2026-11-19T12:52:35.176887+00:00",
+  "sent_at": "2026-11-19T13:07:59.198351+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -108,7 +109,7 @@
    "@startupchoyxona"
   ],
   "first_seen": "2026-11-19T12:23:22.004443+00:00",
-  "sent_at": "2026-11-19T12:52:35.176887+00:00",
+  "sent_at": null,
   "reminded_at": null,
   "feedback": null
  },
@@ -419,7 +420,7 @@
    "@qazstartup"
   ],
   "first_seen": "2026-11-19T12:23:22.013164+00:00",
-  "sent_at": "2026-11-19T12:52:35.176887+00:00",
+  "sent_at": "2026-11-19T13:07:59.198351+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -446,7 +447,7 @@
    "@qazstartup"
   ],
   "first_seen": "2026-11-19T12:23:22.014162+00:00",
-  "sent_at": "2026-11-19T12:52:35.176887+00:00",
+  "sent_at": "2026-11-19T13:07:59.198351+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -473,7 +474,7 @@
    "@qazstartup"
   ],
   "first_seen": "2026-11-19T12:23:22.015673+00:00",
-  "sent_at": "2026-11-19T12:52:35.176887+00:00",
+  "sent_at": "2026-11-19T13:07:59.198351+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -503,7 +504,7 @@
    "@qazstartup"
   ],
   "first_seen": "2026-11-19T12:23:22.020736+00:00",
-  "sent_at": "2026-11-19T12:52:35.176887+00:00",
+  "sent_at": "2026-11-19T13:07:59.198351+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -674,7 +675,7 @@
    "@startup_course_com"
   ],
   "first_seen": "2026-11-19T12:23:22.033328+00:00",
-  "sent_at": "2026-11-19T12:52:35.176887+00:00",
+  "sent_at": "2026-11-19T13:07:59.198351+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -789,7 +790,7 @@
    "@huntmeinternship"
   ],
   "first_seen": "2026-11-19T12:23:22.055709+00:00",
-  "sent_at": "2026-11-19T12:52:35.176887+00:00",
+  "sent_at": "2026-11-19T13:07:59.198351+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -816,7 +817,7 @@
    "@huntmeinternship"
   ],
   "first_seen": "2026-11-19T12:23:22.057742+00:00",
-  "sent_at": "2026-11-19T12:52:35.176887+00:00",
+  "sent_at": null,
   "reminded_at": null,
   "feedback": null
  },
@@ -1043,7 +1044,7 @@
    "@thetechkz"
   ],
   "first_seen": "2026-11-19T12:23:22.084672+00:00",
-  "sent_at": "2026-11-19T12:52:35.176887+00:00",
+  "sent_at": "2026-11-19T13:07:59.198351+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -1234,7 +1235,7 @@
    "@hackathonsrus"
   ],
   "first_seen": "2026-11-19T12:23:22.123117+00:00",
-  "sent_at": "2026-11-19T12:52:35.176887+00:00",
+  "sent_at": "2026-11-19T13:07:59.198351+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -1261,7 +1262,7 @@
    "@hackathonsrus"
   ],
   "first_seen": "2026-11-19T12:23:22.125641+00:00",
-  "sent_at": "2026-11-19T12:52:35.176887+00:00",
+  "sent_at": "2026-11-19T13:07:59.198351+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -1402,7 +1403,7 @@
    "Astana Hub (календарь)"
   ],
   "first_seen": "2026-11-19T12:23:22.152749+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-19T13:07:59.198351+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -1537,7 +1538,7 @@
    "Astana Hub (календарь)"
   ],
   "first_seen": "2026-11-19T12:23:22.191561+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-19T13:07:59.198351+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -2133,7 +2134,7 @@
    "@startupchoyxona"
   ],
   "first_seen": "2026-11-19T12:23:22.410819+00:00",
-  "sent_at": "2026-11-19T12:52:35.176887+00:00",
+  "sent_at": "2026-11-19T13:07:59.198351+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -3199,18 +3200,20 @@
  {
   "title": "IVL CUP 2026",
   "kind": "startup",
-  "summary": "Конкурс стартапов в Алматы с призовым фондом 5 млн ₸, где можно представить свой проект или прийти как зритель, чтобы познакомиться с основателями и найти команду.",
+  "summary": "Стартап-соревнование в Алматы с гранд-финалом и призовым фондом 5 млн ₸, можно участвовать со стартапом или как зритель.",
   "city": "Алматы",
   "online": true,
   "start_date": "2026-11-28",
   "end_date": "2026-11-28",
   "deadline": "2026-11-20",
-  "who": "Основатели стартапов (для участия), все желающие (как зрители)",
-  "prize": "5 000 000 ₸ (общий призовой фонд)",
-  "flags": [],
+  "who": "Основатели стартапов, разработчики, зрители",
+  "prize": "5 000 000 ₸",
+  "flags": [
+   "needs_project"
+  ],
   "is_freebie": false,
   "score": 9,
-  "why": "Отличная возможность для пользователя в Алматы, чтобы погрузиться в стартап-среду, найти команду и получить опыт, даже если пока нет своего проекта. Есть онлайн-формат.",
+  "why": "В Алматы + есть онлайн, высокий призовой фонд, возможность найти команду или проект в роли зрителя.",
   "link": "https://forms.gle/ow9rPu8xtcUbuJ3XA",
   "post_url": "https://t.me/mentoria_organization/791",
   "source": "@mentoria_organization",
@@ -3218,146 +3221,123 @@
   "sources": [
    "@mentoria_organization"
   ],
-  "first_seen": "2026-11-19T12:52:35.185361+00:00",
+  "first_seen": "2026-11-19T13:07:59.227007+00:00",
   "sent_at": "dupe",
   "reminded_at": null,
   "feedback": null
  },
  {
-  "title": "ŞAM - 24-часовой креатон",
-  "kind": "project",
-  "summary": "24-часовой креатон в Алматы для молодых видеографов и креаторов, где можно получить практический опыт, создать проект для портфолио и побороться за призовой фонд 1 000 000 ₸.",
-  "city": "Алматы",
-  "online": false,
-  "start_date": "2026-11-21",
-  "end_date": "2026-11-22",
-  "deadline": "",
-  "who": "От 18 до 29 лет, увлекающиеся видеосъёмкой, режиссурой, монтажом или продакшеном",
-  "prize": "1 000 000 ₸",
-  "flags": [
-   "age_limit"
-  ],
-  "is_freebie": true,
-  "score": 9,
-  "why": "Отличная возможность в Алматы, бесплатное участие, призовой фонд, позволяет получить опыт и проект для портфолио, что соответствует целям пользователя.",
-  "link": "https://www.jasa.dev/opportunities/am-project",
-  "post_url": "https://t.me/mentoria_organization/797",
-  "source": "@mentoria_organization",
-  "id": "759d90659d",
-  "sources": [
-   "@mentoria_organization"
-  ],
-  "first_seen": "2026-11-19T12:52:35.190384+00:00",
-  "sent_at": null,
-  "reminded_at": null,
-  "feedback": null
- },
- {
-  "title": "NATIONAL FOUNDER CUP",
+  "title": "National Founder Cup Актобе",
   "kind": "startup",
-  "summary": "Конкурс для амбициозных предпринимателей и стартапов на ранних стадиях в Актобе, предлагающий возможность представить идеи и получить обратную связь.",
+  "summary": "Конкурс стартапов и инновационных идей с офлайн Demo Day в Актобе.",
   "city": "Актобе",
   "online": false,
   "start_date": "2026-12-04",
   "end_date": "2026-12-04",
   "deadline": "2026-11-30",
-  "who": "Предприниматели с идеями, стартапы на ранних стадиях",
+  "who": "Предприниматели, ранние стартапы",
   "prize": "",
   "flags": [
    "needs_project"
   ],
   "is_freebie": false,
   "score": 4,
-  "why": "Требуется свой проект, которого у пользователя нет, и проходит очно в Актобе, что является низким приоритетом.",
+  "why": "Очно в Актобе и требуется готовый стартап/проект.",
   "link": "http://aistartify.com/",
   "post_url": "https://t.me/mentoria_organization/792",
   "source": "@mentoria_organization",
-  "id": "186f94168b",
+  "id": "0c659dda94",
   "sources": [
    "@mentoria_organization"
   ],
-  "first_seen": "2026-11-19T12:52:35.193390+00:00",
+  "first_seen": "2026-11-19T13:07:59.237548+00:00",
   "sent_at": null,
   "reminded_at": null,
   "feedback": null
  },
  {
-  "title": "INNOVATE X",
+  "title": "Almaty International Hackathon 2026",
   "kind": "hackathon",
-  "summary": "Двухдневный онлайн-хакатон по созданию веб- и софт-прототипов за 48 часов.",
-  "city": "Онлайн",
-  "online": true,
-  "start_date": "2026-11-19",
-  "end_date": "2026-11-20",
-  "deadline": "2026-11-19",
-  "who": "Студенты вузов любых специальностей",
-  "prize": "",
-  "flags": [],
-  "is_freebie": false,
-  "score": 7,
-  "why": "Международный онлайн-хакатон по разработке ПО, подходит для получения опыта и командной работы.",
-  "link": "",
-  "post_url": "https://unstop.com/hackathons/innovate-x-poornima-institute-of-engineering-technology-piet-jaipur-1818980",
-  "source": "Unstop",
-  "id": "9b965cf650",
-  "sources": [
-   "Unstop"
+  "summary": "Школьный хакатон в Алматы с призовым фондом 4 000 000 ₸.",
+  "city": "Алматы",
+  "online": false,
+  "start_date": "2026-11-28",
+  "end_date": "2026-11-29",
+  "deadline": "",
+  "who": "Учащиеся 8–12 классов",
+  "prize": "4 000 000 ₸",
+  "flags": [
+   "school_only"
   ],
-  "first_seen": "2026-11-19T12:52:35.218029+00:00",
+  "is_freebie": false,
+  "score": 2,
+  "why": "Событие только для школьников 8–12 классов.",
+  "link": "https://forms.gle/iR7dMPuiC5HewkhEA",
+  "post_url": "https://t.me/mentoria_organization/793",
+  "source": "@mentoria_organization",
+  "id": "8a088532f1",
+  "sources": [
+   "@mentoria_organization"
+  ],
+  "first_seen": "2026-11-19T13:07:59.247059+00:00",
   "sent_at": null,
   "reminded_at": null,
   "feedback": null
  },
  {
-  "title": "Branded & Buttered: Quiz 7 : The Local Twist",
+  "title": "Oxford Essay Prize 2027",
   "kind": "contest",
-  "summary": "Онлайн-викторина по маркетингу и стратегии локализации глобальных брендов.",
+  "summary": "Международный онлайн-конкурс эссе на английском языке на темы ИИ, экономики и общества.",
   "city": "Онлайн",
   "online": true,
   "start_date": "",
   "end_date": "",
-  "deadline": "2026-11-21",
-  "who": "Все желающие",
-  "prize": "500 INR",
-  "flags": [],
-  "is_freebie": false,
-  "score": 4,
-  "why": "Узкопрофильная онлайн-викторина по маркетингу с символическим призом.",
-  "link": "",
-  "post_url": "https://unstop.com/quiz/branded-buttered-quiz-7-the-local-twist-iim-rohtak-1789916",
-  "source": "Unstop",
-  "id": "8f3faeb01c",
-  "sources": [
-   "Unstop"
+  "deadline": "2026-12-20",
+  "who": "Школьники и студенты от 14 до 18 лет",
+  "prize": "Сертификат для портфолио",
+  "flags": [
+   "age_limit"
   ],
-  "first_seen": "2026-11-19T12:52:35.227660+00:00",
-  "sent_at": null,
-  "reminded_at": null,
-  "feedback": null
- },
- {
-  "title": "Bid & Blitz: The Virtual IPL Auction",
-  "kind": "contest",
-  "summary": "Онлайн-соревнование по знанию крикета и симуляция виртуального аукциона игроков.",
-  "city": "Онлайн",
-  "online": true,
-  "start_date": "",
-  "end_date": "",
-  "deadline": "2026-11-26",
-  "who": "Все желающие",
-  "prize": "1500 INR",
-  "flags": [],
   "is_freebie": false,
   "score": 3,
-  "why": "Специфический контест про крикет, маловероятно интересен пользователю.",
-  "link": "",
-  "post_url": "https://unstop.com/competitions/bid-blitz-the-virtual-ipl-auction-utkarsh-the-business-arena-pragyta-the-commerce-association-1819465",
-  "source": "Unstop",
-  "id": "755b77d442",
+  "why": "Возрастное ограничение участников до 18 лет.",
+  "link": "http://oxford-research.uk.com/",
+  "post_url": "https://t.me/mentoria_organization/799",
+  "source": "@mentoria_organization",
+  "id": "e61b6b29c5",
   "sources": [
-   "Unstop"
+   "@mentoria_organization"
   ],
-  "first_seen": "2026-11-19T12:52:35.235779+00:00",
+  "first_seen": "2026-11-19T13:07:59.268196+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Воркшоп «Автоматизация бизнеса с ИИ-агентами»",
+  "kind": "meetup",
+  "summary": "Практический онлайн-воркшоп по настройке ИИ-агентов в продажах с бесплатным доступом к QazCRM на 30 дней.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "2026-11-27",
+  "end_date": "2026-11-27",
+  "deadline": "",
+  "who": "Предприниматели, руководители, маркетологи, IT-специалисты",
+  "prize": "30 дней бесплатного доступа к QazCRM",
+  "flags": [
+   "sales_hr"
+  ],
+  "is_freebie": true,
+  "score": 7,
+  "why": "Онлайн-мероприятие по актуальной теме ИИ-агентов с бесплатной подпиской для участников.",
+  "link": "",
+  "post_url": "https://astanahub.com/ru/event/onlain-vorkshop-avtomatizatsiia-liubogo-biznesa-s-ii-agentami-za-30-minut",
+  "source": "Astana Hub (календарь)",
+  "id": "73ef29830c",
+  "sources": [
+   "Astana Hub (календарь)"
+  ],
+  "first_seen": "2026-11-19T13:07:59.281007+00:00",
   "sent_at": null,
   "reminded_at": null,
   "feedback": null
