@@ -1,0 +1,41 @@
+name: Digest
+
+on:
+  schedule:
+    - cron: "0 4 * * *"    # 09:00 Almaty (UTC+5)
+    - cron: "0 13 * * *"   # 18:00 Almaty
+  workflow_dispatch: {}    # manual "Run workflow" button
+
+permissions:
+  contents: write          # to save the bot's memory (state/) back to the repo
+
+concurrency:
+  group: digest
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run agent
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python -m agent.main
+
+      - name: Save memory
+        if: always()
+        run: |
+          git config user.name "opportunity-agent"
+          git config user.email "actions@users.noreply.github.com"
+          git add state/
+          git diff --cached --quiet || git commit -m "state: run $(date -u +%Y-%m-%dT%H:%M)"
+          git push

@@ -1,0 +1,102 @@
+{
+  "_comment": "Машинный список источников. Человеческое описание — в sources.md. Чтобы добавить Telegram-канал, допишите его имя в список telegram.",
+  "telegram": [
+    "uppertunity",
+    "aiesecinalmaty",
+    "aieseckz",
+    "astana_hub",
+    "techgardenalmaty",
+    "startup_course_com",
+    "startupVGlobal",
+    "qazstartup",
+    "grants_scholarships",
+    "mlcomkz",
+    "huntmeinternship",
+    "mentoria_organization",
+    "asmsalmaty",
+    "digitaljuz",
+    "itnomads_kz",
+    "thetechkz",
+    "nu_caseclub",
+    "nu_datasci",
+    "nuacmsc",
+    "wwaikz",
+    "qazaqtech",
+    "it_bilimkz",
+    "techozimiz",
+    "datanomika",
+    "dsmlkz_news",
+    "superteamkz",
+    "HackNU",
+    "hackathonsrus",
+    "codenrock",
+    "startupchoyxona"
+  ],
+  "sites": [
+    {
+      "type": "astanahub",
+      "name": "Astana Hub (календарь)",
+      "keep_cities": [
+        "Almaty",
+        "Astana",
+        "other",
+        ""
+      ],
+      "pages": 3
+    },
+    {
+      "type": "rss",
+      "name": "The Tech: IT-афиша",
+      "url": "https://the-tech.kz/?s=IT-%D0%B0%D1%84%D0%B8%D1%88%D0%B0&feed=rss2",
+      "title_filter": "афиша",
+      "limit": 1
+    },
+    {
+      "type": "bevy",
+      "name": "GDG Almaty",
+      "url": "https://gdg.community.dev/api/event_slim/for_chapter/768/?page_size=500",
+      "base": "https://gdg.community.dev"
+    },
+    {
+      "type": "page",
+      "name": "dev.events (Казахстан)",
+      "url": "https://dev.events/AS/KZ"
+    },
+    {
+      "type": "devpost",
+      "name": "Devpost",
+      "pages": 2
+    },
+    {
+      "type": "unstop",
+      "name": "Unstop",
+      "kinds": [
+        "hackathons",
+        "competitions"
+      ],
+      "pages": 1
+    },
+    {
+      "type": "page",
+      "name": "Taikai",
+      "url": "https://taikai.network/hackathons"
+    },
+    {
+      "type": "page",
+      "name": "ETHGlobal",
+      "url": "https://ethglobal.com/events"
+    },
+    {
+      "type": "rss",
+      "name": "Opportunity Desk",
+      "url": "https://www.opportunitydesk.org/feed/",
+      "limit": 15
+    },
+    {
+      "type": "rss",
+      "name": "Opportunities for Youth",
+      "url": "https://opportunitiesforyouth.org/feed/",
+      "limit": 15
+    }
+  ]
+}
