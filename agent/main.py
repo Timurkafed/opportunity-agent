@@ -22,6 +22,18 @@ MIN_SCORE = 5       # below this nothing is sent
 DROP_FLAGS = {"school_only", "rf_only"}  # the user can't take part anyway
 
 
+def load_env_file():
+    """Keys for running on a PC live in .env (never committed). GitHub uses its own secrets instead."""
+    path = os.path.join(ROOT, ".env")
+    if not os.path.exists(path):
+        return
+    with open(path, encoding="utf-8-sig") as f:
+        for line in f:
+            key, sep, val = line.strip().partition("=")
+            if sep and key and not key.startswith("#") and val.strip() and not os.environ.get(key.strip()):
+                os.environ[key.strip()] = val.strip().strip('"').strip("'")
+
+
 def read(path):
     with open(os.path.join(ROOT, path), encoding="utf-8") as f:
         return f.read()
@@ -119,6 +131,7 @@ def process_updates(bot, meta, events):
 
 # ------------------------------------------------------------------ main
 def main():
+    load_env_file()
     args = set(sys.argv[1:])
     dry, no_send = "--dry" in args, "--no-send" in args
     sources = json.loads(read("config/sources.json"))
