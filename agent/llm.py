@@ -41,8 +41,12 @@ class Gemini:
             return float(m.group(1)) if m else 0
 
         flash.sort(key=lambda n: (-version(n), "lite" in n))
-        ordered = [n for n in flash if version(n) >= 2] or [n for n in PREFERRED if n in names]
-        return ordered[:3] or PREFERRED[:2]
+        full = [n for n in flash if version(n) >= 2 and "lite" not in n]
+        lite = [n for n in flash if version(n) >= 2 and "lite" in n]
+        # newest models are often overloaded on the free tier, so keep proven ones in the list too
+        ordered = full[:3] + [n for n in ("gemini-2.5-flash",) if n in names] + lite[:2]
+        ordered = list(dict.fromkeys(ordered)) or [n for n in PREFERRED if n in names]
+        return ordered or PREFERRED[:2]
 
     def ask(self, system, user, schema):
         body = {
@@ -52,24 +56,27 @@ class Gemini:
                                  "responseSchema": schema},
         }
         last = None
-        for model in self.models:
-            for attempt in range(3):
+        for model in list(self.models):
+            for attempt in range(2):
                 if self.calls:
-                    time.sleep(PAUSE * (attempt + 1))
+                    time.sleep(PAUSE if attempt == 0 else 20)
                 self.calls += 1
                 try:
                     r = json.loads(fetch(f"{API}/models/{model}:generateContent", data=body,
-                                         headers={"x-goog-api-key": self.key}, timeout=120, retries=0))
-                    text = "".join(p.get("text", "") for p in r["candidates"][0]["content"]["parts"])
-                    return json.loads(text)
+                                         headers={"x-goog-api-key": self.key}, timeout=150, retries=0))
+                    text = "".join(p.get("text", "") for p in r["candidates"][0]["content"]["parts"]
+                                   if not p.get("thought"))
+                    result = json.loads(text)
+                    if self.models[0] != model:  # stick to the model that works
+                        self.models.remove(model)
+                        self.models.insert(0, model)
+                    return result
                 except Exception as e:
                     last = e
                     code = getattr(e, "code", None)
                     print(f"  ! {model} attempt {attempt + 1}: {code or ''} {str(e)[:120]}")
-                    if code in (400, 403, 404):
-                        break  # this model is unusable, try the next one
-                    if code == 429 and attempt == 2:
-                        break
+                    if code in (400, 403, 404, 503):
+                        break  # unusable or overloaded right now: go to the next model at once
         raise RuntimeError(f"Gemini failed: {last}")
 
 

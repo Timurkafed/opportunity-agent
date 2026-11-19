@@ -215,9 +215,12 @@ def main():
         print(f"\nGemini calls: {gem.calls}  (preview: memory not saved)")
         return
 
+    if not meta.get("chat_id"):  # maybe Start was pressed while we were collecting
+        process_updates(bot, meta, events)
     chat = meta.get("chat_id")
     if not chat:
         print("  ! chat unknown: open the bot in Telegram and press Start. Nothing sent this time.")
+        digest, freebies, reminders = [], [], []
     else:
         bot.send(chat, header)
         for e in reminders:
