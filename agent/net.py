@@ -27,7 +27,8 @@ def fetch(url, *, data=None, headers=None, timeout=30, retries=2):
                 raise
         except Exception as e:  # timeouts, resets
             last = e
-        time.sleep(2 * (attempt + 1))
+        if attempt < retries:
+            time.sleep(2 * (attempt + 1))
     raise last
 
 

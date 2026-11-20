@@ -89,7 +89,7 @@
     {
       "type": "rss",
       "name": "Opportunity Desk",
-      "url": "https://www.opportunitydesk.org/feed/",
+      "url": "https://opportunitydesk.org/feed/",
       "limit": 15
     },
     {

@@ -1,6 +1,6 @@
 # GitLab: бот запускается по расписанию (Build → Pipeline schedules) или кнопкой "Run pipeline".
 # Ключи берутся из Settings → CI/CD → Variables: TELEGRAM_BOT_TOKEN, GEMINI_API_KEY.
-# Память бота (state/) сохраняется обратно в репозиторий через CI_JOB_TOKEN
+# Память бота (state/) сохраняется обратно в репозиторий через CI_JOB_TOKEN (python -m agent.gitstate)
 # (нужна галочка Settings → CI/CD → Job token permissions → "Allow Git push requests to the repository").
 
 digest:
@@ -10,17 +10,13 @@ digest:
     - if: $CI_PIPELINE_SOURCE == "schedule"
     - if: $CI_PIPELINE_SOURCE == "web"
   variables:
-    GIT_DEPTH: "1"
+    GIT_DEPTH: "50"
     PYTHONIOENCODING: "utf-8"
+    OPP_RUNNER: "gitlab"
   script:
     - set +e
+    - git checkout -q -B main "$CI_COMMIT_SHA"
+    - export STATE_REMOTE="https://gitlab-ci-token:${CI_JOB_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git"
     - python -u -m agent.main; status=$?
-    - git config user.name "opportunity-agent"
-    - git config user.email "bot@users.noreply.gitlab.com"
-    - git add state/
-    - |
-      if ! git diff --cached --quiet; then
-        git commit -q -m "state: ci run $(date -u +%Y-%m-%dT%H:%M)"
-        git push -q "https://gitlab-ci-token:${CI_JOB_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git" "HEAD:${CI_COMMIT_REF_NAME}" || echo "WARNING: could not save state"
-      fi
+    - 'python -m agent.gitstate gitlab || echo "WARNING - could not save state"'
     - exit $status

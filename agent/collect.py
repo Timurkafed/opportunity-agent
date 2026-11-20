@@ -64,17 +64,15 @@ def _tg_page(channel, before=None):
 
 def telegram_channel(channel, seen, since):
     """Newest posts first page; one more page if everything there is new and recent."""
-    out = []
-    try:
-        page = _tg_page(channel)
-        out += page
-        if page and all(p["uid"] not in seen for p in page):
-            oldest = min(p["_pid"] for p in page)
-            dates = [p["date"] for p in page if p["date"]]
-            if dates and min(dates) > since:
+    out = _tg_page(channel)  # errors go up: collect_all records them per source
+    if out and all(p["uid"] not in seen for p in out):
+        oldest = min(p["_pid"] for p in out)
+        dates = [p["date"] for p in out if p["date"]]
+        if dates and min(dates) > since:
+            try:
                 out += _tg_page(channel, before=oldest)
-    except Exception as e:
-        print(f"  ! {channel}: {e}")
+            except Exception as e:
+                print(f"  ! {channel} (page 2): {e}")
     fresh = [p for p in out if p["uid"] not in seen and (p["date"] or "9") >= since and len(p["text"]) > 40]
     for p in fresh:
         p.pop("_pid", None)
@@ -206,22 +204,21 @@ SITE_TYPES = {"astanahub": astanahub, "devpost": devpost, "unstop": unstop, "bev
 
 
 def collect_all(sources, seen, days_back):
+    """Returns (items, {source: new materials}, {source: error text})."""
     since = (datetime.now(timezone.utc) - timedelta(days=days_back)).isoformat()
-    items, stats = [], {}
+    items, stats, errors = [], {}, {}
     with cf.ThreadPoolExecutor(5) as ex:
         futs = {ex.submit(telegram_channel, ch, seen, since): "@" + ch for ch in sources["telegram"]}
         for cfg in sources["sites"]:
-            futs[ex.submit(_safe_site, cfg, seen, since)] = cfg["name"]
+            futs[ex.submit(SITE_TYPES[cfg["type"]], cfg, seen, since)] = cfg["name"]
         for f in cf.as_completed(futs):
-            got = f.result()
-            stats[futs[f]] = len(got)
+            name = futs[f]
+            try:
+                got = f.result()
+            except Exception as e:
+                print(f"  ! {name}: {e}")
+                errors[name] = str(e)[:200]
+                got = []
+            stats[name] = len(got)
             items += got
-    return items, stats
-
-
-def _safe_site(cfg, seen, since):
-    try:
-        return SITE_TYPES[cfg["type"]](cfg, seen, since)
-    except Exception as e:
-        print(f"  ! {cfg['name']}: {e}")
-        return []
+    return items, stats, errors

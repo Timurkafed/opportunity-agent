@@ -8,19 +8,48 @@ from .net import fetch, fetch_json
 
 API = "https://generativelanguage.googleapis.com/v1beta"
 PREFERRED = ["gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-2.0-flash", "gemini-flash-latest"]
-PAUSE = 7  # seconds between calls: stays under the free-tier per-minute limit
+PAUSE = 6          # seconds between calls: free tier allows ~10 requests per minute
+BUDGET = 360       # seconds for all Gemini work in one run; the rest waits for the next run
+MAX_MODELS = 4
+CALL_TIMEOUT = 120
 
 KINDS = ["hackathon", "meetup", "startup", "case", "forum", "project", "volunteer",
          "social", "contest", "internship", "freebie", "other"]
 FLAGS = ["needs_project", "women_only", "school_only", "rf_only", "age_limit", "sales_hr", "paid"]
 
 
+class OutOfTime(RuntimeError):
+    pass
+
+
+class Truncated(RuntimeError):
+    """The answer did not fit: the batch has to be split."""
+
+
+def _error_body(e):
+    try:
+        return e.read().decode("utf-8", "replace")
+    except Exception:
+        return ""
+
+
+def _retry_delay(body, default=15):
+    m = re.search(r'"retryDelay":\s*"(\d+(?:\.\d+)?)s"', body)
+    return float(m.group(1)) if m else default
+
+
 class Gemini:
-    def __init__(self, key):
+    def __init__(self, key, budget=BUDGET, models=None):
         self.key = key
-        self.models = self._pick_models()
+        self.models = (models or self._pick_models())[:MAX_MODELS]
         self.calls = 0
+        self.deadline = time.monotonic() + budget
+        self.last_call = None
+        self.no_thinking_cfg = set()  # models that rejected thinkingConfig
         print(f"  Gemini models: {self.models}")
+
+    def time_left(self):
+        return self.deadline - time.monotonic()
 
     def _pick_models(self):
         forced = os.environ.get("GEMINI_MODEL")
@@ -43,13 +72,22 @@ class Gemini:
         flash.sort(key=lambda n: (-version(n), "lite" in n))
         full = [n for n in flash if version(n) >= 2 and "lite" not in n]
         lite = [n for n in flash if version(n) >= 2 and "lite" in n]
-        # newest models are often overloaded on the free tier, so keep proven ones in the list too
-        ordered = full[:3] + [n for n in ("gemini-2.5-flash",) if n in names] + lite[:2]
+        # newest models are often overloaded on the free tier, so keep a proven one in the list too
+        ordered = full[:2] + [n for n in ("gemini-2.5-flash",) if n in names] + lite[:2]
         ordered = list(dict.fromkeys(ordered)) or [n for n in PREFERRED if n in names]
         return ordered or PREFERRED[:2]
 
+    def _post(self, model, body, timeout):
+        return json.loads(fetch(f"{API}/models/{model}:generateContent", data=body,
+                                headers={"x-goog-api-key": self.key}, timeout=timeout, retries=0))
+
+    def _demote(self, model):
+        if model in self.models:
+            self.models.remove(model)
+            self.models.append(model)
+
     def ask(self, system, user, schema):
-        body = {
+        base = {
             "systemInstruction": {"parts": [{"text": system}]},
             "contents": [{"role": "user", "parts": [{"text": user}]}],
             "generationConfig": {"temperature": 0.2, "responseMimeType": "application/json",
@@ -57,26 +95,56 @@ class Gemini:
         }
         last = None
         for model in list(self.models):
-            for attempt in range(2):
-                if self.calls:
-                    time.sleep(PAUSE if attempt == 0 else 20)
+            if model not in self.models:
+                continue
+            attempt = 0
+            while attempt < 3:
+                attempt += 1
+                if self.last_call is not None:
+                    wait = PAUSE - (time.monotonic() - self.last_call)
+                    if wait > 0:
+                        time.sleep(wait)
+                left = self.time_left()
+                if left < 25:
+                    raise OutOfTime(f"Gemini time budget is over ({self.calls} calls)")
+                body = json.loads(json.dumps(base))
+                thinking_cfg = model.startswith("gemini-2.5") and model not in self.no_thinking_cfg
+                if thinking_cfg:  # thinking makes 2.5 slow and gives nothing for this task
+                    body["generationConfig"]["thinkingConfig"] = {"thinkingBudget": 0}
                 self.calls += 1
+                self.last_call = time.monotonic()
                 try:
-                    r = json.loads(fetch(f"{API}/models/{model}:generateContent", data=body,
-                                         headers={"x-goog-api-key": self.key}, timeout=150, retries=0))
-                    text = "".join(p.get("text", "") for p in r["candidates"][0]["content"]["parts"]
+                    r = self._post(model, body, min(CALL_TIMEOUT, left - 5))
+                    cand = (r.get("candidates") or [{}])[0]
+                    text = "".join(p.get("text", "") for p in cand.get("content", {}).get("parts", [])
                                    if not p.get("thought"))
+                    if cand.get("finishReason") == "MAX_TOKENS":
+                        raise Truncated(f"{model}: answer cut at max tokens")
                     result = json.loads(text)
                     if self.models[0] != model:  # stick to the model that works
                         self.models.remove(model)
                         self.models.insert(0, model)
                     return result
+                except Truncated:
+                    raise
                 except Exception as e:
                     last = e
                     code = getattr(e, "code", None)
-                    print(f"  ! {model} attempt {attempt + 1}: {code or ''} {str(e)[:120]}")
-                    if code in (400, 403, 404, 503):
-                        break  # unusable or overloaded right now: go to the next model at once
+                    detail = _error_body(e) if code else ""
+                    print(f"  ! {model} attempt {attempt}: {code or ''} {(detail or str(e))[:160]}")
+                    if code == 400 and thinking_cfg:
+                        self.no_thinking_cfg.add(model)  # maybe it just doesn't know thinkingConfig
+                        continue
+                    if code in (400, 401, 403, 404) or (code == 429 and "PerDay" in detail):
+                        self.models.remove(model)  # unusable for the rest of this run
+                        break
+                    if code == 429 and attempt == 1:  # per-minute limit: wait as asked, once
+                        delay = min(_retry_delay(detail), 30)
+                        if delay < self.time_left() - 30:
+                            time.sleep(delay)
+                            continue
+                    self._demote(model)  # overloaded, timed out or bad answer: try the next model
+                    break
         raise RuntimeError(f"Gemini failed: {last}")
 
 
@@ -166,7 +234,7 @@ def feedback_summary(events):
     return "\n".join(lines)
 
 
-def batches(items, max_items=18, max_chars=24000):
+def batches(items, max_items=25, max_chars=36000):
     cur, size = [], 0
     for it in items:
         n = len(it["text"]) + 200
@@ -183,10 +251,16 @@ def batches(items, max_items=18, max_chars=24000):
 
 
 def extract(gem, items, criteria, events, today):
+    """Returns (found opportunities, materials that were not processed and must be retried next run)."""
     system = EXTRACT_RULES.format(today=today, criteria=criteria, feedback=feedback_summary(events))
     found, failed = [], []
-    all_batches = list(batches(items))
-    for bi, batch in enumerate(all_batches, 1):
+    queue = list(batches(items))
+    done = 0
+    while queue:
+        batch = queue.pop(0)
+        if gem.time_left() < 60 or not gem.models:  # keep a minute for rerank
+            failed += batch
+            continue
         parts = []
         for i, it in enumerate(batch):
             links = "\n".join(it["links"]) or "(нет)"
@@ -194,8 +268,16 @@ def extract(gem, items, criteria, events, today):
                          f"Ссылки:\n{links}\nТекст:\n{it['text']}")
         try:
             res = gem.ask(system, "\n\n".join(parts), EXTRACT_SCHEMA)
+        except Truncated as e:
+            if len(batch) > 1:
+                print(f"  ! {e}: splitting the batch in two")
+                half = len(batch) // 2
+                queue[:0] = [batch[:half], batch[half:]]
+            else:
+                failed += batch
+            continue
         except Exception as e:
-            print(f"  ! batch {bi} failed: {e}")
+            print(f"  ! batch failed: {e}")
             failed += batch
             continue
         for op in res.get("items", []):
@@ -208,7 +290,10 @@ def extract(gem, items, criteria, events, today):
             op["source"] = it["source"]
             op["uid"] = it["uid"]
             found.append(op)
-        print(f"  batch {bi}/{len(all_batches)}: {len(batch)} materials -> {len(res.get('items', []))} opportunities")
+        done += 1
+        print(f"  batch {done} (+{len(queue)} left): {len(batch)} materials -> {len(res.get('items', []))} opportunities")
+    if failed:
+        print(f"  ! not processed this time: {len(failed)} materials (will retry next run)")
     return found, failed
 
 

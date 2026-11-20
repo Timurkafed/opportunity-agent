@@ -1,8 +1,9 @@
 """Telegram Bot API: send digest items with 👍/👎 buttons, read button presses with getUpdates."""
 import html
 import json
+import re
 import time
-import urllib.parse
+import urllib.error
 from datetime import date
 
 from .net import fetch
@@ -20,9 +21,19 @@ class Bot:
         self.base = f"https://api.telegram.org/bot{token}/"
 
     def call(self, method, **params):
-        r = json.loads(fetch(self.base + method, data=params, timeout=40, retries=1))
+        for attempt in range(2):
+            try:
+                r = json.loads(fetch(self.base + method, data=params, timeout=40, retries=1))
+                break
+            except urllib.error.HTTPError as e:
+                body = _body(e)
+                if e.code == 429 and attempt == 0:  # flood limit: wait as Telegram asks
+                    m = re.search(r'"retry_after":\s*(\d+)', body)
+                    time.sleep(min(int(m.group(1)) if m else 5, 60) + 1)
+                    continue
+                raise TelegramError(e.code, f"{method}: {e.code} {body[:200]}") from None
         if not r.get("ok"):
-            raise RuntimeError(f"{method}: {r}")
+            raise TelegramError(None, f"{method}: {r}")
         time.sleep(0.4)  # stay far below Telegram flood limits
         return r["result"]
 
@@ -31,14 +42,40 @@ class Bot:
                   "disable_web_page_preview": True, "disable_notification": silent}
         if buttons:
             params["reply_markup"] = {"inline_keyboard": buttons}
-        return self.call("sendMessage", **params)
+        try:
+            return self.call("sendMessage", **params)
+        except TelegramError as e:
+            if e.code != 400 or "parse" not in str(e).lower():
+                raise
+            # broken HTML in a title or link: send the same text without formatting
+            params.pop("parse_mode")
+            params["text"] = html.unescape(re.sub(r"<[^>]+>", "", text))
+            return self.call("sendMessage", **params)
 
     def updates(self, offset):
         return self.call("getUpdates", offset=offset, timeout=0, allowed_updates=["message", "callback_query"])
 
 
+class TelegramError(RuntimeError):
+    def __init__(self, code, msg):
+        super().__init__(msg)
+        self.code = code
+
+
+def _body(e):
+    try:
+        return e.read().decode("utf-8", "replace")
+    except Exception:
+        return ""
+
+
 def h(s):
     return html.escape(s or "", quote=False)
+
+
+def attr(s):
+    """Value inside href="...": quotes must be escaped too."""
+    return html.escape(s or "", quote=True)
 
 
 def nice_date(s):
@@ -72,8 +109,8 @@ def item_text(e):
     lines += [FLAG_TEXT[f] for f in e.get("flags", []) if f in FLAG_TEXT]
     links = []
     if e.get("link"):
-        links.append(f'<a href="{h(e["link"])}">Регистрация / подробности</a>')
-    links.append(f'<a href="{h(e["post_url"])}">Источник: {h(e["source"])}</a>')
+        links.append(f'<a href="{attr(e["link"])}">Регистрация / подробности</a>')
+    links.append(f'<a href="{attr(e["post_url"])}">Источник: {h(e["source"])}</a>')
     if len(e.get("sources", [])) > 1:
         links.append(f"(ещё в {len(e['sources']) - 1} ист.)")
     lines.append(" · ".join(links))
