@@ -124,3 +124,140 @@ def vote_buttons(eid):
 def voted_buttons(vote):
     label = "✅ Учтено: 👍" if vote == "up" else "✅ Учтено: 👎"
     return [[{"text": label, "callback_data": "noop"}]]
+
+
+# ---------------------------------------------------------------- one-message digest
+MONTHS_SHORT = ["янв", "фев", "мар", "апр", "мая", "июн", "июл", "авг", "сен", "окт", "ноя", "дек"]
+WEEKDAYS = ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"]
+FLAG_SHORT = {"needs_project": "💡 нужен свой проект", "age_limit": "🔞 есть ограничение по возрасту",
+              "sales_hr": "📎 продажи/HR", "paid": "💳 платно", "women_only": "👩 только для девушек"}
+LIMIT = 3900  # Telegram allows 4096 characters per message
+
+
+def short_date(s):
+    try:
+        d = date.fromisoformat(s[:10])
+        return f"{d.day} {MONTHS_SHORT[d.month - 1]}"
+    except Exception:
+        return ""
+
+
+def short_when(e):
+    a, b = short_date(e.get("start_date", "")), short_date(e.get("end_date", ""))
+    return f"{a}–{b}" if a and b and a != b else (a or b)
+
+
+def place(e):
+    p = (e.get("city") or "").strip()
+    if e.get("online") and "онлайн" not in p.lower() and "online" not in p.lower():
+        p = f"{p} или онлайн" if p else "онлайн"
+    return p.replace("Online", "онлайн").replace("Онлайн", "онлайн")
+
+
+def deadline_text(e, today):
+    dl = e.get("deadline") or ""
+    if not dl:
+        return ""
+    try:
+        days = (date.fromisoformat(dl[:10]) - date.fromisoformat(today)).days
+    except Exception:
+        return ""
+    when = {0: "сегодня", 1: "завтра"}.get(days, f"через {days} дн." if 0 < days <= 7 else "")
+    return f"подать до {short_date(dl)}" + (f" ({when})" if when else "")
+
+
+def link_of(e):
+    return e.get("link") or e.get("post_url") or ""
+
+
+def title_link(e, limit=80):
+    t = e["title"] if len(e["title"]) <= limit else e["title"][:limit - 1] + "…"
+    url = link_of(e)
+    return f'<a href="{attr(url)}">{h(t)}</a>' if url else h(t)
+
+
+def top_block(n, e, hook, today):
+    lines = [f"<b>{n}. {KIND_ICON.get(e['kind'], '📌')} {title_link(e)}</b>"]
+    meta = [x for x in (place(e), short_when(e)) if x]
+    if e.get("prize"):
+        meta.append(f"🏆 {h(e['prize'][:60])}")
+    if meta:
+        lines.append(" · ".join(h(x) if not x.startswith("🏆") else x for x in meta))
+    dl = deadline_text(e, today)
+    if dl:
+        lines.append(f"⏰ <b>{dl}</b>")
+    lines.append(f"<i>{h(hook or e.get('summary', ''))}</i>")
+    flags = [FLAG_SHORT[f] for f in e.get("flags", []) if f in FLAG_SHORT]
+    if flags:
+        lines.append(" · ".join(flags))
+    return "\n".join(lines)
+
+
+def short_line(n, e, today, show_place=True):
+    bits = [x for x in (short_when(e), place(e) if show_place else "") if x]
+    dl = e.get("deadline")
+    if dl and short_date(dl) and not short_when(e).endswith(short_date(dl)):
+        bits.append(f"подать до {short_date(dl)}")
+    tail = f" — {h(', '.join(bits))}" if bits else ""
+    mark = " 💡" if "needs_project" in e.get("flags", []) else ""
+    return f"{n}. {KIND_ICON.get(e['kind'], '📌')} {title_link(e, 70)}{tail}{mark}"
+
+
+def digest_message(today_dt, top, more, women, free, reminders, queue_left, evening=False):
+    """top: [(event, hook)], others: [event]. Returns (html text, numbered events in order)."""
+    today = today_dt.date().isoformat()
+    numbered, parts = [], []
+    if evening:
+        parts.append("🌙 <b>Вечером: это стоит успеть</b>")
+    else:
+        day = f"{WEEKDAYS[today_dt.weekday()].capitalize()}, {today_dt.day} {MONTHS[today_dt.month - 1]}"
+        counts = [f"{len(top)} главн{'ое' if len(top) == 1 else 'ых'}" if top else "",
+                  f"{len(more)} можно глянуть" if more else "", f"{len(free)} халява" if free else ""]
+        counts = " · ".join(c for c in counts if c) or "нового стоящего нет"
+        parts.append(f"☀️ <b>{day}</b>\n{counts}")
+
+    if top:
+        blocks = []
+        for e, hook in top:
+            numbered.append(e)
+            blocks.append(top_block(len(numbered), e, hook, today))
+        parts.append(("🔥 <b>Стоит подать</b>\n\n" if not evening else "") + "\n\n".join(blocks))
+
+    def section(title, items, show_place=True):
+        lines = []
+        for e in items:
+            numbered.append(e)
+            lines.append(short_line(len(numbered), e, today, show_place))
+        if lines:
+            parts.append(f"{title}\n" + "\n".join(lines))
+
+    section("👀 <b>Можно глянуть</b>", more)
+    section("👩 <b>Только для девушек</b> <i>(для интереса)</i>", women)
+    section("🎁 <b>Халява</b>", free)
+    if reminders:
+        parts.append("⏰ <b>Скоро дедлайн</b>\n" + "\n".join(
+            f"• {title_link(e, 60)} — {deadline_text(e, today)}" for e in reminders))
+    foot = []
+    if numbered:
+        foot.append("Нажми номер, если интересно: учту в следующих подборках.")
+    if queue_left:
+        foot.append(f"В очереди ещё {queue_left}.")
+    if foot:
+        parts.append("<i>" + " ".join(foot) + "</i>")
+
+    text = "\n\n".join(parts)
+    while len(text) > LIMIT and more:  # too long: drop the least valuable lines
+        more = more[:-1]
+        return digest_message(today_dt, top, more, women, free, reminders, queue_left + 1, evening)
+    return text, numbered
+
+
+def number_buttons(events, per_row=6):
+    btns = [{"text": str(i), "callback_data": f"up:{e['id']}"} for i, e in enumerate(events, 1)]
+    return [btns[i:i + per_row] for i in range(0, len(btns), per_row)]
+
+
+def mark_voted(keyboard, data):
+    """Keyboard of a list digest after a press: the pressed number becomes ✅N."""
+    return [[{"text": "✅" + b["text"], "callback_data": "noop"} if b.get("callback_data") == data else b
+             for b in row] for row in keyboard]

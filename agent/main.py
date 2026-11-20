@@ -4,6 +4,7 @@ Run:  python -m agent.main            (normal run, needs secrets in environment)
       python -m agent.main --force    (normal run even if another run was less than 4 hours ago)
       python -m agent.main --dry      (only collect and print counts; no keys needed)
       python -m agent.main --no-send  (collect + Gemini, print the digest instead of sending)
+      add --morning or --evening to force the kind of digest (otherwise: by the time of day)
 
 Exit code: 0 = done or skipped, 1 = failed (a short note is sent to Telegram when possible).
 Saving state/ to the repository is a separate step: python -m agent.gitstate <runner>.
@@ -20,8 +21,12 @@ from . import collect, gitstate, llm, store, tg
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ALMATY = timezone(timedelta(hours=5))
-MAX_MAIN = 10       # main items per digest
+MAX_TOP = 3         # "worth applying" items with details
+MAX_MORE = 7        # one-line "worth a look" items
+MAX_WOMEN = 2       # women-only events, shown just for interest
 MAX_FREE = 3        # freebies per digest
+EVENING_HOUR = 14   # runs from this hour (Almaty) send only exceptional ("hot") items, or nothing
+ACTIVE = {"hackathon", "startup", "case", "contest", "project", "volunteer", "internship"}  # you take part
 MIN_SCORE = 5       # below this nothing is sent
 DROP_FLAGS = {"school_only", "rf_only"}  # the user can't take part anyway
 SKIP_HOURS = 4      # another run finished less than this ago -> do nothing (laptop + cloud overlap)
@@ -175,6 +180,7 @@ def is_stale(e, today):
 def process_updates(bot, meta, events, pages=10):
     by_id = {e["id"]: e for e in events}
     total = votes = 0
+    keyboards = {}  # message_id -> keyboard after this run's presses (several presses on one digest)
     for _ in range(pages):  # Telegram gives at most 100 updates per call
         try:
             ups = bot.updates(meta.get("tg_offset", 0))
@@ -186,13 +192,13 @@ def process_updates(bot, meta, events, pages=10):
         total += len(ups)
         for u in ups:
             meta["tg_offset"] = u["update_id"] + 1
-            votes += _handle_update(bot, meta, by_id, u)
+            votes += _handle_update(bot, meta, by_id, u, keyboards)
         if len(ups) < 100:
             break
     print(f"  updates: {total}, votes: {votes}")
 
 
-def _handle_update(bot, meta, by_id, u):
+def _handle_update(bot, meta, by_id, u, keyboards=None):
     msg = u.get("message")
     if msg:
         chat = (msg.get("chat") or {}).get("id")
@@ -216,10 +222,17 @@ def _handle_update(bot, meta, by_id, u):
         print(f"  ! vote for an event that is not in memory: {eid}")
         return 0
     by_id[eid]["feedback"] = vote
+    keyboards = {} if keyboards is None else keyboards
+    mid = cmsg.get("message_id")
+    kb = keyboards.get(mid) or (cmsg.get("reply_markup") or {}).get("inline_keyboard") or []
+    ids = {b.get("callback_data", "").partition(":")[2] for row in kb for b in row}
+    if len(ids) > 1:  # one-message digest with numbered buttons
+        keyboards[mid] = tg.mark_voted(kb, cq.get("data"))
+    else:             # old style: one card with 👍/👎
+        keyboards[mid] = tg.voted_buttons(vote)
     for method, params in (("answerCallbackQuery", {"callback_query_id": cq.get("id"), "text": "Учтено"}),
-                           ("editMessageReplyMarkup", {"chat_id": meta["chat_id"],
-                                                       "message_id": cmsg.get("message_id"),
-                                                       "reply_markup": {"inline_keyboard": tg.voted_buttons(vote)}})):
+                           ("editMessageReplyMarkup", {"chat_id": meta["chat_id"], "message_id": mid,
+                                                       "reply_markup": {"inline_keyboard": keyboards[mid]}})):
         try:
             bot.call(method, **params)
         except Exception:
@@ -258,10 +271,11 @@ def pick_reminders(events, today_dt):
     in2 = (today_dt.date() + timedelta(days=2)).isoformat()
     shown_before = (store.now() - timedelta(hours=20)).isoformat()  # not right after the first show
     return [e for e in events if e["sent_at"] and e["sent_at"] != "dupe" and e["sent_at"] < shown_before
-            and not e["reminded_at"] and e["feedback"] != "down" and not is_stale(e, today)
+            and not e["reminded_at"] and (e["feedback"] == "up" or (e.get("tier") == "top" and not e["feedback"]))
+            and not is_stale(e, today)
             and ((e["deadline"] and today <= e["deadline"][:10] <= soon)
                  or (e["feedback"] == "up" and not e["deadline"] and e["start_date"]
-                     and today < e["start_date"][:10] <= in2))][:5]
+                     and today < e["start_date"][:10] <= in2))][:4]
 
 
 def update_source_health(meta, stats, errors):
@@ -281,6 +295,30 @@ def update_source_health(meta, stats, errors):
 
 
 # ------------------------------------------------------------------ main
+def choose(gem, cands, sent_titles, criteria, events, today):
+    """Split candidates into top [(event, hook, hot)], more, women-only, freebies. Marks repeats as dupes."""
+    if not cands:
+        return [], [], [], []
+    try:
+        dupes, top_idx, order = llm.rerank(gem, cands, sent_titles, criteria, events, today)
+        for i in dupes:
+            cands[i]["sent_at"] = "dupe"
+        top = [(cands[i], hook, hot) for i, hook, hot in top_idx
+               if cands[i]["kind"] != "freebie" and "women_only" not in cands[i]["flags"]]
+        rest = [cands[i] for i in order]
+    except Exception as ex:  # Gemini is down: simple rules instead of the editor
+        print(f"  ! rerank failed, using scores: {ex}")
+        top = [(e, e["summary"], False) for e in cands
+               if e["kind"] in ACTIVE and "women_only" not in e["flags"] and e["score"] >= 8][:MAX_TOP]
+        rest = [e for e in cands if all(e is not t for t, _, _ in top)]
+    top = top[:MAX_TOP]
+    rest = [e for e in rest if all(e is not t for t, _, _ in top)]
+    more = [e for e in rest if e["kind"] != "freebie" and "women_only" not in e["flags"]][:MAX_MORE]
+    women = [e for e in rest if "women_only" in e["flags"]][:MAX_WOMEN]
+    free = [e for e in rest if e["kind"] == "freebie"][:MAX_FREE]
+    return top, more, women, free
+
+
 def save_all(seen, events, meta):
     meta["saved_at"] = store.now().isoformat()
     store.save("seen.json", store.prune_seen(seen))
@@ -304,7 +342,7 @@ def main():
                   f"({meta.get('runner') or '?'}). Use --force to run anyway.")
             return 0
     try:
-        run(meta, dry, no_send)
+        run(meta, dry, no_send, mode="morning" if "--morning" in args else "evening" if "--evening" in args else None)
         return 0
     except Exception as ex:
         if real:
@@ -313,7 +351,7 @@ def main():
         raise
 
 
-def run(meta, dry, no_send):
+def run(meta, dry, no_send, mode=None):
     real = not dry and not no_send
     sources = json.loads(read("config/sources.json"))
     criteria = read("criteria.md")
@@ -355,94 +393,58 @@ def run(meta, dry, no_send):
         save_all(seen, events, meta)  # what Gemini has read is not lost if the run breaks later
 
     print("4) Choosing ...")
+    evening = mode == "evening" or (mode is None and today_dt.hour >= EVENING_HOUR)
     pending = [e for e in events if not e["sent_at"] and not is_stale(e, today)
                and e["score"] >= MIN_SCORE and not (set(e["flags"]) & DROP_FLAGS)]
     pending.sort(key=lambda e: -e["score"])
-    main_c = [e for e in pending if e["kind"] != "freebie"][:40]
-    free_c = [e for e in pending if e["kind"] == "freebie"][:10]  # a free hackathon is still a hackathon
+    cands = pending[:50]
     recent_cut = (store.now() - timedelta(days=30)).isoformat()
     sent_titles = [e["title"] for e in events if e["sent_at"] and e["sent_at"] != "dupe" and e["sent_at"] >= recent_cut]
-    cands = main_c + free_c
-    if cands:
-        try:
-            dupes, order = llm.rerank(gem, cands, sent_titles, criteria, events, today)
-            for i in dupes:
-                cands[i]["sent_at"] = "dupe"
-            ranked = [cands[i] for i in order]
-            main_c = [e for e in ranked if e["kind"] != "freebie"]
-            free_c = [e for e in ranked if e["kind"] == "freebie"]
-        except Exception as ex:
-            print(f"  ! rerank failed, using scores: {ex}")
-    digest, freebies = main_c[:MAX_MAIN], free_c[:MAX_FREE]
-    queue_left = max(0, len(main_c) - len(digest)) + max(0, len(free_c) - len(freebies))
-    reminders = pick_reminders(events, today_dt)
-
-    part = "☀️ Утренний" if today_dt.hour < 14 else "🌙 Вечерний"
-    if digest or freebies:
-        header = f"{part} дайджест, {tg.nice_date(today)}: {len(digest)} возможностей"
-        header += f" + {len(freebies)} халявы" if freebies else ""
-        header += f".\nЕщё в очереди: {queue_left} — пришлю в следующий раз." if queue_left else "."
+    top, more, women, free = choose(gem, cands, sent_titles, criteria, events, today)
+    if evening:  # evening: only something exceptional, the rest waits for the morning
+        top = [(e, hook) for e, hook, hot in top if hot]
+        more, women, free, reminders = [], [], [], []
     else:
-        header = f"{part} дайджест, {tg.nice_date(today)}: нового стоящего нет."
+        top = [(e, hook) for e, hook, hot in top]
+        reminders = pick_reminders(events, today_dt)
+    shown = {id(e) for e, _ in top} | {id(e) for e in more + women + free}
+    queue_left = sum(1 for e in pending if not e["sent_at"] and id(e) not in shown)
+    text, numbered = tg.digest_message(today_dt, top, more, women, free, reminders, queue_left, evening)
     if failed:
-        header += (f"\n⚠️ Gemini не ответил: {len(failed)} из {len(items)} новых материалов разберу в следующий раз."
-                   if len(failed) < len(items) else
-                   "\n⚠️ Gemini сейчас не ответил, новые материалы разберу в следующий раз.")
+        text += ("\n\n⚠️ Gemini ответил не на всё: часть новых материалов разберу в следующий раз."
+                 if len(failed) < len(items) else "\n\n⚠️ Gemini сейчас не ответил, новые материалы разберу в следующий раз.")
+    silent_evening = evening and not top and not failed
 
     print("5) Sending ...")
     if no_send:
-        print("\n" + header)
-        for e in reminders:
-            print("\n[НАПОМИНАНИЕ]\n" + tg.item_text(e))
-        for e in digest:
-            print("\n" + tg.item_text(e) + f"\n   (оценка {e['score']}: {e['why']})")
-        for e in freebies:
-            print("\n[ХАЛЯВА]\n" + tg.item_text(e))
+        print("\n" + (text if not silent_evening else "(evening: nothing exceptional, nothing sent)"))
         print(f"\nGemini calls: {gem.calls}  (preview: memory not saved)")
         return
 
     if not meta.get("chat_id"):  # maybe Start was pressed while we were collecting
         process_updates(bot, meta, events)
     chat = meta.get("chat_id")
-    sent = errors_send = 0
     if not chat:
         print("  ! chat unknown: open the bot in Telegram and press Start. Nothing sent this time.")
-        digest, freebies, reminders = [], [], []
+    elif silent_evening:
+        print("  evening: nothing exceptional, nothing sent")
     else:
-        bot.send(chat, header)  # if even this fails, the run fails and nothing is marked as sent
-
-        def send_item(e, text, buttons, field):
-            nonlocal sent, errors_send
-            try:
-                bot.send(chat, text, buttons, silent=True)
-            except Exception as ex:  # one broken item must not stop the digest; it goes next time
-                errors_send += 1
-                print(f"  ! not sent: {e['title'][:60]}: {ex}")
-                return
-            e[field] = store.now().isoformat()
-            sent += 1
-            save_all(seen, events, meta)  # a run killed in the middle won't resend what already went
-
+        bot.send(chat, text, tg.number_buttons(numbered) if numbered else None)
+        stamp_sent = store.now().isoformat()
+        for e in numbered:
+            e["sent_at"] = stamp_sent
+        for e, _ in top:
+            e["tier"] = "top"
         for e in reminders:
-            send_item(e, "⏰ <b>Напоминание</b>\n" + tg.item_text(e), None, "reminded_at")
-        for e in digest:
-            send_item(e, tg.item_text(e), tg.vote_buttons(e["id"]), "sent_at")
-        if freebies:
-            try:
-                bot.send(chat, "🎁 <b>Халява</b>", silent=True)
-            except Exception as ex:
-                print(f"  ! freebies header: {ex}")
-            for e in freebies:
-                send_item(e, tg.item_text(e), tg.vote_buttons(e["id"]), "sent_at")
-        if errors_send and errors_send >= sent:
-            raise RuntimeError(f"Telegram refused {errors_send} of {errors_send + sent} messages")
+            e["reminded_at"] = stamp_sent
+    sent = len(numbered) if chat and not silent_evening else 0
 
     meta["last_run"] = store.now().isoformat()
     meta["runner"] = os.environ.get("OPP_RUNNER", "")
     meta["gemini_calls_last_run"] = gem.calls
     save_all(seen, events, meta)
-    print(f"Done. Sent {sent} messages ({len(digest)} + {len(freebies)} freebies + {len(reminders)} reminders"
-          f"{f', {errors_send} failed' if errors_send else ''}). Gemini calls: {gem.calls}")
+    print(f"Done. {'Evening' if evening else 'Morning'} digest: {sent} items ({len(top)} top), "
+          f"{len(reminders)} reminders. Gemini calls: {gem.calls}")
 
 
 if __name__ == "__main__":

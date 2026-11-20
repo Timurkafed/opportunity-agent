@@ -68,10 +68,11 @@ def test_merge_cleans_dates():
 def test_reminder_not_right_after_first_show():
     today = datetime(2026, 11, 20, 9, 0, tzinfo=m.ALMATY)
     just_sent = ev("A", deadline="2026-11-22", sent_at=store.now().isoformat())
-    old_sent = ev("B", deadline="2026-11-22", sent_at=(store.now() - timedelta(days=2)).isoformat())
+    old_sent = ev("B", deadline="2026-11-22", sent_at=(store.now() - timedelta(days=2)).isoformat(), feedback="up")
+    unrated = ev("E", deadline="2026-11-22", sent_at=(store.now() - timedelta(days=2)).isoformat())
     disliked = ev("C", deadline="2026-11-22", sent_at=(store.now() - timedelta(days=2)).isoformat(), feedback="down")
     far = ev("D", deadline="2026-12-22", sent_at=(store.now() - timedelta(days=2)).isoformat())
-    picked = m.pick_reminders([just_sent, old_sent, disliked, far], today)
+    picked = m.pick_reminders([just_sent, old_sent, unrated, disliked, far], today)
     assert [e["title"] for e in picked] == ["B"]
 
 
@@ -211,11 +212,25 @@ def fake_found(title, kind="hackathon", is_freebie=False, score=9, uid="tg:x/1")
     return op
 
 
-def run_with_fakes(monkeypatch, found, bot):
+class FixedTime(datetime):
+    hour_ = 9
+
+    @classmethod
+    def now(cls, tz=None):
+        return datetime(2026, 11, 21, cls.hour_, 7, tzinfo=tz)
+
+
+def run_with_fakes(monkeypatch, found, bot, hour=9, top=(0,), hot=()):
+    FixedTime.hour_ = hour
+    monkeypatch.setattr(m, "datetime", FixedTime)
     monkeypatch.setattr(m.collect, "collect_all", lambda *a, **k: ([item(1)], {"@x": 1}, {"@y": "HTTP 404"}))
     monkeypatch.setattr(m.llm, "Gemini", lambda key: type("G", (), {"calls": 1})())
     monkeypatch.setattr(m.llm, "extract", lambda *a: (found, []))
-    monkeypatch.setattr(m.llm, "rerank", lambda g, c, *a: (set(), list(range(len(c)))))
+
+    def fake_rerank(g, c, *a):
+        tops = [(i, f"hook {i}", i in hot) for i in top if i < len(c)]
+        return set(), tops, [i for i in range(len(c)) if i not in top]
+    monkeypatch.setattr(m.llm, "rerank", fake_rerank)
     monkeypatch.setattr(m.tg, "Bot", lambda token: bot)
     monkeypatch.setenv("TELEGRAM_BOT_TOKEN", "t")
     monkeypatch.setenv("GEMINI_API_KEY", "k")
@@ -224,22 +239,58 @@ def run_with_fakes(monkeypatch, found, bot):
     return meta
 
 
-def test_free_hackathon_goes_to_main_block_and_course_to_freebies(tmp_state, monkeypatch):
-    bot = FakeBot()
-    found = [fake_found("Free Hackathon", kind="hackathon", is_freebie=True),
-             fake_found("Бесплатный курс Figma", kind="freebie", is_freebie=True)]
-    run_with_fakes(monkeypatch, found, bot)
-    text = "\n".join(bot.sent)
-    assert text.index("Free Hackathon") < text.index("🎁 <b>Халява</b>") < text.index("Бесплатный курс Figma")
+class ListBot(FakeBot):
+    def send(self, chat, text, buttons=None, silent=False):
+        self.sent.append((text, buttons))
 
 
-def test_broken_message_does_not_lose_the_rest(tmp_state, monkeypatch):
-    bot = FakeBot(fail_on={2})  # 0 = header, 1 = first item, 2 = second item fails
-    names = ["Decentrathon", "HackNU", "Junction Almaty"]
-    found = [fake_found(t, score=10 - n) for n, t in enumerate(names)]
+def test_morning_digest_is_one_message_with_sections_and_numbers(tmp_state, monkeypatch):
+    bot = ListBot()
+    found = [fake_found("Decentrathon", kind="hackathon", score=10),
+             fake_found("IT Talks Almaty", kind="meetup", score=9),
+             fake_found("Бесплатный курс Figma", kind="freebie", is_freebie=True, score=8),
+             fake_found("SOUL CAMP AI", kind="contest", score=8)]
+    found[3]["flags"] = ["women_only"]
     meta = run_with_fakes(monkeypatch, found, bot)
+    assert len(bot.sent) == 1
+    text, buttons = bot.sent[0]
+    assert text.index("Стоит подать") < text.index("Decentrathon") < text.index("Можно глянуть") \
+        < text.index("IT Talks") < text.index("девушек") < text.index("SOUL CAMP") < text.index("Халява")
+    assert "hook 0" in text
+    assert [b["text"] for row in buttons for b in row] == ["1", "2", "3", "4"]
     events = store.load("events.json", [])
-    sent = {e["title"]: bool(e["sent_at"]) for e in events}
-    assert sent == {"Decentrathon": True, "HackNU": False, "Junction Almaty": True}
-    assert meta["last_run"] and meta["sources"]["@y"]["errors_in_row"] == 1
-    assert store.load("meta.json", {})["saved_at"]
+    assert all(e["sent_at"] for e in events) and meta["last_run"]
+    assert [e["title"] for e in events if e.get("tier") == "top"] == ["Decentrathon"]
+    assert meta["sources"]["@y"]["errors_in_row"] == 1
+
+
+def test_evening_sends_only_hot_and_is_silent_otherwise(tmp_state, monkeypatch):
+    bot = ListBot()
+    run_with_fakes(monkeypatch, [fake_found("Decentrathon"), fake_found("Junction Almaty")], bot, hour=18)
+    assert bot.sent == []
+    assert all(not e["sent_at"] for e in store.load("events.json", []))  # waits for the morning
+
+    bot = ListBot()
+    run_with_fakes(monkeypatch, [fake_found("Astana Hub Grant Battle", score=10)], bot, hour=18, top=(0,), hot=(0,))
+    assert len(bot.sent) == 1 and "Вечером" in bot.sent[0][0] and "Astana Hub Grant Battle" in bot.sent[0][0]
+
+
+def test_number_press_marks_only_that_number():
+    events = [ev("A", id="a1"), ev("B", id="b1"), ev("C", id="c1")]
+    kb = m.tg.number_buttons(events)
+    msg = {"chat": {"id": 1}, "message_id": 7, "reply_markup": {"inline_keyboard": kb}}
+    ups = [{"update_id": 1, "callback_query": {"id": "q1", "data": "up:b1", "message": msg}},
+           {"update_id": 2, "callback_query": {"id": "q2", "data": "up:c1", "message": msg}}]
+    bot = FakeBot([ups])
+    edits = []
+    bot.call = lambda method, **p: edits.append(p) if method == "editMessageReplyMarkup" else None
+    m.process_updates(bot, {"chat_id": 1}, events)
+    assert [e["feedback"] for e in events] == [None, "up", "up"]
+    assert [b["text"] for b in edits[-1]["reply_markup"]["inline_keyboard"][0]] == ["1", "✅2", "✅3"]
+
+
+def test_long_digest_is_cut_to_telegram_limit():
+    today = datetime(2026, 11, 21, 9, 7, tzinfo=m.ALMATY)
+    more = [ev("Очень длинное название события " * 3 + str(i), "2026-11-25", id=str(i)) for i in range(60)]
+    text, numbered = m.tg.digest_message(today, [], more, [], [], [], 0)
+    assert len(text) <= m.tg.LIMIT and len(numbered) < 60 and "В очереди ещё" in text
