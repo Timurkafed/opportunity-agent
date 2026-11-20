@@ -78,7 +78,8 @@
   "id": "a8befcf947",
   "sources": [
    "@techgardenalmaty",
-   "Astana Hub (календарь)"
+   "Astana Hub (календарь)",
+   "@startup_course_com"
   ],
   "first_seen": "2026-11-19T12:23:22.004443+00:00",
   "sent_at": null,
@@ -93,7 +94,7 @@
   "online": false,
   "start_date": "2026-11-26",
   "end_date": "2026-11-26",
-  "deadline": "",
+  "deadline": "2026-11-26",
   "who": "IT-специалисты, руководители бизнеса, инженеры",
   "prize": "Нетворкинг, ужин, QA-сессия с ML-специалистами.",
   "flags": [],
@@ -106,10 +107,12 @@
   "id": "799d20d3ac",
   "sources": [
    "@uppertunity",
-   "@startupchoyxona"
+   "@startupchoyxona",
+   "@startup_course_com",
+   "@it_bilimkz"
   ],
   "first_seen": "2026-11-19T12:23:22.004443+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-20T12:15:01.911832+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -137,7 +140,7 @@
    "Astana Hub (календарь)"
   ],
   "first_seen": "2026-11-19T12:23:22.004443+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-20T12:15:07.090158+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -164,7 +167,7 @@
    "@techgardenalmaty"
   ],
   "first_seen": "2026-11-19T12:23:22.005444+00:00",
-  "sent_at": null,
+  "sent_at": "dupe",
   "reminded_at": null,
   "feedback": null
  },
@@ -191,7 +194,7 @@
    "@techgardenalmaty"
   ],
   "first_seen": "2026-11-19T12:23:22.005955+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-20T12:15:07.992492+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -218,7 +221,8 @@
    "@startupVGlobal",
    "@huntmeinternship",
    "@thetechkz",
-   "@it_bilimkz"
+   "@it_bilimkz",
+   "@startupchoyxona"
   ],
   "first_seen": "2026-11-19T12:23:22.005955+00:00",
   "sent_at": null,
@@ -303,7 +307,8 @@
   "source": "@startupVGlobal",
   "id": "da3f62426c",
   "sources": [
-   "@startupVGlobal"
+   "@startupVGlobal",
+   "@startup_course_com"
   ],
   "first_seen": "2026-11-19T12:23:22.008770+00:00",
   "sent_at": null,
@@ -421,7 +426,7 @@
   ],
   "first_seen": "2026-11-19T12:23:22.013164+00:00",
   "sent_at": "2026-11-19T13:07:59.198351+00:00",
-  "reminded_at": null,
+  "reminded_at": "2026-11-20T12:14:54.626289+00:00",
   "feedback": null
  },
  {
@@ -448,7 +453,7 @@
   ],
   "first_seen": "2026-11-19T12:23:22.014162+00:00",
   "sent_at": "2026-11-19T13:07:59.198351+00:00",
-  "reminded_at": null,
+  "reminded_at": "2026-11-20T12:14:55.624543+00:00",
   "feedback": null
  },
  {
@@ -505,7 +510,7 @@
   ],
   "first_seen": "2026-11-19T12:23:22.020736+00:00",
   "sent_at": "2026-11-19T13:07:59.198351+00:00",
-  "reminded_at": null,
+  "reminded_at": "2026-11-20T12:14:56.490750+00:00",
   "feedback": null
  },
  {
@@ -531,7 +536,7 @@
    "@startup_course_com"
   ],
   "first_seen": "2026-11-19T12:23:22.021738+00:00",
-  "sent_at": null,
+  "sent_at": "dupe",
   "reminded_at": null,
   "feedback": null
  },
@@ -558,7 +563,7 @@
    "@startup_course_com"
   ],
   "first_seen": "2026-11-19T12:23:22.024738+00:00",
-  "sent_at": null,
+  "sent_at": "dupe",
   "reminded_at": null,
   "feedback": null
  },
@@ -620,7 +625,7 @@
    "@thetechkz"
   ],
   "first_seen": "2026-11-19T12:23:22.031787+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-20T12:15:05.307418+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -676,7 +681,7 @@
   ],
   "first_seen": "2026-11-19T12:23:22.033328+00:00",
   "sent_at": "2026-11-19T13:07:59.198351+00:00",
-  "reminded_at": null,
+  "reminded_at": "2026-11-20T12:14:57.347993+00:00",
   "feedback": null
  },
  {
@@ -817,7 +822,7 @@
    "@huntmeinternship"
   ],
   "first_seen": "2026-11-19T12:23:22.057742+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-20T12:15:00.242205+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -1071,7 +1076,7 @@
    "@thetechkz"
   ],
   "first_seen": "2026-11-19T12:23:22.089852+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-20T12:15:11.410529+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -1111,7 +1116,7 @@
   "city": "Онлайн",
   "online": true,
   "start_date": "2026-11-26",
-  "end_date": "",
+  "end_date": "2026-11-26",
   "deadline": "2026-11-26",
   "who": "Предприниматели, топ-менеджеры, руководители команд, менеджеры, специалисты, все, кто интересуется ИИ.",
   "prize": "",
@@ -1124,10 +1129,11 @@
   "source": "@datanomika",
   "id": "c490eb312e",
   "sources": [
-   "@datanomika"
+   "@datanomika",
+   "Astana Hub (календарь)"
   ],
   "first_seen": "2026-11-19T12:23:22.101691+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-20T12:15:09.739489+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -1154,7 +1160,7 @@
    "@it_bilimkz"
   ],
   "first_seen": "2026-11-19T12:23:22.106203+00:00",
-  "sent_at": null,
+  "sent_at": "dupe",
   "reminded_at": null,
   "feedback": null
  },
@@ -1530,12 +1536,13 @@
   "is_freebie": false,
   "score": 9,
   "why": "Отличная возможность для нетворкинга и получения опыта в Алматы, соответствует интересам пользователя.",
-  "link": "",
+  "link": "http://forms.gle/Frn5tJMLsWdEyreW8?&utm_source=startup.vg",
   "post_url": "https://astanahub.com/ru/event/almaty-java-community-x-127-1",
   "source": "Astana Hub (календарь)",
   "id": "cef5dfa6cd",
   "sources": [
-   "Astana Hub (календарь)"
+   "Astana Hub (календарь)",
+   "@uppertunity"
   ],
   "first_seen": "2026-11-19T12:23:22.191561+00:00",
   "sent_at": "2026-11-19T13:07:59.198351+00:00",
@@ -1592,7 +1599,7 @@
    "Astana Hub (календарь)"
   ],
   "first_seen": "2026-11-19T12:23:22.209469+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-20T12:15:02.740229+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -1916,7 +1923,7 @@
    "@startupchoyxona"
   ],
   "first_seen": "2026-11-19T12:23:22.300842+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-20T12:15:01.060327+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -1945,7 +1952,7 @@
    "@startupchoyxona"
   ],
   "first_seen": "2026-11-19T12:23:22.308574+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-20T12:15:06.269234+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -2135,7 +2142,7 @@
   ],
   "first_seen": "2026-11-19T12:23:22.410819+00:00",
   "sent_at": "2026-11-19T13:07:59.198351+00:00",
-  "reminded_at": null,
+  "reminded_at": "2026-11-20T12:14:59.404051+00:00",
   "feedback": null
  },
  {
@@ -2261,7 +2268,7 @@
   "prize": "",
   "flags": [],
   "is_freebie": false,
-  "score": 5,
+  "score": 6,
   "why": "Техническая конференция, но проходит очно в Павлодаре, что не является приоритетным городом для пользователя из Алматы.",
   "link": "",
   "post_url": "https://dev.events/AS/KZ",
@@ -2285,10 +2292,10 @@
   "end_date": "2026-12-04",
   "deadline": "",
   "who": "Опытные инженеры-программисты, техлиды",
-  "prize": "",
+  "prize": "Сертификация",
   "flags": [],
   "is_freebie": false,
-  "score": 4,
+  "score": 5,
   "why": "Мастер-класс для опытных специалистов, не подходит для поиска первого опыта. Город не указан, но в Казахстане.",
   "link": "",
   "post_url": "https://dev.events/AS/KZ",
@@ -2312,10 +2319,10 @@
   "end_date": "2026-12-11",
   "deadline": "",
   "who": "Опытные Java-разработчики",
-  "prize": "",
+  "prize": "Сертификация",
   "flags": [],
   "is_freebie": false,
-  "score": 4,
+  "score": 5,
   "why": "Мастер-класс для опытных Java-разработчиков, не подходит для поиска первого опыта. Город не указан, но в Казахстане.",
   "link": "",
   "post_url": "https://dev.events/AS/KZ",
@@ -3338,6 +3345,823 @@
    "Astana Hub (календарь)"
   ],
   "first_seen": "2026-11-19T13:07:59.281007+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Онлайн экзамен от Network School NS.com",
+  "kind": "contest",
+  "summary": "Сдайте онлайн-экзамен, чтобы получить приглашение на очный экзамен и рекомендации в топовые IT-компании.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "2026-11-27",
+  "who": "Все желающие",
+  "prize": "Рекомендации в IT-компании",
+  "flags": [],
+  "is_freebie": false,
+  "score": 8,
+  "why": "Отличная возможность для пользователя получить опыт и потенциально работу в IT-компаниях, доступно онлайн.",
+  "link": "http://ns.com/exam?&utm_source=startup.vg",
+  "post_url": "https://t.me/uppertunity/721",
+  "source": "@uppertunity",
+  "id": "ce64f0f8a7",
+  "sources": [
+   "@uppertunity"
+  ],
+  "first_seen": "2026-11-20T12:14:51.188946+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "AI & MedTech Meetup",
+  "kind": "meetup",
+  "summary": "Встреча для разработчиков и специалистов здравоохранения по применению ИИ в медицине.",
+  "city": "Астана",
+  "online": false,
+  "start_date": "2026-11-26",
+  "end_date": "2026-11-26",
+  "deadline": "",
+  "who": "Разработчики, специалисты здравоохранения",
+  "prize": "",
+  "flags": [],
+  "is_freebie": false,
+  "score": 6,
+  "why": "Интересная тема, но проходит очно в Астане, что менее приоритетно для пользователя из Алматы. Тем не менее, может быть полезно для нетворкинга.",
+  "link": "https://form.astanahub.com/form/view/247848",
+  "post_url": "https://t.me/astana_hub/7433",
+  "source": "@astana_hub",
+  "id": "068c8c11e9",
+  "sources": [
+   "@astana_hub"
+  ],
+  "first_seen": "2026-11-20T12:14:51.193293+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Claude Code Build Day — первый хакатон Anthropic в Казахстане",
+  "kind": "hackathon",
+  "summary": "Хакатон по разработке AI-решений с использованием новейших моделей и инструментов Claude.",
+  "city": "Астана",
+  "online": false,
+  "start_date": "2026-12-02",
+  "end_date": "2026-12-02",
+  "deadline": "",
+  "who": "Разработчики, стартап-основатели, дизайнеры, исследователи, AI-энтузиасты",
+  "prize": "API-кредит $100, публикация на сайте Anthropic",
+  "flags": [],
+  "is_freebie": false,
+  "score": 7,
+  "why": "Отличная возможность для участия в хакатоне по ИИ, но проходит очно в Астане. Есть денежный приз в виде кредитов.",
+  "link": "https://luma.com/claude-bepd",
+  "post_url": "https://t.me/astana_hub/7437",
+  "source": "@astana_hub",
+  "id": "827064176c",
+  "sources": [
+   "@astana_hub"
+  ],
+  "first_seen": "2026-11-20T12:14:51.197163+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Бизнес-завтрак Astana Hub в Алматы: Co-Creation Day",
+  "kind": "meetup",
+  "summary": "Утренняя встреча для резидентов Astana Hub в Алматы для обмена опытом и генерации идей.",
+  "city": "Алматы",
+  "online": false,
+  "start_date": "2026-12-04",
+  "end_date": "2026-12-04",
+  "deadline": "",
+  "who": "Действующие резиденты Astana Hub",
+  "prize": "",
+  "flags": [],
+  "is_freebie": false,
+  "score": 5,
+  "why": "Мероприятие в Алматы, но только для резидентов Astana Hub. Если пользователь планирует стать резидентом, это может быть полезно.",
+  "link": "https://form.astanahub.com/form/view/247820",
+  "post_url": "https://t.me/techgardenalmaty/1719",
+  "source": "@techgardenalmaty",
+  "id": "83feb21f0f",
+  "sources": [
+   "@techgardenalmaty"
+  ],
+  "first_seen": "2026-11-20T12:14:51.200687+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Workshop \"Vibe-Marketing\"",
+  "kind": "meetup",
+  "summary": "Мастер-класс по использованию AI для поиска аудитории, создания контента и привлечения клиентов.",
+  "city": "Алматы",
+  "online": false,
+  "start_date": "2026-11-20",
+  "end_date": "2026-11-20",
+  "deadline": "",
+  "who": "Все желающие",
+  "prize": "Пробный доступ к Beyonder",
+  "flags": [],
+  "is_freebie": false,
+  "score": 9,
+  "why": "Отличная возможность для пользователя в Алматы, интересующегося стартапами и бизнесом. Бесплатное участие и полезный контент.",
+  "link": "http://luma.com/ozd67o3s?&utm_source=startup.vg",
+  "post_url": "https://t.me/startup_course_com/6430",
+  "source": "@startup_course_com",
+  "id": "a6a5bcd9b3",
+  "sources": [
+   "@startup_course_com"
+  ],
+  "first_seen": "2026-11-20T12:14:51.203235+00:00",
+  "sent_at": "2026-11-20T12:15:04.485988+00:00",
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "IT FEST 2026 — StartUp Battle",
+  "kind": "startup",
+  "summary": "Конкурс стартапов, использующих искусственный интеллект, для студентов бакалавриата и магистратуры вузов Казахстана.",
+  "city": "Астана",
+  "online": false,
+  "start_date": "2026-12-04",
+  "end_date": "2026-12-05",
+  "deadline": "2026-11-22",
+  "who": "Студенты бакалавриата и магистратуры вузов Казахстана, команды 2-3 человека",
+  "prize": "300 000 ₸",
+  "flags": [
+   "needs_project",
+   "age_limit"
+  ],
+  "is_freebie": false,
+  "score": 6,
+  "why": "Хорошая возможность для участия в стартап-конкурсе с денежным призом, но требует готового MVP и проходит очно в Астане. Также есть ограничение по возрасту (студенты).",
+  "link": "https://itfest.kz/kk/ready-solutions/",
+  "post_url": "https://t.me/qazstartup/291",
+  "source": "@qazstartup",
+  "id": "0f4b6be56d",
+  "sources": [
+   "@qazstartup"
+  ],
+  "first_seen": "2026-11-20T12:14:51.206011+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Стажировки в Google, NVIDIA и TikTok: 6 IT-программ для старта карьеры",
+  "kind": "internship",
+  "summary": "Подборка актуальных стажировок в международных технологических компаниях для студентов и начинающих специалистов.",
+  "city": "Международное",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "",
+  "who": "Студенты и начинающие специалисты",
+  "prize": "",
+  "flags": [],
+  "is_freebie": false,
+  "score": 8,
+  "why": "Отличная возможность для пользователя, ищущего опыт и старт карьеры в IT. Доступно онлайн и в международных компаниях.",
+  "link": "",
+  "post_url": "https://t.me/thetechkz/12562",
+  "source": "@thetechkz",
+  "id": "8954041185",
+  "sources": [
+   "@thetechkz"
+  ],
+  "first_seen": "2026-11-20T12:14:51.216649+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "ML School Meetup",
+  "kind": "meetup",
+  "summary": "Митап в честь открытия ML School в Астане, где обсудят изменения в AI-технологиях, работе инженеров и ML-образовании.",
+  "city": "Астана",
+  "online": false,
+  "start_date": "2026-11-23",
+  "end_date": "2026-11-23",
+  "deadline": "2026-11-22",
+  "who": "Все желающие",
+  "prize": "",
+  "flags": [],
+  "is_freebie": false,
+  "score": 6,
+  "why": "Интересная тема по ИИ, но проходит очно в Астане. Может быть полезно для нетворкинга и получения знаний.",
+  "link": "https://luma.com/srs4kit6?utm_campaign=dsmlkz",
+  "post_url": "https://t.me/dsmlkz_news/1317",
+  "source": "@dsmlkz_news",
+  "id": "3409322443",
+  "sources": [
+   "@dsmlkz_news"
+  ],
+  "first_seen": "2026-11-20T12:14:51.218914+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Дебаты ВТБ",
+  "kind": "contest",
+  "summary": "Проверьте свои навыки аргументации, критического мышления и работы с возражениями, дебатируя с ИИ.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "2026-11-26",
+  "who": "Все желающие",
+  "prize": "Фаст-трек на стажировку в банке, сертификат, подарки от ВТБ",
+  "flags": [],
+  "is_freebie": false,
+  "score": 7,
+  "why": "Хорошая возможность для развития навыков и получения призов, доступно онлайн. Может быть полезно для будущего в бизнесе.",
+  "link": "https://u.to/7X7iIg",
+  "post_url": "https://t.me/hackathonsrus/1648",
+  "source": "@hackathonsrus",
+  "id": "a1b4dee6ae",
+  "sources": [
+   "@hackathonsrus"
+  ],
+  "first_seen": "2026-11-20T12:14:51.223275+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "BCC-HUB × MNU FinTech Hackathon",
+  "kind": "hackathon",
+  "summary": "Финтех-хакатон по разработке AI-агентов для анализа и проверки качества технических заданий.",
+  "city": "Астана",
+  "online": true,
+  "start_date": "2026-11-25",
+  "end_date": "2026-12-04",
+  "deadline": "2026-11-24",
+  "who": "Студенты бакалавриата вузов Казахстана, индивидуально или командами до трёх человек",
+  "prize": "1 800 000 ₸ в виде сертификатов на технику",
+  "flags": [
+   "age_limit"
+  ],
+  "is_freebie": false,
+  "score": 7,
+  "why": "Отличная возможность для участия в хакатоне с крупным призовым фондом, разработка онлайн. Однако, есть ограничение по возрасту (студенты).",
+  "link": "https://bcchubagents.mnu.kz/",
+  "post_url": "https://t.me/startupchoyxona/3944",
+  "source": "@startupchoyxona",
+  "id": "1a1bc628ee",
+  "sources": [
+   "@startupchoyxona"
+  ],
+  "first_seen": "2026-11-20T12:14:51.226194+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Free AWS Courses & Certifications for Students – NASSCOM Initiative",
+  "kind": "freebie",
+  "summary": "Это онлайн-хакатон, предлагающий бесплатные курсы и сертификации AWS для студентов.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "2026-11-19",
+  "end_date": "2026-11-26",
+  "deadline": "2026-11-26",
+  "who": "Студенты",
+  "prize": "Бесплатные курсы и сертификации AWS",
+  "flags": [],
+  "is_freebie": true,
+  "score": 9,
+  "why": "Отличная возможность получить бесплатные курсы и сертификации AWS, что очень полезно для развития в IT. Полностью онлайн и доступно.",
+  "link": "",
+  "post_url": "https://free-aws-courses.devpost.com/",
+  "source": "Devpost",
+  "id": "0d5bb9f4c6",
+  "sources": [
+   "Devpost"
+  ],
+  "first_seen": "2026-11-20T12:14:51.234911+00:00",
+  "sent_at": "2026-11-20T12:15:10.557552+00:00",
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "BCC-HUB × MNU FinTech Hackathon",
+  "kind": "hackathon",
+  "summary": "Хакатон по созданию ИИ-агента для анализа финтех-проектов с призовым фондом 1 800 000 ₸.",
+  "city": "Астана",
+  "online": true,
+  "start_date": "2026-11-20",
+  "end_date": "2026-12-05",
+  "deadline": "2026-11-24",
+  "who": "Студенты университетов Казахстана",
+  "prize": "1 800 000 ₸ на техническое оборудование",
+  "flags": [],
+  "is_freebie": false,
+  "score": 8,
+  "why": "Отличная возможность для получения опыта в хакатонах и работы с ИИ, есть призовой фонд, доступно онлайн и для студентов Казахстана.",
+  "link": "https://bcchubagents.mnu.kz",
+  "post_url": "https://astanahub.com/ru/event/bcc-hub-x-mnu-fintech-hackathon",
+  "source": "Astana Hub (календарь)",
+  "id": "e4c15623b0",
+  "sources": [
+   "Astana Hub (календарь)"
+  ],
+  "first_seen": "2026-11-20T12:14:51.245739+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Almaty Hub | IT Talks: Казахстанский IT: как мы выросли и куда идём дальше?",
+  "kind": "meetup",
+  "summary": "Открытый разговор с представителями IT-сообщества в формате подкаста со зрителями об изменениях в IT-экосистеме Казахстана.",
+  "city": "Алматы",
+  "online": false,
+  "start_date": "2026-11-25",
+  "end_date": "2026-11-25",
+  "deadline": "",
+  "who": "Все желающие",
+  "prize": "",
+  "flags": [],
+  "is_freebie": false,
+  "score": 9,
+  "why": "Очное мероприятие в Алматы, полезно для нетворкинга и понимания развития IT-рынка, соответствует интересам пользователя.",
+  "link": "",
+  "post_url": "https://astanahub.com/ru/event/almaty-hub-it-talks-kazakhstanskii-it-kak-my-vyrosli-i-kuda-idem-dalshe",
+  "source": "Astana Hub (календарь)",
+  "id": "7e4d927a02",
+  "sources": [
+   "Astana Hub (календарь)"
+  ],
+  "first_seen": "2026-11-20T12:14:51.248928+00:00",
+  "sent_at": "2026-11-20T12:15:03.636407+00:00",
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Онлайн-вебинар: \"Управление IT-проектами: из хаоса в систему\"",
+  "kind": "meetup",
+  "summary": "Вебинар о том, как довести IT-проект или личную цель до финиша без хаоса и выгорания, с практическими инструментами.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "2026-11-26",
+  "end_date": "2026-11-26",
+  "deadline": "",
+  "who": "Все желающие",
+  "prize": "Гайд-шпаргалка с инструментами вебинара",
+  "flags": [],
+  "is_freebie": false,
+  "score": 8,
+  "why": "Онлайн-вебинар по управлению IT-проектами, очень полезно для получения опыта и навыков, которые пригодятся в стартапах и бизнесе.",
+  "link": "https://docs.google.com/forms/d/e/1FAIpQLScu24Sfw12MElhGzCp27ZcBbIRIokUrpliD51WBD_a1WB-U9Q/viewform?usp=dialog",
+  "post_url": "https://astanahub.com/ru/event/vebinar-upravlenie-proektami-iz-khaosa-v-sistemu",
+  "source": "Astana Hub (календарь)",
+  "id": "d34a007e6f",
+  "sources": [
+   "Astana Hub (календарь)"
+  ],
+  "first_seen": "2026-11-20T12:14:51.253476+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "ИИ-сотрудник для вашего бизнеса: от переписки с ИИ к автономной работе",
+  "kind": "meetup",
+  "summary": "Онлайн-воркшоп о переходе от использования ChatGPT к автономному ИИ-сотруднику для выполнения бизнес-задач.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "2026-11-26",
+  "end_date": "2026-11-26",
+  "deadline": "",
+  "who": "Владельцы бизнеса, руководители отделов, PM и CTO, все интересующиеся ИИ",
+  "prize": "Бесплатный разбор процессов своего отдела и обсуждение пилота Synco",
+  "flags": [],
+  "is_freebie": false,
+  "score": 7,
+  "why": "Онлайн-воркшоп по актуальной теме ИИ, полезно для понимания применения ИИ в рабочих процессах и потенциального нетворкинга.",
+  "link": "",
+  "post_url": "https://astanahub.com/ru/event/ii-sotrudnik-dlia-vashego-biznesa-ot-perepiski-s-ii-k-avtonomnoi-rabote",
+  "source": "Astana Hub (календарь)",
+  "id": "6099da572d",
+  "sources": [
+   "Astana Hub (календарь)"
+  ],
+  "first_seen": "2026-11-20T12:14:51.257597+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Вебинар: Конвертация вендорских решений (low-code) на open-source платформу",
+  "kind": "meetup",
+  "summary": "Вебинар о практическом опыте миграции устаревших вендорских систем на open-source.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "2026-11-27",
+  "end_date": "2026-11-27",
+  "deadline": "",
+  "who": "Разработчики, архитекторы, техлиды",
+  "prize": "",
+  "flags": [],
+  "is_freebie": false,
+  "score": 6,
+  "why": "Онлайн-вебинар по технической теме, полезно для расширения технических знаний, но не напрямую связано с поиском команды или стартапами.",
+  "link": "",
+  "post_url": "https://astanahub.com/ru/event/vebinar-konvertatsiia-vendorskikh-reshenii-low-code-na-open-source-platformu",
+  "source": "Astana Hub (календарь)",
+  "id": "9f2a691d91",
+  "sources": [
+   "Astana Hub (календарь)"
+  ],
+  "first_seen": "2026-11-20T12:14:51.260571+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Практический воркшоп по Vibe Coding",
+  "kind": "project",
+  "summary": "Практический воркшоп по созданию цифровых продуктов без навыков программирования с использованием AI-инструментов.",
+  "city": "Астана",
+  "online": false,
+  "start_date": "2026-11-28",
+  "end_date": "2026-11-28",
+  "deadline": "",
+  "who": "Все желающие",
+  "prize": "",
+  "flags": [
+   "paid"
+  ],
+  "is_freebie": false,
+  "score": 6,
+  "why": "Полезный воркшоп для получения практических навыков в создании MVP с ИИ, но платное участие и очно в Астане снижают приоритет.",
+  "link": "https://vibe42-vibe42.vercel.app",
+  "post_url": "https://astanahub.com/ru/event/prakticheskii-vorkshop-po-vibe-coding1793103244",
+  "source": "Astana Hub (календарь)",
+  "id": "57c2a0b55d",
+  "sources": [
+   "Astana Hub (календарь)"
+  ],
+  "first_seen": "2026-11-20T12:14:51.262631+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Мастер-класс «Как запускать рекламу в Instagram с помощью ИИ без таргетолога»",
+  "kind": "meetup",
+  "summary": "Бесплатный мастер-класс по использованию искусственного интеллекта в цифровом маркетинге для запуска рекламы в Instagram.",
+  "city": "Астана",
+  "online": true,
+  "start_date": "2026-11-28",
+  "end_date": "2026-11-28",
+  "deadline": "",
+  "who": "Предприниматели, владельцы малого бизнеса, начинающие маркетологи и студенты",
+  "prize": "",
+  "flags": [
+   "sales_hr"
+  ],
+  "is_freebie": false,
+  "score": 7,
+  "why": "Бесплатный мастер-класс по применению ИИ в маркетинге, полезно для понимания бизнес-процессов и потенциального нетворкинга, доступно онлайн.",
+  "link": "https://wa.me/77779009024",
+  "post_url": "https://astanahub.com/ru/event/master-klass-kak-zapuskat-reklamu-v-instagram-s-pomoshchiu-ii-bez-targetologa",
+  "source": "Astana Hub (календарь)",
+  "id": "9618220bbf",
+  "sources": [
+   "Astana Hub (календарь)"
+  ],
+  "first_seen": "2026-11-20T12:14:51.265846+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Global Citizen Prize: 2027 Cisco Youth Leadership Award",
+  "kind": "contest",
+  "summary": "Премия для молодых лидеров (18-35 лет), внесших вклад в борьбу с крайней бедностью с помощью технологий.",
+  "city": "Международное",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "2026-12-18",
+  "who": "Молодые люди 18-35 лет",
+  "prize": "$250,000",
+  "flags": [
+   "age_limit"
+  ],
+  "is_freebie": false,
+  "score": 7,
+  "why": "Международный конкурс с крупным денежным призом, связанный с технологиями и социальными проектами, что может быть интересно пользователю.",
+  "link": "",
+  "post_url": "https://opportunitydesk.org/2026/11/19/global-citizen-prize-2027-cisco-youth-leadership-award/",
+  "source": "Opportunity Desk",
+  "id": "2ecc0a6d70",
+  "sources": [
+   "Opportunity Desk"
+  ],
+  "first_seen": "2026-11-20T12:14:51.272305+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "ITU Secretary-General’s Youth Advisory Board – Second Cohort 2027",
+  "kind": "project",
+  "summary": "Возможность присоединиться к Молодежному консультативному совету Генерального секретаря МСЭ для формирования будущего глобальной цифровой связи.",
+  "city": "Международное",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "2027-01-15",
+  "who": "Молодые люди 18-28 лет",
+  "prize": "",
+  "flags": [
+   "age_limit"
+  ],
+  "is_freebie": false,
+  "score": 7,
+  "why": "Международная возможность для молодых лидеров в сфере цифрового развития, позволяет получить опыт и внести вклад в глобальные решения.",
+  "link": "https://forms.office.com/e/QFZfqEZvWR",
+  "post_url": "https://opportunitiesforyouth.org/2026/11/19/itu-secretary-generals-youth-advisory-board-second-cohort-2027/",
+  "source": "Opportunities for Youth",
+  "id": "ca66458461",
+  "sources": [
+   "Opportunities for Youth"
+  ],
+  "first_seen": "2026-11-20T12:14:51.279793+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Buildfest 2026",
+  "kind": "contest",
+  "summary": "Национальный конкурс студенческих технологических проектов, где можно продемонстрировать свои инновационные разработки.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "2026-12-15",
+  "who": "Студенты инженерных, последипломных, бакалаврских, управленческих, медицинских, юридических, художественных, коммерческих, научных и других специальностей",
+  "prize": "",
+  "flags": [
+   "needs_project",
+   "rf_only"
+  ],
+  "is_freebie": false,
+  "score": 5,
+  "why": "Конкурс проектов, подходит для получения опыта, но ориентирован на студентов из Индии, что снижает шансы на участие.",
+  "link": "",
+  "post_url": "https://unstop.com/hackathons/buildfest-2026-learnix-labs-1814814",
+  "source": "Unstop",
+  "id": "cfe6247f62",
+  "sources": [
+   "Unstop"
+  ],
+  "first_seen": "2026-11-20T12:14:51.282263+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "MyOnne National Bug Bounty Challenge 2026",
+  "kind": "contest",
+  "summary": "48-часовой онлайн-конкурс по поиску уязвимостей в приложении MyOnne.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "2026-11-26",
+  "who": "Все желающие",
+  "prize": "Bounty rewards: 300000 INR",
+  "flags": [
+   "rf_only"
+  ],
+  "is_freebie": false,
+  "score": 5,
+  "why": "Интересный конкурс по кибербезопасности, но явно ориентирован на участников из Индии, что снижает релевантность.",
+  "link": "",
+  "post_url": "https://unstop.com/hackathons/myonne-national-bug-bounty-challenge-2026-myonne-amora-private-limited-1817686",
+  "source": "Unstop",
+  "id": "5fb45769d2",
+  "sources": [
+   "Unstop"
+  ],
+  "first_seen": "2026-11-20T12:14:51.287739+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "CS Arena 2026 - 7-Day Computer Science Quiz Series",
+  "kind": "contest",
+  "summary": "Семидневный онлайн-конкурс по информатике, проверяющий знания фундаментальных концепций.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "2026-12-17",
+  "who": "Студенты инженерных, последипломных, бакалаврских, управленческих, медицинских, юридических, художественных, коммерческих, научных и других специальностей",
+  "prize": "",
+  "flags": [
+   "rf_only"
+  ],
+  "is_freebie": false,
+  "score": 5,
+  "why": "Онлайн-викторина по CS, подходит для получения опыта, но ориентирована на студентов из Индии, что снижает шансы на участие.",
+  "link": "",
+  "post_url": "https://unstop.com/quiz/cs-arena-2026-7-day-computer-science-quiz-series-the-national-institute-of-engineering-karnataka-1820730",
+  "source": "Unstop",
+  "id": "4f542697ed",
+  "sources": [
+   "Unstop"
+  ],
+  "first_seen": "2026-11-20T12:14:51.295168+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "General Case Study Competition",
+  "kind": "case",
+  "summary": "Онлайн-конкурс кейсов с системой ранжирования по скорости и точности ответов.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "2026-11-25",
+  "who": "",
+  "prize": "",
+  "flags": [
+   "rf_only"
+  ],
+  "is_freebie": false,
+  "score": 5,
+  "why": "Онлайн-кейс-чемпионат, но без указания целевой аудитории и с фокусом на Индию, что снижает релевантность.",
+  "link": "",
+  "post_url": "https://unstop.com/quiz/general-case-study-competition-rising-scholars-1820197",
+  "source": "Unstop",
+  "id": "7a5461394b",
+  "sources": [
+   "Unstop"
+  ],
+  "first_seen": "2026-11-20T12:14:51.304396+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "WinterArc: 30 Days of Money",
+  "kind": "contest",
+  "summary": "Бесплатный 30-дневный финансовый челлендж для обучения.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "2026-12-01",
+  "end_date": "2026-12-30",
+  "deadline": "2026-11-30",
+  "who": "Все, кто живет в Индии и старше 18 лет",
+  "prize": "3000 INR; 2000 INR; 1000 INR",
+  "flags": [
+   "rf_only",
+   "age_limit"
+  ],
+  "is_freebie": false,
+  "score": 4,
+  "why": "Интересный финансовый челлендж, но строго ограничен для граждан Индии, что делает его недоступным.",
+  "link": "",
+  "post_url": "https://unstop.com/competitions/winterarc-30-days-of-money-fined-1819963",
+  "source": "Unstop",
+  "id": "764b555af7",
+  "sources": [
+   "Unstop"
+  ],
+  "first_seen": "2026-11-20T12:14:51.306547+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Quiz Carnival 2026",
+  "kind": "contest",
+  "summary": "Онлайн-викторина по различным темам для проверки знаний и интеллекта.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "2026-11-21",
+  "end_date": "2026-11-21",
+  "deadline": "2026-11-29",
+  "who": "Студенты инженерных, последипломных, бакалаврских, управленческих, художественных, коммерческих, научных и других специальностей",
+  "prize": "Эксклюзивные курсы по разработке ПО для топ-50",
+  "flags": [
+   "rf_only"
+  ],
+  "is_freebie": false,
+  "score": 5,
+  "why": "Онлайн-викторина, подходит для получения опыта, но ориентирована на студентов из Индии, что снижает шансы на участие.",
+  "link": "",
+  "post_url": "https://unstop.com/quiz/quiz-carnival-2026-knowledge-institute-of-technology-kiot-tamil-nadu-1811342",
+  "source": "Unstop",
+  "id": "4bc7eaa7e6",
+  "sources": [
+   "Unstop"
+  ],
+  "first_seen": "2026-11-20T12:14:51.308232+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Brand Swap",
+  "kind": "contest",
+  "summary": "Маркетинговый конкурс, где участникам предстоит объединить два контрастных бренда в один кобрендинговый продукт или кампанию.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "2026-11-23",
+  "who": "Студенты инженерных, последипломных, бакалаврских, управленческих, медицинских, юридических, художественных, коммерческих, научных и других специальностей",
+  "prize": "1500 INR; 1000 INR",
+  "flags": [
+   "sales_hr",
+   "rf_only"
+  ],
+  "is_freebie": false,
+  "score": 5,
+  "why": "Онлайн-конкурс по маркетингу, подходит для получения опыта, но ориентирован на студентов из Индии, что снижает шансы на участие.",
+  "link": "",
+  "post_url": "https://unstop.com/competitions/brand-swap-utkarsh-the-business-arena-shaheed-bhagat-singh-college-new-delhi-1819762",
+  "source": "Unstop",
+  "id": "18f71de9e0",
+  "sources": [
+   "Unstop"
+  ],
+  "first_seen": "2026-11-20T12:14:51.318179+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Dataverse",
+  "kind": "case",
+  "summary": "Кейс-чемпионат по анализу данных, где нужно найти историю в реальных бизнес-данных и предложить рекомендации.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "2026-11-30",
+  "who": "Студенты инженерных, последипломных, бакалаврских, управленческих, художественных, коммерческих, научных и других специальностей",
+  "prize": "20000 INR; 12000 INR; 8000 INR",
+  "flags": [
+   "rf_only"
+  ],
+  "is_freebie": false,
+  "score": 5,
+  "why": "Онлайн-кейс-чемпионат по анализу данных, подходит для получения опыта, но ориентирован на студентов из Индии, что снижает шансы на участие.",
+  "link": "",
+  "post_url": "https://unstop.com/competitions/dataverse-iit-madras-1806030",
+  "source": "Unstop",
+  "id": "a3fff1b4e4",
+  "sources": [
+   "Unstop"
+  ],
+  "first_seen": "2026-11-20T12:14:51.321691+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "WealthNest National Case Study Challenge 2026",
+  "kind": "case",
+  "summary": "Кейс-чемпионат, предлагающий решить реальную проблему для продукта WealthNest – как привлечь 100 000 загрузок приложения с минимальным бюджетом.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "2026-12-06",
+  "who": "Студенты MBA, BBA и любых других специальностей",
+  "prize": "",
+  "flags": [
+   "rf_only"
+  ],
+  "is_freebie": false,
+  "score": 5,
+  "why": "Онлайн-кейс-чемпионат по стратегии и росту, подходит для получения опыта, но ориентирован на студентов из Индии, что снижает шансы на участие.",
+  "link": "",
+  "post_url": "https://unstop.com/competitions/wealthnest-national-case-study-challenge-2026-wealthnest-1819278",
+  "source": "Unstop",
+  "id": "1ec58f2509",
+  "sources": [
+   "Unstop"
+  ],
+  "first_seen": "2026-11-20T12:14:51.330773+00:00",
   "sent_at": null,
   "reminded_at": null,
   "feedback": null
