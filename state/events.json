@@ -650,7 +650,8 @@
   "id": "ea7887a359",
   "sources": [
    "@startup_course_com",
-   "@startupchoyxona"
+   "@startupchoyxona",
+   "@thetechkz"
   ],
   "first_seen": "2026-11-19T12:23:22.031787+00:00",
   "sent_at": null,
@@ -1187,7 +1188,7 @@
    "@hackathonsrus"
   ],
   "first_seen": "2026-11-19T12:23:22.117322+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-21T04:10:45.971270+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -1214,7 +1215,7 @@
    "@techozimiz"
   ],
   "first_seen": "2026-11-19T12:23:22.120575+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-21T04:10:45.971270+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -1920,7 +1921,8 @@
   "source": "@startupchoyxona",
   "id": "fbe01c80ba",
   "sources": [
-   "@startupchoyxona"
+   "@startupchoyxona",
+   "Astana Hub (календарь)"
   ],
   "first_seen": "2026-11-19T12:23:22.300842+00:00",
   "sent_at": "2026-11-20T12:15:01.060327+00:00",
@@ -2359,9 +2361,10 @@
    "Devpost"
   ],
   "first_seen": "2026-11-19T12:23:22.470321+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-21T04:10:45.971270+00:00",
   "reminded_at": null,
-  "feedback": null
+  "feedback": null,
+  "tier": "top"
  },
  {
   "title": "Cloud9 x JetBrains: Sky's The Limit Hackathon 2026",
@@ -2386,9 +2389,10 @@
    "Devpost"
   ],
   "first_seen": "2026-11-19T12:23:22.476374+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-21T04:10:45.971270+00:00",
   "reminded_at": null,
-  "feedback": null
+  "feedback": null,
+  "tier": "top"
  },
  {
   "title": "Open Agentic Web Challenge",
@@ -2413,7 +2417,7 @@
    "Devpost"
   ],
   "first_seen": "2026-11-19T12:23:22.480903+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-21T04:10:45.971270+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -2440,7 +2444,7 @@
    "Devpost"
   ],
   "first_seen": "2026-11-19T12:23:22.486685+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-21T04:10:45.971270+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -2467,7 +2471,7 @@
    "Devpost"
   ],
   "first_seen": "2026-11-19T12:23:22.490221+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-21T04:10:45.971270+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -2764,7 +2768,7 @@
    "Taikai"
   ],
   "first_seen": "2026-11-19T12:23:22.561628+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-21T04:10:45.971270+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -2791,7 +2795,7 @@
    "Taikai"
   ],
   "first_seen": "2026-11-19T12:23:22.576995+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-21T04:10:45.971270+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -3674,9 +3678,10 @@
    "Astana Hub (календарь)"
   ],
   "first_seen": "2026-11-20T12:14:51.245739+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-21T04:10:45.971270+00:00",
   "reminded_at": null,
-  "feedback": null
+  "feedback": null,
+  "tier": "top"
  },
  {
   "title": "Almaty Hub | IT Talks: Казахстанский IT: как мы выросли и куда идём дальше?",
@@ -3693,12 +3698,13 @@
   "is_freebie": false,
   "score": 9,
   "why": "Очное мероприятие в Алматы, полезно для нетворкинга и понимания развития IT-рынка, соответствует интересам пользователя.",
-  "link": "",
+  "link": "https://astanahub.com/kk/event/almaty-hub-it-talks-kazakhstanskii-it-kak-my-vyrosli-i-kuda-idem-dalshe",
   "post_url": "https://astanahub.com/ru/event/almaty-hub-it-talks-kazakhstanskii-it-kak-my-vyrosli-i-kuda-idem-dalshe",
   "source": "Astana Hub (календарь)",
   "id": "7e4d927a02",
   "sources": [
-   "Astana Hub (календарь)"
+   "Astana Hub (календарь)",
+   "@techgardenalmaty"
   ],
   "first_seen": "2026-11-20T12:14:51.248928+00:00",
   "sent_at": "2026-11-20T12:15:03.636407+00:00",
@@ -4162,6 +4168,388 @@
    "Unstop"
   ],
   "first_seen": "2026-11-20T12:14:51.330773+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "ТОО «Казахмыс Коал» ищет AI-решение для анализа данных горнотранспортного комплекса",
+  "kind": "contest",
+  "summary": "Компания ищет IT- и AI-команды для разработки и внедрения интегрированного AI-ассистента для анализа производственных данных.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "2026-12-03",
+  "who": "IT- и AI-команды, участники Astana Hub",
+  "prize": "Возможность применить свои технологии и выйти на рынок промышленных AI-решений",
+  "flags": [
+   "needs_project"
+  ],
+  "is_freebie": false,
+  "score": 7,
+  "why": "Интересная возможность для получения опыта и применения навыков в AI, но требуется статус участника Astana Hub и свой проект.",
+  "link": "http://astanahub.com/",
+  "post_url": "https://t.me/astana_hub/7442",
+  "source": "@astana_hub",
+  "id": "3e5be7c197",
+  "sources": [
+   "@astana_hub"
+  ],
+  "first_seen": "2026-11-21T04:10:39.042741+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Глобальный финтех-единорог Fasset выходит на рынок Казахстана",
+  "kind": "meetup",
+  "summary": "Мероприятие, где Fasset представит стратегию развития цифровых финансов в Казахстане, а участники смогут обсудить перспективы индустрии и расширить контакты.",
+  "city": "Астана",
+  "online": false,
+  "start_date": "2026-11-26",
+  "end_date": "",
+  "deadline": "",
+  "who": "Все желающие",
+  "prize": "Розыгрыш 100 USDT",
+  "flags": [],
+  "is_freebie": false,
+  "score": 6,
+  "why": "Интересное событие для расширения контактов в финтех-сфере, но проходит очно в Астане. Есть розыгрыш призов.",
+  "link": "https://luma.com/qay4sj57",
+  "post_url": "https://t.me/astana_hub/7445",
+  "source": "@astana_hub",
+  "id": "23dc938f14",
+  "sources": [
+   "@astana_hub"
+  ],
+  "first_seen": "2026-11-21T04:10:39.052447+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Розыгрыш 100 USDT от Fasset",
+  "kind": "freebie",
+  "summary": "Розыгрыш с призовым фондом 100 USDT в преддверии встречи с Fasset, пять победителей получат по 20 USDT.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "2026-11-25",
+  "who": "Все желающие",
+  "prize": "100 USDT",
+  "flags": [],
+  "is_freebie": true,
+  "score": 7,
+  "why": "Бесплатная возможность получить приз, не требует личного присутствия.",
+  "link": "https://www.instagram.com/p/Df9xXieiIfC/?fqnt=azZsanZhdWx1NHg3",
+  "post_url": "https://t.me/astana_hub/7445",
+  "source": "@astana_hub",
+  "id": "6d0cb3e162",
+  "sources": [
+   "@astana_hub"
+  ],
+  "first_seen": "2026-11-21T04:10:39.059081+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Митап «От идеи к росту бизнеса»",
+  "kind": "meetup",
+  "summary": "Митап, где будут разбираться, как проверять бизнес-идеи до больших вложений, а также обсуждать поиск роста прибыли, AI в разработке и продуктовые кейсы.",
+  "city": "Алматы",
+  "online": false,
+  "start_date": "2026-11-28",
+  "end_date": "",
+  "deadline": "",
+  "who": "Все желающие",
+  "prize": "",
+  "flags": [],
+  "is_freebie": false,
+  "score": 10,
+  "why": "Идеально подходит для пользователя, который хочет войти в стартапы и бизнес-события, получить опыт и обсудить идеи. Проходит в Алматы.",
+  "link": "https://scrumtrek.ru/product/530/from-idea-to-growth-conference/",
+  "post_url": "https://t.me/startup_course_com/6432",
+  "source": "@startup_course_com",
+  "id": "1d35be1bed",
+  "sources": [
+   "@startup_course_com"
+  ],
+  "first_seen": "2026-11-21T04:10:39.062238+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "TUJ Fall 2026 Hackathon",
+  "kind": "hackathon",
+  "summary": "Хакатон для новичков от Temple University Japan с темами по образованию и машинному обучению/ИИ.",
+  "city": "Токио",
+  "online": false,
+  "start_date": "2026-11-20",
+  "end_date": "2026-11-22",
+  "deadline": "2026-11-22",
+  "who": "Все желающие",
+  "prize": "",
+  "flags": [],
+  "is_freebie": false,
+  "score": 4,
+  "why": "Очное участие в Токио, что делает его менее доступным, но хакатон подходит для новичков.",
+  "link": "",
+  "post_url": "https://tuj-fall-2026-hackathon.devpost.com/",
+  "source": "Devpost",
+  "id": "1f04b5b31c",
+  "sources": [
+   "Devpost"
+  ],
+  "first_seen": "2026-11-21T04:10:39.069650+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Alatau Hub | Вебинар: От идеи до запуска",
+  "kind": "meetup",
+  "summary": "Вебинар о выборе инфраструктуры для проекта, который поможет избежать проблем с производительностью и переплатой за сервер.",
+  "city": "Konayev",
+  "online": true,
+  "start_date": "2026-11-25",
+  "end_date": "2026-11-25",
+  "deadline": "",
+  "who": "Все, кто запускает проекты",
+  "prize": "",
+  "flags": [],
+  "is_freebie": false,
+  "score": 6,
+  "why": "Онлайн-вебинар по полезной теме, но не интерактивное событие для участия.",
+  "link": "",
+  "post_url": "https://astanahub.com/ru/event/alatau-hub-vebinar-ot-idei-do-zapuska",
+  "source": "Astana Hub (календарь)",
+  "id": "5b03a066c4",
+  "sources": [
+   "Astana Hub (календарь)"
+  ],
+  "first_seen": "2026-11-21T04:10:39.084887+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Как хакеры взламывают даже самые защищённые компании? Реальные истории",
+  "kind": "meetup",
+  "summary": "Бесплатный онлайн-вебинар о реальных случаях взломов компаний и методах хакеров.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "2026-12-01",
+  "end_date": "2026-12-01",
+  "deadline": "",
+  "who": "Все, кто интересуется кибербезопасностью",
+  "prize": "",
+  "flags": [],
+  "is_freebie": false,
+  "score": 7,
+  "why": "Интересная тема, онлайн-формат, не требует технической подготовки, полезно для общего развития и понимания IT-сферы.",
+  "link": "",
+  "post_url": "https://astanahub.com/ru/event/kak-khakery-vzlamyvaiut-dazhe-samye-zashchishchennye-kompanii-realnye-istorii",
+  "source": "Astana Hub (календарь)",
+  "id": "e76cd2d537",
+  "sources": [
+   "Astana Hub (календарь)"
+  ],
+  "first_seen": "2026-11-21T04:10:39.090643+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Первые шаги в ИИ: простая инструкция по применению",
+  "kind": "meetup",
+  "summary": "Практический семинар в Алматы, где простым языком объяснят, как пользоваться нейросетями в жизни и работе.",
+  "city": "Алматы",
+  "online": true,
+  "start_date": "2026-12-11",
+  "end_date": "2026-12-11",
+  "deadline": "",
+  "who": "Новички и все желающие освоить ИИ",
+  "prize": "",
+  "flags": [],
+  "is_freebie": false,
+  "score": 8,
+  "why": "Очное событие в Алматы, практический семинар по актуальной теме ИИ, полезно для получения новых навыков и понимания технологий.",
+  "link": "https://event.newit.kz/#registration",
+  "post_url": "https://astanahub.com/ru/event/prakticheskii-seminar-pervye-shagi-v-ii",
+  "source": "Astana Hub (календарь)",
+  "id": "1f9d1155ac",
+  "sources": [
+   "Astana Hub (календарь)"
+  ],
+  "first_seen": "2026-11-21T04:10:39.094733+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Asia House Fellowship 2027/2028",
+  "kind": "project",
+  "summary": "12-месячная полностью финансируемая исследовательская стипендия для молодых специалистов и исследователей в области международных отношений, геополитики, экономики, торговли, технологий и политики в Азии и на Ближнем Востоке.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "2027-01-01",
+  "end_date": "2028-01-01",
+  "deadline": "2027-01-31",
+  "who": "Молодые специалисты и исследователи всех национальностей",
+  "prize": "Стипендия £24,000",
+  "flags": [],
+  "is_freebie": false,
+  "score": 7,
+  "why": "Полностью финансируемая стипендия, можно участвовать онлайн, но это долгосрочная исследовательская программа, а не хакатон или стартап-конкурс.",
+  "link": "https://apply.workable.com/asia-house/j/267FD33EF8",
+  "post_url": "https://opportunitiesforyouth.org/2026/11/20/asia-house-fellowship-2027-2028-apply-for-a-fully-funded-12-month-research-fellowship-with-a-24000-stipend/",
+  "source": "Opportunities for Youth",
+  "id": "c366935988",
+  "sources": [
+   "Opportunities for Youth"
+  ],
+  "first_seen": "2026-11-21T04:10:39.097371+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "SHE WINS Rapid Response Fund (RRF)",
+  "kind": "social",
+  "summary": "Малые гранты для женских инициатив в более чем 70 странах, направленные на решение насущных потребностей и проблем в сообществах.",
+  "city": "Международное",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "",
+  "who": "Женщины-лидеры и организации в соответствующих странах",
+  "prize": "Малый грант",
+  "flags": [
+   "women_only"
+  ],
+  "is_freebie": false,
+  "score": 3,
+  "why": "Только для женщин, что не подходит пользователю. Также не указаны конкретные сроки и ссылка на подачу.",
+  "link": "https://lnkd.in/e4GC-rZB",
+  "post_url": "https://opportunitiesforyouth.org/2026/11/20/she-wins-rapid-response-fund-rrf-small-grants-for-women-led-initiatives-in-70-eligible-countries/",
+  "source": "Opportunities for Youth",
+  "id": "c744fe2de1",
+  "sources": [
+   "Opportunities for Youth"
+  ],
+  "first_seen": "2026-11-21T04:10:39.105746+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "UNITAR Traineeships 2026",
+  "kind": "internship",
+  "summary": "3-6 месячные стажировки в системе ООН в Нью-Йорке и Женеве по многосторонней дипломатии, партнерствам, дизайну обучения, мультимедийным коммуникациям и графическому дизайну.",
+  "city": "Нью-Йорк",
+  "online": false,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "",
+  "who": "Все желающие получить профессиональный опыт в системе ООН",
+  "prize": "",
+  "flags": [],
+  "is_freebie": false,
+  "score": 5,
+  "why": "Международная стажировка, но очно и без указания оплаты дороги, что снижает доступность. Нет конкретных дедлайнов.",
+  "link": "https://unitar.org/vacancy-announcements/traineeship-division-multilateral-diplomacynew-york-office-partnerships-and-training-design/440?utm_source=chatgpt.com",
+  "post_url": "https://opportunitiesforyouth.org/2026/11/20/unitar-traineeships-2026-apply-for-3-6-month-training-opportunities-in-new-york-and-geneva-switzerland/",
+  "source": "Opportunities for Youth",
+  "id": "78563881cc",
+  "sources": [
+   "Opportunities for Youth"
+  ],
+  "first_seen": "2026-11-21T04:10:39.111171+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "World Economic Forum Early Careers Programme 2027",
+  "kind": "internship",
+  "summary": "Оплачиваемые стажировки для выпускников в Женеве, Пекине, Нью-Йорке и Сан-Франциско в рамках программы World Economic Forum Early Careers.",
+  "city": "Женева",
+  "online": false,
+  "start_date": "2027-02-15",
+  "end_date": "2027-09-15",
+  "deadline": "2026-12-02",
+  "who": "Выпускники бакалавриата и магистратуры с 1-2 годами опыта работы",
+  "prize": "Оплачиваемая роль",
+  "flags": [],
+  "is_freebie": false,
+  "score": 6,
+  "why": "Оплачиваемая стажировка в крупной международной организации, но очно и далеко, без оплаты дороги. Дедлайн скоро.",
+  "link": "https://weforum.wd3.myworkdayjobs.com/en-US/Forum_Careers/details/Early-Careers-Programme--Spring-2027-Cohort---Geneva_R4381",
+  "post_url": "https://opportunitiesforyouth.org/2026/11/20/world-economic-forum-early-careers-programme-2027-paid-graduate-roles-in-switzerland-china-and-usa/",
+  "source": "Opportunities for Youth",
+  "id": "bf0c513fb5",
+  "sources": [
+   "Opportunities for Youth"
+  ],
+  "first_seen": "2026-11-21T04:10:39.114653+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Agentic Markets Async Hackathon",
+  "kind": "hackathon",
+  "summary": "Асинхронный хакатон от ETHGlobal по теме Agentic Markets с возможностью проявить себя онлайн.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "2026-12-03",
+  "end_date": "2026-12-10",
+  "deadline": "",
+  "who": "Разработчики, все желающие",
+  "prize": "",
+  "flags": [],
+  "is_freebie": false,
+  "score": 9,
+  "why": "Отличный онлайн-хакатон от известной платформы ETHGlobal, идеально подходит для входа в веб3-разработку и поиска опыта.",
+  "link": "",
+  "post_url": "https://ethglobal.com/events",
+  "source": "ETHGlobal",
+  "id": "ca963962ae",
+  "sources": [
+   "ETHGlobal"
+  ],
+  "first_seen": "2026-11-21T04:10:39.117883+00:00",
+  "sent_at": "2026-11-21T04:10:45.971270+00:00",
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "PRoelio 12.0",
+  "kind": "case",
+  "summary": "Национальное соревнование по кейсам в области PR и управления кризисными ситуациями от SIBM Pune.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "2026-12-04",
+  "who": "Студенты и все желающие",
+  "prize": "75 000 INR",
+  "flags": [],
+  "is_freebie": false,
+  "score": 6,
+  "why": "Интересный онлайн-кейс-чемпионат с денежным призом, но зарубежный организатор.",
+  "link": "",
+  "post_url": "https://unstop.com/competitions/proelio-120-sibm-pune-1819948",
+  "source": "Unstop",
+  "id": "1cb806d835",
+  "sources": [
+   "Unstop"
+  ],
+  "first_seen": "2026-11-21T04:10:39.123168+00:00",
   "sent_at": null,
   "reminded_at": null,
   "feedback": null

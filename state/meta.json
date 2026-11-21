@@ -1,34 +1,35 @@
 {
- "last_run": "2026-11-20T12:15:11.415554+00:00",
- "gemini_calls_last_run": 9,
+ "last_run": "2026-11-21T04:10:45.971308+00:00",
+ "gemini_calls_last_run": 11,
  "tg_offset": 992753168,
  "chat_id": 841226328,
  "sources": {
   "Opportunity Desk": {
    "errors_in_row": 0,
-   "last_new": "2026-11-20T12:14"
+   "last_new": "2026-11-21T04:10"
   },
   "Devpost": {
    "errors_in_row": 0,
-   "last_new": "2026-11-20T12:14"
+   "last_new": "2026-11-21T04:10"
   },
   "@aieseckz": {
    "errors_in_row": 0
   },
   "The Tech: IT-афиша": {
    "errors_in_row": 0,
-   "last_new": "2026-11-20T12:14"
+   "last_new": "2026-11-21T04:10"
   },
   "@grants_scholarships": {
-   "errors_in_row": 0
+   "errors_in_row": 0,
+   "last_new": "2026-11-21T04:10"
   },
   "Astana Hub (календарь)": {
    "errors_in_row": 0,
-   "last_new": "2026-11-20T12:14"
+   "last_new": "2026-11-21T04:10"
   },
   "Opportunities for Youth": {
    "errors_in_row": 0,
-   "last_new": "2026-11-20T12:14"
+   "last_new": "2026-11-21T04:10"
   },
   "@wwaikz": {
    "errors_in_row": 0
@@ -39,11 +40,11 @@
   },
   "@thetechkz": {
    "errors_in_row": 0,
-   "last_new": "2026-11-20T12:14"
+   "last_new": "2026-11-21T04:10"
   },
   "Taikai": {
    "errors_in_row": 0,
-   "last_new": "2026-11-20T12:14"
+   "last_new": "2026-11-21T04:10"
   },
   "@aiesecinalmaty": {
    "errors_in_row": 0
@@ -71,10 +72,11 @@
   },
   "Unstop": {
    "errors_in_row": 0,
-   "last_new": "2026-11-20T12:14"
+   "last_new": "2026-11-21T04:10"
   },
   "@it_bilimkz": {
-   "errors_in_row": 0
+   "errors_in_row": 0,
+   "last_new": "2026-11-21T04:10"
   },
   "@nu_datasci": {
    "errors_in_row": 0
@@ -91,14 +93,14 @@
   },
   "dev.events (Казахстан)": {
    "errors_in_row": 0,
-   "last_new": "2026-11-20T12:14"
+   "last_new": "2026-11-21T04:10"
   },
   "@digitaljuz": {
    "errors_in_row": 0
   },
   "@techgardenalmaty": {
    "errors_in_row": 0,
-   "last_new": "2026-11-20T12:14"
+   "last_new": "2026-11-21T04:10"
   },
   "@nu_caseclub": {
    "errors_in_row": 0
@@ -121,29 +123,31 @@
   },
   "@astana_hub": {
    "errors_in_row": 0,
-   "last_new": "2026-11-20T12:14"
+   "last_new": "2026-11-21T04:10"
   },
   "@qazaqtech": {
    "errors_in_row": 0
   },
   "ETHGlobal": {
-   "errors_in_row": 0
+   "errors_in_row": 0,
+   "last_new": "2026-11-21T04:10"
   },
   "@dsmlkz_news": {
    "errors_in_row": 0,
-   "last_new": "2026-11-20T12:14"
+   "last_new": "2026-11-21T04:10"
   },
   "@techozimiz": {
-   "errors_in_row": 0
+   "errors_in_row": 0,
+   "last_new": "2026-11-21T04:10"
   },
   "@startup_course_com": {
    "errors_in_row": 0,
-   "last_new": "2026-11-20T12:14"
+   "last_new": "2026-11-21T04:10"
   },
   "@startupVGlobal": {
    "errors_in_row": 0
   }
  },
- "saved_at": "2026-11-20T12:15:11.415583+00:00",
+ "saved_at": "2026-11-21T04:10:45.971325+00:00",
  "runner": "cloud"
 }
