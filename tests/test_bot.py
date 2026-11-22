@@ -68,7 +68,7 @@ def test_merge_cleans_dates():
 def test_reminder_not_right_after_first_show():
     today = datetime(2026, 11, 20, 9, 0, tzinfo=m.ALMATY)
     just_sent = ev("A", deadline="2026-11-22", sent_at=store.now().isoformat())
-    old_sent = ev("B", deadline="2026-11-22", sent_at=(store.now() - timedelta(days=2)).isoformat(), feedback="up")
+    old_sent = ev("B", deadline="2026-11-22", sent_at=(store.now() - timedelta(days=2)).isoformat(), tier="top")
     unrated = ev("E", deadline="2026-11-22", sent_at=(store.now() - timedelta(days=2)).isoformat())
     disliked = ev("C", deadline="2026-11-22", sent_at=(store.now() - timedelta(days=2)).isoformat(), feedback="down")
     far = ev("D", deadline="2026-12-22", sent_at=(store.now() - timedelta(days=2)).isoformat())
@@ -257,7 +257,7 @@ def test_morning_digest_is_one_message_with_sections_and_numbers(tmp_state, monk
     assert text.index("Стоит подать") < text.index("Decentrathon") < text.index("Можно глянуть") \
         < text.index("IT Talks") < text.index("девушек") < text.index("SOUL CAMP") < text.index("Халява")
     assert "hook 0" in text
-    assert [b["text"] for row in buttons for b in row] == ["1", "2", "3", "4"]
+    assert [b["text"] for row in buttons for b in row] == ["⭐1", "⭐2", "⭐3", "⭐4"]
     events = store.load("events.json", [])
     assert all(e["sent_at"] for e in events) and meta["last_run"]
     assert [e["title"] for e in events if e.get("tier") == "top"] == ["Decentrathon"]
@@ -286,7 +286,7 @@ def test_number_press_marks_only_that_number():
     bot.call = lambda method, **p: edits.append(p) if method == "editMessageReplyMarkup" else None
     m.process_updates(bot, {"chat_id": 1}, events)
     assert [e["feedback"] for e in events] == [None, "up", "up"]
-    assert [b["text"] for b in edits[-1]["reply_markup"]["inline_keyboard"][0]] == ["1", "✅2", "✅3"]
+    assert [b["text"] for b in edits[-1]["reply_markup"]["inline_keyboard"][0]] == ["⭐1", "✅2", "✅3"]
 
 
 def test_long_digest_is_cut_to_telegram_limit():
@@ -308,3 +308,14 @@ def test_blocked_and_foreign_caps():
     assert m.is_foreign(ev("Tourism Hackathon", city="Ташкент", source="@startupchoyxona", sources=["@startupchoyxona"]))
     capped = m.cap_foreign(devpost + [local, online_kz], 1)
     assert [e["title"] for e in capped] == ["Hack a", "Pizza Pitch", "Онлайн-хакатон lé.codes48"]
+
+
+def test_watch_shows_starred_within_a_week_nearest_first():
+    today = datetime(2026, 11, 22, 9, 7, tzinfo=m.ALMATY)
+    a = ev("A", deadline="2026-11-28", feedback="up")
+    b = ev("B", "2026-11-24", feedback="up")
+    far = ev("C", deadline="2026-12-20", feedback="up")
+    not_starred = ev("D", deadline="2026-11-23")
+    assert [e["title"] for e in m.pick_watch([a, b, far, not_starred], today)] == ["B", "A"]
+    text, _ = m.tg.digest_message(today, [], [], [], [], [], 0, watch=[b, a])
+    assert "⭐ <b>Отмеченное</b>" in text and text.index(">B<") < text.index(">A<")

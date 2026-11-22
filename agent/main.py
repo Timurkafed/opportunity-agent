@@ -271,16 +271,28 @@ def recent_run(meta, hours=SKIP_HOURS):
 
 
 def pick_reminders(events, today_dt):
+    """Former top picks you didn't rate: one reminder 0-3 days before the deadline."""
     today = today_dt.date().isoformat()
     soon = (today_dt.date() + timedelta(days=3)).isoformat()
-    in2 = (today_dt.date() + timedelta(days=2)).isoformat()
     shown_before = (store.now() - timedelta(hours=20)).isoformat()  # not right after the first show
     return [e for e in events if e["sent_at"] and e["sent_at"] != "dupe" and e["sent_at"] < shown_before
-            and not e["reminded_at"] and (e["feedback"] == "up" or (e.get("tier") == "top" and not e["feedback"]))
-            and not is_stale(e, today)
-            and ((e["deadline"] and today <= e["deadline"][:10] <= soon)
-                 or (e["feedback"] == "up" and not e["deadline"] and e["start_date"]
-                     and today < e["start_date"][:10] <= in2))][:4]
+            and not e["reminded_at"] and e.get("tier") == "top" and not e["feedback"]
+            and not is_stale(e, today) and e["deadline"] and today <= e["deadline"][:10] <= soon][:3]
+
+
+def pick_watch(events, today_dt, days=7):
+    """What you starred (pressed its number): shown every morning while its deadline or start is within a week."""
+    today = today_dt.date().isoformat()
+    horizon = (today_dt.date() + timedelta(days=days)).isoformat()
+
+    def key_date(e):
+        for k in ("deadline", "start_date"):
+            if e.get(k) and e[k][:10] >= today:
+                return e[k][:10]
+        return ""
+    liked = [e for e in events if e["feedback"] == "up" and not is_stale(e, today) and key_date(e)
+             and key_date(e) <= horizon]
+    return sorted(liked, key=key_date)[:5]
 
 
 def update_source_health(meta, stats, errors):
@@ -438,13 +450,15 @@ def run(meta, dry, no_send, mode=None):
     top, more, women, free = choose(gem, cands, sent_titles, criteria, events, today)
     if evening:  # evening: only something exceptional, the rest waits for the morning
         top = [(e, hook) for e, hook, hot in top if hot]
-        more, women, free, reminders = [], [], [], []
+        more, women, free, reminders, watch = [], [], [], [], []
     else:
         top = [(e, hook) for e, hook, hot in top]
         reminders = pick_reminders(events, today_dt)
+        watch = pick_watch(events, today_dt)
+        reminders = [e for e in reminders if all(e is not w for w in watch)]
     shown = {id(e) for e, _ in top} | {id(e) for e in more + women + free}
     queue_left = sum(1 for e in pending if not e["sent_at"] and id(e) not in shown)
-    text, numbered = tg.digest_message(today_dt, top, more, women, free, reminders, queue_left, evening)
+    text, numbered = tg.digest_message(today_dt, top, more, women, free, reminders, queue_left, evening, watch)
     if failed:
         text += ("\n\n⚠️ Gemini ответил не на всё: часть новых материалов разберу в следующий раз."
                  if len(failed) < len(items) else "\n\n⚠️ Gemini сейчас не ответил, новые материалы разберу в следующий раз.")

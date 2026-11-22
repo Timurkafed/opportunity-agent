@@ -203,7 +203,7 @@ def short_line(n, e, today, show_place=True):
     return f"{n}. {KIND_ICON.get(e['kind'], '📌')} {title_link(e, 70)}{tail}{mark}"
 
 
-def digest_message(today_dt, top, more, women, free, reminders, queue_left, evening=False):
+def digest_message(today_dt, top, more, women, free, reminders, queue_left, evening=False, watch=()):
     """top: [(event, hook)], others: [event]. Returns (html text, numbered events in order)."""
     today = today_dt.date().isoformat()
     numbered, parts = [], []
@@ -234,12 +234,15 @@ def digest_message(today_dt, top, more, women, free, reminders, queue_left, even
     section("👀 <b>Можно глянуть</b>", more)
     section("👩 <b>Только для девушек</b> <i>(для интереса)</i>", women)
     section("🎁 <b>Халява</b>", free)
+    if watch:
+        parts.append("⭐ <b>Отмеченное</b>\n" + "\n".join(
+            f"• {title_link(e, 60)} — {deadline_text(e, today) or short_when(e)}" for e in watch))
     if reminders:
         parts.append("⏰ <b>Скоро дедлайн</b>\n" + "\n".join(
             f"• {title_link(e, 60)} — {deadline_text(e, today)}" for e in reminders))
     foot = []
     if numbered:
-        foot.append("Нажми номер, если интересно: учту в следующих подборках.")
+        foot.append("Нажми ⭐ с номером: сохраню в «Отмеченное», напомню о дедлайне и учту в подборках.")
     if queue_left:
         foot.append(f"В очереди ещё {queue_left}.")
     if foot:
@@ -248,16 +251,16 @@ def digest_message(today_dt, top, more, women, free, reminders, queue_left, even
     text = "\n\n".join(parts)
     while len(text) > LIMIT and more:  # too long: drop the least valuable lines
         more = more[:-1]
-        return digest_message(today_dt, top, more, women, free, reminders, queue_left + 1, evening)
+        return digest_message(today_dt, top, more, women, free, reminders, queue_left + 1, evening, watch)
     return text, numbered
 
 
 def number_buttons(events, per_row=6):
-    btns = [{"text": str(i), "callback_data": f"up:{e['id']}"} for i, e in enumerate(events, 1)]
+    btns = [{"text": f"⭐{i}", "callback_data": f"up:{e['id']}"} for i, e in enumerate(events, 1)]
     return [btns[i:i + per_row] for i in range(0, len(btns), per_row)]
 
 
 def mark_voted(keyboard, data):
     """Keyboard of a list digest after a press: the pressed number becomes ✅N."""
-    return [[{"text": "✅" + b["text"], "callback_data": "noop"} if b.get("callback_data") == data else b
+    return [[{"text": "✅" + b["text"].lstrip("⭐"), "callback_data": "noop"} if b.get("callback_data") == data else b
              for b in row] for row in keyboard]
