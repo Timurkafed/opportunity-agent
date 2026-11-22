@@ -17,7 +17,7 @@ import sys
 from datetime import date, datetime, timedelta, timezone
 from difflib import SequenceMatcher
 
-from . import collect, gitstate, llm, store, tg
+from . import collect, feed, gitstate, llm, store, tg
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ALMATY = timezone(timedelta(hours=5))
@@ -458,7 +458,8 @@ def run(meta, dry, no_send, mode=None):
         reminders = [e for e in reminders if all(e is not w for w in watch)]
     shown = {id(e) for e, _ in top} | {id(e) for e in more + women + free}
     queue_left = sum(1 for e in pending if not e["sent_at"] and id(e) not in shown)
-    text, numbered = tg.digest_message(today_dt, top, more, women, free, reminders, queue_left, evening, watch)
+    text, numbered = tg.digest_message(today_dt, top, more, women, free, reminders, queue_left, evening, watch,
+                                      feed_url=feed.FEED_URL)
     if failed:
         text += ("\n\n⚠️ Gemini ответил не на всё: часть новых материалов разберу в следующий раз."
                  if len(failed) < len(items) else "\n\n⚠️ Gemini сейчас не ответил, новые материалы разберу в следующий раз.")
@@ -492,6 +493,10 @@ def run(meta, dry, no_send, mode=None):
     meta["runner"] = os.environ.get("OPP_RUNNER", "")
     meta["gemini_calls_last_run"] = gem.calls
     save_all(seen, events, meta)
+    try:
+        feed.write(events, today_dt, blocked, is_stale)
+    except Exception as ex:  # the feed is a bonus: never fail the run because of it
+        print(f"  ! feed: {ex}")
     print(f"Done. {'Evening' if evening else 'Morning'} digest: {sent} items ({len(top)} top), "
           f"{len(reminders)} reminders. Gemini calls: {gem.calls}")
 

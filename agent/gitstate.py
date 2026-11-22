@@ -19,7 +19,7 @@ from datetime import datetime, timedelta, timezone
 from . import store
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-FILES = ("meta.json", "events.json", "seen.json")
+FILES = ("meta.json", "events.json", "seen.json", "feed.html")
 IDENTITY = ["-c", "user.name=opportunity-agent", "-c", "user.email=opportunity-agent@users.noreply.github.com"]
 ALMATY = timezone(timedelta(hours=5))
 

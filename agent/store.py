@@ -26,6 +26,14 @@ def save(name, data):
     os.replace(tmp, _path(name))
 
 
+def save_text(name, text):
+    os.makedirs(STATE_DIR, exist_ok=True)
+    tmp = _path(name) + ".tmp"
+    with open(tmp, "w", encoding="utf-8", newline="\n") as f:
+        f.write(text)
+    os.replace(tmp, _path(name))
+
+
 def now():
     return datetime.now(timezone.utc)
 

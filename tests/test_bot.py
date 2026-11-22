@@ -319,3 +319,16 @@ def test_watch_shows_starred_within_a_week_nearest_first():
     assert [e["title"] for e in m.pick_watch([a, b, far, not_starred], today)] == ["B", "A"]
     text, _ = m.tg.digest_message(today, [], [], [], [], [], 0, watch=[b, a])
     assert "⭐ <b>Отмеченное</b>" in text and text.index(">B<") < text.index(">A<")
+
+
+def test_feed_page_lists_live_events_with_filters():
+    from agent import feed
+    today = datetime(2026, 11, 22, 9, 7, tzinfo=m.ALMATY)
+    events = [ev("Decentrathon", "2026-11-28", deadline="2026-11-25", kind="hackathon"),
+              ev("Старое", "2026-11-01", deadline="2026-11-01"),
+              ev("Повтор", "2026-11-28", sent_at="dupe"),
+              ev("Отмеченное <b>", "2026-12-20", feedback="up")]
+    page = feed.build(events, today, m.blocked, m.is_stale)
+    assert page.count("<article") == 2 and "Старое" not in page and "Повтор" not in page
+    assert page.index("Отмеченное &lt;b&gt;") < page.index("Decentrathon")   # starred first, escaped
+    assert 'data-place="almaty"' in page and "подать до 25 ноя (3 дн.)" in page

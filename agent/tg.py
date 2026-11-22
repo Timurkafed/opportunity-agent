@@ -203,7 +203,7 @@ def short_line(n, e, today, show_place=True):
     return f"{n}. {KIND_ICON.get(e['kind'], '📌')} {title_link(e, 70)}{tail}{mark}"
 
 
-def digest_message(today_dt, top, more, women, free, reminders, queue_left, evening=False, watch=()):
+def digest_message(today_dt, top, more, women, free, reminders, queue_left, evening=False, watch=(), feed_url=""):
     """top: [(event, hook)], others: [event]. Returns (html text, numbered events in order)."""
     today = today_dt.date().isoformat()
     numbered, parts = [], []
@@ -245,13 +245,15 @@ def digest_message(today_dt, top, more, women, free, reminders, queue_left, even
         foot.append("Нажми ⭐ с номером: сохраню в «Отмеченное», напомню о дедлайне и учту в подборках.")
     if queue_left:
         foot.append(f"В очереди ещё {queue_left}.")
+    if feed_url:
+        foot.append(f'<a href="{attr(feed_url)}">📋 Вся лента</a>')
     if foot:
         parts.append("<i>" + " ".join(foot) + "</i>")
 
     text = "\n\n".join(parts)
     while len(text) > LIMIT and more:  # too long: drop the least valuable lines
         more = more[:-1]
-        return digest_message(today_dt, top, more, women, free, reminders, queue_left + 1, evening, watch)
+        return digest_message(today_dt, top, more, women, free, reminders, queue_left + 1, evening, watch, feed_url)
     return text, numbered
 
 
