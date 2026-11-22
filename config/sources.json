@@ -69,15 +69,6 @@
       "pages": 2
     },
     {
-      "type": "unstop",
-      "name": "Unstop",
-      "kinds": [
-        "hackathons",
-        "competitions"
-      ],
-      "pages": 1
-    },
-    {
       "type": "page",
       "name": "Taikai",
       "url": "https://taikai.network/hackathons"
@@ -98,6 +89,18 @@
       "name": "Opportunities for Youth",
       "url": "https://opportunitiesforyouth.org/feed/",
       "limit": 15
+    }
+  ],
+  "disabled_sites": [
+    {
+      "type": "unstop",
+      "name": "Unstop",
+      "kinds": [
+        "hackathons",
+        "competitions"
+      ],
+      "pages": 1,
+      "why": "22.11.2026: 47 событий за 3 дня, почти все для студентов Индии, ни одно не подошло"
     }
   ]
 }

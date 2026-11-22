@@ -77,3 +77,8 @@
 - **Не по теме.** @we_project (учёба за рубежом), @changellenge (карьера в РФ), @sdu_university (PR вуза), @devs_kz (вакансии).
 - **Мёртвые.** @qazinnovations, @gdgalmaty, каналы Decentrathon (новости о нём приходят через @digitaljuz и @itnomads_kz).
 - **Сайты.** MLH (почти всё очно в США), Luma (у Алматы одно событие), hackathon.com, Techstars Startup Weekend (КЗ пусто), lablab.ai (не читается без браузера; онлайн-AI-хакатоны и так есть на Devpost).
+
+
+## Отключено
+
+- **Unstop** (22.11.2026): за 3 дня 47 событий, почти все для студентов Индии, в подборку не подошло ни одно. Настройки лежат в `config/sources.json` → `disabled_sites`.
