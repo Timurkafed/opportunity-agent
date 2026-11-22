@@ -850,9 +850,10 @@
    "@grants_scholarships"
   ],
   "first_seen": "2026-11-19T12:23:22.061241+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-22T04:10:55.136253+00:00",
   "reminded_at": null,
-  "feedback": null
+  "feedback": null,
+  "tier": "top"
  },
  {
   "title": "Figma для начинающих",
@@ -2607,7 +2608,7 @@
    "Devpost"
   ],
   "first_seen": "2026-11-19T12:23:22.510647+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-22T04:10:55.136253+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -2877,7 +2878,7 @@
    "Unstop"
   ],
   "first_seen": "2026-11-19T12:23:22.590685+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-22T04:10:55.136253+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -2904,7 +2905,7 @@
    "Unstop"
   ],
   "first_seen": "2026-11-19T12:23:22.595712+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-22T04:10:55.136253+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -2931,7 +2932,7 @@
    "Unstop"
   ],
   "first_seen": "2026-11-19T12:23:22.603826+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-22T04:10:55.136253+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -3066,9 +3067,10 @@
    "Unstop"
   ],
   "first_seen": "2026-11-19T12:23:22.677405+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-22T04:10:55.136253+00:00",
   "reminded_at": null,
-  "feedback": null
+  "feedback": null,
+  "tier": "top"
  },
  {
   "title": "Codathon 1.0",
@@ -3377,7 +3379,7 @@
    "@uppertunity"
   ],
   "first_seen": "2026-11-20T12:14:51.188946+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-22T04:10:55.136253+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -3680,7 +3682,7 @@
   ],
   "first_seen": "2026-11-20T12:14:51.245739+00:00",
   "sent_at": "2026-11-21T04:10:45.971270+00:00",
-  "reminded_at": null,
+  "reminded_at": "2026-11-22T04:10:55.136253+00:00",
   "feedback": null,
   "tier": "top"
  },
@@ -4252,7 +4254,7 @@
    "@astana_hub"
   ],
   "first_seen": "2026-11-21T04:10:39.059081+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-22T04:10:55.136253+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -4659,7 +4661,7 @@
    "Unstop"
   ],
   "first_seen": "2026-11-21T13:13:14.918945+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-22T04:10:55.136253+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -5145,6 +5147,231 @@
    "The Tech: IT-афиша"
   ],
   "first_seen": "2026-11-21T13:13:15.020555+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Saturday Speaking Club",
+  "kind": "meetup",
+  "summary": "Клуб для практики английского языка и новых знакомств в Алматы.",
+  "city": "Алматы",
+  "online": false,
+  "start_date": "2026-11-22",
+  "end_date": "",
+  "deadline": "2026-11-27",
+  "who": "Все желающие от 14 лет с уровнем английского A2 и выше",
+  "prize": "",
+  "flags": [
+   "age_limit"
+  ],
+  "is_freebie": false,
+  "score": 6,
+  "why": "Полезно для развития коммуникативных навыков и нетворкинга, но не напрямую связано со стартапами или IT. Регистрация открывается каждый четверг, нужно успеть.",
+  "link": "",
+  "post_url": "https://t.me/asmsalmaty/5211",
+  "source": "@asmsalmaty",
+  "id": "b11ffbd4bc",
+  "sources": [
+   "@asmsalmaty"
+  ],
+  "first_seen": "2026-11-22T04:10:51.575491+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Almaty Open Debate Tournament 2026",
+  "kind": "contest",
+  "summary": "Двухдневный турнир по дебатам на английском языке с призовым фондом.",
+  "city": "Алматы",
+  "online": false,
+  "start_date": "2026-12-05",
+  "end_date": "2026-12-06",
+  "deadline": "2026-11-22",
+  "who": "Ученики 7-12 классов",
+  "prize": "100 000 ₸",
+  "flags": [
+   "school_only",
+   "age_limit",
+   "paid"
+  ],
+  "is_freebie": false,
+  "score": 0,
+  "why": "Пользователь не школьник, поэтому не подходит. Дедлайн сегодня.",
+  "link": "https://awsddebates2026.tilda.ws/",
+  "post_url": "https://t.me/mentoria_organization/803",
+  "source": "@mentoria_organization",
+  "id": "5215cf75f7",
+  "sources": [
+   "@mentoria_organization"
+  ],
+  "first_seen": "2026-11-22T04:10:51.580186+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "AI-Powered Career Development Hackathon",
+  "kind": "hackathon",
+  "summary": "Хакатон по разработке AI-решений для карьерного развития, где участники будут создавать платформы, которые помогают студентам находить индивидуальные пути обучения и устранять пробелы в навыках.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "2026-11-28",
+  "who": "Все желающие",
+  "prize": "30000 INR",
+  "flags": [],
+  "is_freebie": false,
+  "score": 9,
+  "why": "Отличная возможность для получения опыта в хакатонах и работы с AI, полностью онлайн и с призами.",
+  "link": "",
+  "post_url": "https://unstop.com/hackathons/ai-powered-career-development-hackathon-unsaidtalks-education-1821954",
+  "source": "Unstop",
+  "id": "19be016b4b",
+  "sources": [
+   "Unstop"
+  ],
+  "first_seen": "2026-11-22T04:10:51.602722+00:00",
+  "sent_at": "2026-11-22T04:10:55.136253+00:00",
+  "reminded_at": null,
+  "feedback": null,
+  "tier": "top"
+ },
+ {
+  "title": "Samvad: Call For Article",
+  "kind": "contest",
+  "summary": "Конкурс статей на тему «Frictionless Customer Value» для развития навыков письма и аналитического мышления.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "2026-11-27",
+  "who": "Аспиранты, менеджеры",
+  "prize": "",
+  "flags": [],
+  "is_freebie": false,
+  "score": 5,
+  "why": "Онлайн-конкурс, но без денежных призов и сфокусирован на написании статей, что не является приоритетом для пользователя.",
+  "link": "",
+  "post_url": "https://unstop.com/competitions/samvad-call-for-article-sp-mandalis-prin-l-n-welingkar-institute-of-management-development-research-mumbai--1822031",
+  "source": "Unstop",
+  "id": "c486d17810",
+  "sources": [
+   "Unstop"
+  ],
+  "first_seen": "2026-11-22T04:10:51.608469+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "StrategicIQ: The Ultimate Business Challenge",
+  "kind": "case",
+  "summary": "Бизнес-кейс-чемпионат для проверки деловой хватки, стратегического мышления и навыков принятия решений.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "2026-11-26",
+  "who": "Студенты инженерных, последипломных, бакалаврских, управленческих, медицинских, юридических, гуманитарных, коммерческих, научных и других специальностей",
+  "prize": "5000 INR",
+  "flags": [],
+  "is_freebie": false,
+  "score": 8,
+  "why": "Отличная возможность для получения опыта в бизнес-кейсах, полностью онлайн и с денежными призами.",
+  "link": "",
+  "post_url": "https://unstop.com/competitions/strategiciq-the-ultimate-business-challenge--1822030",
+  "source": "Unstop",
+  "id": "7cf14e440e",
+  "sources": [
+   "Unstop"
+  ],
+  "first_seen": "2026-11-22T04:10:51.616027+00:00",
+  "sent_at": "2026-11-22T04:10:55.136253+00:00",
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Rinnit Health Explainer Challenge 2026: Explain a Health Topic in Your Own Words",
+  "kind": "contest",
+  "summary": "Конкурс по объяснению медицинских тем в формате видео или письменного поста для улучшения коммуникативных навыков.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "2026-12-16",
+  "who": "Все желающие",
+  "prize": "",
+  "flags": [],
+  "is_freebie": false,
+  "score": 6,
+  "why": "Онлайн-конкурс, но без денежных призов и больше ориентирован на создание контента, чем на технические или бизнес-навыки.",
+  "link": "",
+  "post_url": "https://unstop.com/competitions/rinnit-health-explainer-challenge-2026-explain-a-health-topic-in-your-own-words-rinnit-1822625",
+  "source": "Unstop",
+  "id": "9e61fcdf45",
+  "sources": [
+   "Unstop"
+  ],
+  "first_seen": "2026-11-22T04:10:51.627549+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "AI Music/image Generation Competition",
+  "kind": "contest",
+  "summary": "Конкурс по генерации музыки или изображений с использованием AI-инструментов для демонстрации творческого потенциала.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "2026-12-07",
+  "who": "Все желающие",
+  "prize": "",
+  "flags": [],
+  "is_freebie": false,
+  "score": 7,
+  "why": "Онлайн-конкурс, связанный с AI, что интересно пользователю, но без денежных призов.",
+  "link": "",
+  "post_url": "https://unstop.com/competitions/ai-musicimage-generation-competition-mumbai-university-mu-mumbai-1822549",
+  "source": "Unstop",
+  "id": "179d0a68f1",
+  "sources": [
+   "Unstop"
+  ],
+  "first_seen": "2026-11-22T04:10:51.634774+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Humanistiq Seeks Your Perspective, 2026",
+  "kind": "contest",
+  "summary": "Конкурс статей на тему «Startup vs Corporate: Where do people thrive» для публикации в HR-журнале.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "2026-12-30",
+  "who": "Студенты инженерных, MBA, последипломных, бакалаврских специальностей",
+  "prize": "2000 INR",
+  "flags": [
+   "sales_hr"
+  ],
+  "is_freebie": false,
+  "score": 5,
+  "why": "Онлайн-конкурс, но сфокусирован на HR и написании статей, что не является приоритетом для пользователя, хотя есть небольшой приз.",
+  "link": "",
+  "post_url": "https://unstop.com/competitions/humanistiq-seeks-your-perspective-2026-kjsim-mumbai-1822192",
+  "source": "Unstop",
+  "id": "39bfe8a4eb",
+  "sources": [
+   "Unstop"
+  ],
+  "first_seen": "2026-11-22T04:10:51.641558+00:00",
   "sent_at": null,
   "reminded_at": null,
   "feedback": null
