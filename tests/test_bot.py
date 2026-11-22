@@ -294,3 +294,17 @@ def test_long_digest_is_cut_to_telegram_limit():
     more = [ev("Очень длинное название события " * 3 + str(i), "2026-11-25", id=str(i)) for i in range(60)]
     text, numbered = m.tg.digest_message(today, [], more, [], [], [], 0)
     assert len(text) <= m.tg.LIMIT and len(numbered) < 60 and "В очереди ещё" in text
+
+
+def test_blocked_and_foreign_caps():
+    assert m.blocked(ev("CodeWarriors India 2026 - National Hackathon"))
+    assert m.blocked(ev("Розыгрыш 100 USDT от Fasset"))
+    assert m.blocked(ev("X", flags=["country_only"]))
+    assert not m.blocked(ev("BCC-HUB × MNU FinTech Hackathon"))
+    devpost = [ev(f"Hack {c}", city="Online", source="Devpost", sources=["Devpost"]) for c in "abcd"]
+    local = ev("Pizza Pitch", city="Алматы")
+    online_kz = ev("Онлайн-хакатон lé.codes48", city="Онлайн", source="@uppertunity", sources=["@uppertunity"])
+    assert not m.is_foreign(local) and not m.is_foreign(online_kz) and m.is_foreign(devpost[0])
+    assert m.is_foreign(ev("Tourism Hackathon", city="Ташкент", source="@startupchoyxona", sources=["@startupchoyxona"]))
+    capped = m.cap_foreign(devpost + [local, online_kz], 1)
+    assert [e["title"] for e in capped] == ["Hack a", "Pizza Pitch", "Онлайн-хакатон lé.codes48"]

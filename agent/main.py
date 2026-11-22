@@ -28,7 +28,12 @@ MAX_FREE = 3        # freebies per digest
 EVENING_HOUR = 14   # runs from this hour (Almaty) send only exceptional ("hot") items, or nothing
 ACTIVE = {"hackathon", "startup", "case", "contest", "project", "volunteer", "internship"}  # you take part
 MIN_SCORE = 5       # below this nothing is sent
-DROP_FLAGS = {"school_only", "rf_only"}  # the user can't take part anyway
+DROP_FLAGS = {"school_only", "rf_only", "country_only", "giveaway"}  # can't take part / not an opportunity
+MORE_MIN_SCORE = 7  # "worth a look" only from this score: better 3 good lines than 7 weak ones
+MAX_FOREIGN_TOP, MAX_FOREIGN_MORE = 1, 3  # foreign online platforms flood the digest otherwise
+KZ_PLACES = ("алматы", "астана", "казахстан", "almaty", "astana", "kazakhstan", "шымкент", "караганд", "актобе",
+             "павлодар", "kz")
+FOREIGN_SOURCES = {"Devpost", "Unstop", "Taikai", "ETHGlobal", "Opportunity Desk", "Opportunities for Youth"}
 SKIP_HOURS = 4      # another run finished less than this ago -> do nothing (laptop + cloud overlap)
 
 
@@ -295,6 +300,35 @@ def update_source_health(meta, stats, errors):
 
 
 # ------------------------------------------------------------------ main
+BLOCK_TITLE = re.compile(r"(national\b.*\bindia|india\b.*\bnational|розыгрыш|giveaway|airdrop|лотере)", re.I)
+
+
+def blocked(e):
+    """Can't take part or not an opportunity (also catches events stored before the flags existed)."""
+    return bool(set(e.get("flags", [])) & DROP_FLAGS) or bool(BLOCK_TITLE.search(e.get("title", "")))
+
+
+def is_foreign(e):
+    """Not in Kazakhstan: an online event from an international platform or an event abroad."""
+    city = (e.get("city") or "").lower()
+    if any(p in city for p in KZ_PLACES):
+        return False
+    if e.get("source") in FOREIGN_SOURCES or all(s in FOREIGN_SOURCES for s in e.get("sources", [])):
+        return True
+    return bool(city) and "онлайн" not in city and "online" not in city
+
+
+def cap_foreign(items, limit, key=lambda x: x):
+    out, n = [], 0
+    for it in items:
+        if is_foreign(key(it)):
+            if n >= limit:
+                continue
+            n += 1
+        out.append(it)
+    return out
+
+
 def choose(gem, cands, sent_titles, criteria, events, today):
     """Split candidates into top [(event, hook, hot)], more, women-only, freebies. Marks repeats as dupes."""
     if not cands:
@@ -311,9 +345,10 @@ def choose(gem, cands, sent_titles, criteria, events, today):
         top = [(e, e["summary"], False) for e in cands
                if e["kind"] in ACTIVE and "women_only" not in e["flags"] and e["score"] >= 8][:MAX_TOP]
         rest = [e for e in cands if all(e is not t for t, _, _ in top)]
-    top = top[:MAX_TOP]
+    top = cap_foreign(top, MAX_FOREIGN_TOP, key=lambda t: t[0])[:MAX_TOP]
     rest = [e for e in rest if all(e is not t for t, _, _ in top)]
-    more = [e for e in rest if e["kind"] != "freebie" and "women_only" not in e["flags"]][:MAX_MORE]
+    more = [e for e in rest if e["kind"] != "freebie" and "women_only" not in e["flags"] and e["score"] >= MORE_MIN_SCORE]
+    more = cap_foreign(more, MAX_FOREIGN_MORE)[:MAX_MORE]
     women = [e for e in rest if "women_only" in e["flags"]][:MAX_WOMEN]
     free = [e for e in rest if e["kind"] == "freebie"][:MAX_FREE]
     return top, more, women, free
@@ -395,7 +430,7 @@ def run(meta, dry, no_send, mode=None):
     print("4) Choosing ...")
     evening = mode == "evening" or (mode is None and today_dt.hour >= EVENING_HOUR)
     pending = [e for e in events if not e["sent_at"] and not is_stale(e, today)
-               and e["score"] >= MIN_SCORE and not (set(e["flags"]) & DROP_FLAGS)]
+               and e["score"] >= MIN_SCORE and not blocked(e)]
     pending.sort(key=lambda e: -e["score"])
     cands = pending[:50]
     recent_cut = (store.now() - timedelta(days=30)).isoformat()
