@@ -340,7 +340,7 @@
    "@astana_hub"
   ],
   "first_seen": "2026-11-19T12:23:22.009786+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-23T04:10:27.981964+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -623,7 +623,8 @@
   "id": "4e8979962e",
   "sources": [
    "@qazstartup",
-   "@thetechkz"
+   "@thetechkz",
+   "@hackathon_kz"
   ],
   "first_seen": "2026-11-19T12:23:22.031787+00:00",
   "sent_at": "2026-11-20T12:15:05.307418+00:00",
@@ -679,7 +680,8 @@
   "source": "@startup_course_com",
   "id": "575d8c60b9",
   "sources": [
-   "@startup_course_com"
+   "@startup_course_com",
+   "@hackathon_kz"
   ],
   "first_seen": "2026-11-19T12:23:22.033328+00:00",
   "sent_at": "2026-11-19T13:07:59.198351+00:00",
@@ -740,7 +742,7 @@
    "@startup_course_com"
   ],
   "first_seen": "2026-11-19T12:23:22.041975+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-23T04:10:27.981964+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -2173,7 +2175,7 @@
    "@codenrock"
   ],
   "first_seen": "2026-11-19T12:23:22.426703+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-23T04:10:27.981964+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -2663,7 +2665,7 @@
    "Devpost"
   ],
   "first_seen": "2026-11-19T12:23:22.521232+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-23T04:10:27.981964+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -3069,7 +3071,7 @@
   ],
   "first_seen": "2026-11-19T12:23:22.677405+00:00",
   "sent_at": "2026-11-22T04:10:55.136253+00:00",
-  "reminded_at": null,
+  "reminded_at": "2026-11-23T04:10:27.981964+00:00",
   "feedback": null,
   "tier": "top"
  },
@@ -3125,7 +3127,7 @@
    "Unstop"
   ],
   "first_seen": "2026-11-19T12:23:22.709530+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-23T04:10:27.981964+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -3434,9 +3436,10 @@
    "@astana_hub"
   ],
   "first_seen": "2026-11-20T12:14:51.197163+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-23T04:10:27.981964+00:00",
   "reminded_at": null,
-  "feedback": null
+  "feedback": null,
+  "tier": "top"
  },
  {
   "title": "Бизнес-завтрак Astana Hub в Алматы: Co-Creation Day",
@@ -3515,7 +3518,8 @@
   "source": "@qazstartup",
   "id": "0f4b6be56d",
   "sources": [
-   "@qazstartup"
+   "@qazstartup",
+   "@startup_course_com"
   ],
   "first_seen": "2026-11-20T12:14:51.206011+00:00",
   "sent_at": null,
@@ -4202,7 +4206,7 @@
    "@astana_hub"
   ],
   "first_seen": "2026-11-21T04:10:39.042741+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-23T04:10:27.981964+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -5563,7 +5567,7 @@
    "Unstop"
   ],
   "first_seen": "2026-11-22T13:10:56.922836+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-23T04:10:27.981964+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -5617,6 +5621,230 @@
    "Unstop"
   ],
   "first_seen": "2026-11-22T13:10:56.944179+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Christmas Hackathon",
+  "kind": "hackathon",
+  "summary": "Хакатон, где участники превратят идею в MVP и смогут выиграть денежный приз.",
+  "city": "Караганда",
+  "online": false,
+  "start_date": "2026-12-04",
+  "end_date": "",
+  "deadline": "",
+  "who": "Все желающие",
+  "prize": "Денежный приз",
+  "flags": [],
+  "is_freebie": false,
+  "score": 5,
+  "why": "Интересный хакатон с призом, но проходит очно в Караганде, что требует оплаты дороги.",
+  "link": "https://hackathon.kz/event?slug=christmas-hackathon-karaganda-2026",
+  "post_url": "https://t.me/hackathon_kz/145",
+  "source": "@hackathon_kz",
+  "id": "8307480ee3",
+  "sources": [
+   "@hackathon_kz"
+  ],
+  "first_seen": "2026-11-23T04:10:20.189991+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "V региональный ITU Hackathon 2026",
+  "kind": "hackathon",
+  "summary": "Хакатон по финтех-кейсу от Банка ЦентрКредит, где нужно разработать цифровое решение для современного банка и побороться за призовой фонд.",
+  "city": "Тараз",
+  "online": false,
+  "start_date": "2026-12-04",
+  "end_date": "",
+  "deadline": "2026-11-20",
+  "who": "Все желающие",
+  "prize": "1 000 000 ₸",
+  "flags": [],
+  "is_freebie": false,
+  "score": 5,
+  "why": "Хакатон с хорошим призовым фондом и интересной темой, но проходит очно в Таразе, что требует оплаты дороги. Дедлайн скоро.",
+  "link": "https://hackathon.kz/event?slug=itu-hackathon-2026",
+  "post_url": "https://t.me/hackathon_kz/147",
+  "source": "@hackathon_kz",
+  "id": "d9f503bb9f",
+  "sources": [
+   "@hackathon_kz"
+  ],
+  "first_seen": "2026-11-23T04:10:20.195070+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Órleu Hack 2026",
+  "kind": "hackathon",
+  "summary": "Хакатон для школьников и студентов Казахстана, где команды решают реальные проблемы страны и борются за призовой фонд.",
+  "city": "Астана",
+  "online": true,
+  "start_date": "2026-11-25",
+  "end_date": "2026-11-29",
+  "deadline": "2026-11-24",
+  "who": "Школьники и студенты Казахстана",
+  "prize": "1 250 000 ₸",
+  "flags": [
+   "age_limit"
+  ],
+  "is_freebie": false,
+  "score": 7,
+  "why": "Хакатон с онлайн-этапом и хорошим призовым фондом, подходит для студента. Финал в Астане, но онлайн-участие возможно. Дедлайн скоро.",
+  "link": "https://hackathon.kz/hackathon?slug=orleu-hack-2026",
+  "post_url": "https://t.me/hackathon_kz/152",
+  "source": "@hackathon_kz",
+  "id": "a60c75b3f7",
+  "sources": [
+   "@hackathon_kz"
+  ],
+  "first_seen": "2026-11-23T04:10:20.198688+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Co-pilot: хакатон IT FEST 2026",
+  "kind": "hackathon",
+  "summary": "Хакатон по созданию цифровых продуктов с ИИ в рамках фестиваля IT FEST 2026, с возможностью выиграть денежные призы и грант ректора AITU.",
+  "city": "Астана",
+  "online": true,
+  "start_date": "2026-12-04",
+  "end_date": "2026-12-05",
+  "deadline": "2026-11-17",
+  "who": "Школьники 10–12 классов и студенты колледжей и вузов",
+  "prize": "1 000 000 ₸ и грант ректора AITU",
+  "flags": [
+   "age_limit"
+  ],
+  "is_freebie": false,
+  "score": 0,
+  "why": "Дедлайн уже прошел.",
+  "link": "https://hackathon.kz/event?slug=copilot-it-fest-2026",
+  "post_url": "https://t.me/hackathon_kz/155",
+  "source": "@hackathon_kz",
+  "id": "201801770d",
+  "sources": [
+   "@hackathon_kz"
+  ],
+  "first_seen": "2026-11-23T04:10:20.204251+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "ORTAQ 2026: конкурс технологических проектов",
+  "kind": "contest",
+  "summary": "Конкурс технологических проектов для студентов вузов Алматы, направленный на решение проблем в сфере правовой грамотности, цифровой безопасности и ответственного поведения, с призовым фондом.",
+  "city": "Алматы",
+  "online": false,
+  "start_date": "2026-12-10",
+  "end_date": "2026-12-11",
+  "deadline": "2026-12-04",
+  "who": "Студенты вузов Алматы",
+  "prize": "3 000 000 ₸",
+  "flags": [
+   "age_limit"
+  ],
+  "is_freebie": false,
+  "score": 8,
+  "why": "Отличная возможность для студента в Алматы с большим призовым фондом. Пользователь умеет программировать и может найти команду.",
+  "link": "https://hackathon.kz/event?slug=ortaq-2026",
+  "post_url": "https://t.me/hackathon_kz/156",
+  "source": "@hackathon_kz",
+  "id": "d4898b58b4",
+  "sources": [
+   "@hackathon_kz"
+  ],
+  "first_seen": "2026-11-23T04:10:20.209274+00:00",
+  "sent_at": "2026-11-23T04:10:27.981964+00:00",
+  "reminded_at": null,
+  "feedback": null,
+  "tier": "top"
+ },
+ {
+  "title": "Отбор в топовые IT-компании от Network School NS.com",
+  "kind": "internship",
+  "summary": "Возможность попасть на работу в топовые IT-компании через онлайн и очный экзамены, с последующей рекомендацией лучшим кандидатам.",
+  "city": "Алматы",
+  "online": true,
+  "start_date": "2026-11-28",
+  "end_date": "",
+  "deadline": "2026-11-27",
+  "who": "IT-специалисты",
+  "prize": "Возможность трудоустройства",
+  "flags": [],
+  "is_freebie": false,
+  "score": 8,
+  "why": "Отличная возможность для программиста получить стажировку или работу в топовых IT-компаниях. Онлайн-этап доступен, очный экзамен в Алматы. Дедлайн скоро.",
+  "link": "http://ns.com/exam?&utm_source=startup.vg",
+  "post_url": "https://t.me/startup_course_com/6436",
+  "source": "@startup_course_com",
+  "id": "50fb53c104",
+  "sources": [
+   "@startup_course_com"
+  ],
+  "first_seen": "2026-11-23T04:10:20.218271+00:00",
+  "sent_at": "2026-11-23T04:10:27.981964+00:00",
+  "reminded_at": null,
+  "feedback": null,
+  "tier": "top"
+ },
+ {
+  "title": "AlmatyJS Light #9 × BCC Hub",
+  "kind": "meetup",
+  "summary": "Митап, где будут обсуждаться темы тестирования сложных интерфейсов и обеспечения надежной работы ИИ в веб-приложениях, с докладами и свободным общением с программистами.",
+  "city": "Алматы",
+  "online": false,
+  "start_date": "2026-11-28",
+  "end_date": "",
+  "deadline": "",
+  "who": "Студенты с начальными знаниями веб-программирования",
+  "prize": "",
+  "flags": [],
+  "is_freebie": false,
+  "score": 7,
+  "why": "Интересный митап по веб-программированию и ИИ в Алматы, подходит для получения опыта и нетворкинга. Участие бесплатное.",
+  "link": "https://almatyjs.kz/kk/events/almatyjs-light-9-bcc-hub/",
+  "post_url": "https://t.me/qazstartup/294",
+  "source": "@qazstartup",
+  "id": "97a38f16da",
+  "sources": [
+   "@qazstartup"
+  ],
+  "first_seen": "2026-11-23T04:10:20.223190+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Цифровизация и AI в строительстве",
+  "kind": "forum",
+  "summary": "Форум в Астане, где представители строительного бизнеса, инженеры и IT-эксперты обсудят применение искусственного интеллекта и цифровых технологий в строительстве.",
+  "city": "Астана",
+  "online": false,
+  "start_date": "2026-12-04",
+  "end_date": "2026-12-04",
+  "deadline": "",
+  "who": "Руководители строительных компаний, девелоперы, инженеры, проектировщики, IT-специалисты",
+  "prize": "",
+  "flags": [],
+  "is_freebie": false,
+  "score": 7,
+  "why": "Форум в Астане по интересной теме AI, но очно и без явных возможностей для прямого участия, кроме нетворкинга.",
+  "link": "https://eserv.kz/forum",
+  "post_url": "https://astanahub.com/ru/event/kak-iskusstvennyi-intellekt-meniaet-stroitelnuiu-otrasl-ot-proektirovaniia-do-upravleniia-stroitelstvom",
+  "source": "Astana Hub (календарь)",
+  "id": "4c6cfcac69",
+  "sources": [
+   "Astana Hub (календарь)"
+  ],
+  "first_seen": "2026-11-23T04:10:20.244659+00:00",
   "sent_at": null,
   "reminded_at": null,
   "feedback": null
