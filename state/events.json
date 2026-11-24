@@ -507,7 +507,8 @@
   "source": "@qazstartup",
   "id": "1e6e8a4e78",
   "sources": [
-   "@qazstartup"
+   "@qazstartup",
+   "Opportunities for Youth"
   ],
   "first_seen": "2026-11-19T12:23:22.020736+00:00",
   "sent_at": "2026-11-19T13:07:59.198351+00:00",
@@ -1929,7 +1930,8 @@
    "@startupchoyxona",
    "Astana Hub (календарь)",
    "@qazstartup",
-   "The Tech: IT-афиша"
+   "The Tech: IT-афиша",
+   "@techozimiz"
   ],
   "first_seen": "2026-11-19T12:23:22.300842+00:00",
   "sent_at": "2026-11-20T12:15:01.060327+00:00",
@@ -2260,7 +2262,7 @@
    "dev.events (Казахстан)"
   ],
   "first_seen": "2026-11-19T12:23:22.451941+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-24T04:12:20.759941+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -3552,7 +3554,7 @@
    "@thetechkz"
   ],
   "first_seen": "2026-11-20T12:14:51.216649+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-24T04:12:20.759941+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -3606,7 +3608,7 @@
    "@hackathonsrus"
   ],
   "first_seen": "2026-11-20T12:14:51.223275+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-24T04:12:20.759941+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -3636,7 +3638,7 @@
   ],
   "first_seen": "2026-11-20T12:14:51.226194+00:00",
   "sent_at": "2026-11-22T13:11:00.908362+00:00",
-  "reminded_at": null,
+  "reminded_at": "2026-11-24T04:12:20.759941+00:00",
   "feedback": null,
   "tier": "top"
  },
@@ -3902,7 +3904,7 @@
   "end_date": "",
   "deadline": "2027-01-15",
   "who": "Молодые люди 18-28 лет",
-  "prize": "",
+  "prize": "Опыт, влияние на глобальные решения",
   "flags": [
    "age_limit"
   ],
@@ -3914,7 +3916,8 @@
   "source": "Opportunities for Youth",
   "id": "ca66458461",
   "sources": [
-   "Opportunities for Youth"
+   "Opportunities for Youth",
+   "Opportunity Desk"
   ],
   "first_seen": "2026-11-20T12:14:51.279793+00:00",
   "sent_at": null,
@@ -4292,7 +4295,7 @@
    "@startup_course_com"
   ],
   "first_seen": "2026-11-21T04:10:39.062238+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-24T04:12:20.759941+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -4699,7 +4702,7 @@
    "Unstop"
   ],
   "first_seen": "2026-11-21T13:13:14.920925+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-24T04:12:20.759941+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -5796,7 +5799,7 @@
   ],
   "first_seen": "2026-11-23T04:10:20.218271+00:00",
   "sent_at": "2026-11-23T04:10:27.981964+00:00",
-  "reminded_at": null,
+  "reminded_at": "2026-11-24T04:12:20.759941+00:00",
   "feedback": null,
   "tier": "top"
  },
@@ -5877,7 +5880,7 @@
    "@qazstartup"
   ],
   "first_seen": "2026-11-23T13:12:58.339927+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-24T04:12:20.759941+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -6179,6 +6182,229 @@
    "The Tech: IT-афиша"
   ],
   "first_seen": "2026-11-23T13:12:58.440268+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Abai Bol Hackathon 2026",
+  "kind": "hackathon",
+  "summary": "Это хакатон для школьников и студентов, где нужно решить реальную техническую задачу за 4 дня, создать прототип и представить его на очном финале.",
+  "city": "Алматы",
+  "online": false,
+  "start_date": "2026-11-27",
+  "end_date": "2026-12-05",
+  "deadline": "2026-11-30",
+  "who": "Школьники и студенты",
+  "prize": "$300",
+  "flags": [
+   "paid"
+  ],
+  "is_freebie": false,
+  "score": 8,
+  "why": "Отличная возможность получить опыт в бизнесе, дизайне, продажах и презентациях, работая над реальной технической задачей. Есть призовой фонд, и можно использовать AI-инструменты. Очный финал в Алматы.",
+  "link": "https://docs.google.com/forms/d/e/1FAIpQLScLOZXPp2uWNR_t0ovYRDSch-rakWp9Iz6ABjTsGt4gqmV9vA/viewform?usp=publish-editor",
+  "post_url": "https://t.me/mentoria_organization/807",
+  "source": "@mentoria_organization",
+  "id": "eb2bbd9427",
+  "sources": [
+   "@mentoria_organization"
+  ],
+  "first_seen": "2026-11-24T04:12:16.454381+00:00",
+  "sent_at": "2026-11-24T04:12:20.759941+00:00",
+  "reminded_at": null,
+  "feedback": null,
+  "tier": "top"
+ },
+ {
+  "title": "Bath Game Jam 2026",
+  "kind": "hackathon",
+  "summary": "Онлайн-хакатон по разработке игр, ориентированный на новичков и включающий темы дизайна и гейминга.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "2026-11-23",
+  "end_date": "2026-11-30",
+  "deadline": "2026-11-30",
+  "who": "Все желающие",
+  "prize": "0",
+  "flags": [],
+  "is_freebie": false,
+  "score": 0,
+  "why": "Хакатон только по приглашению, пользователь не сможет принять участие.",
+  "link": "",
+  "post_url": "https://jam26.devpost.com/",
+  "source": "Devpost",
+  "id": "d263c0adee",
+  "sources": [
+   "Devpost"
+  ],
+  "first_seen": "2026-11-24T04:12:16.463760+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "GDG x CS Project Sprint",
+  "kind": "hackathon",
+  "summary": "Онлайн-хакатон с темами, ориентированными на новичков, дизайн и образование, который может быть интересен для получения опыта.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "2026-11-23",
+  "end_date": "2026-11-24",
+  "deadline": "2026-11-24",
+  "who": "Все желающие",
+  "prize": "0",
+  "flags": [],
+  "is_freebie": false,
+  "score": 6,
+  "why": "Онлайн-хакатон, подходит для получения опыта в дизайне, но дедлайн сегодня, и призов нет.",
+  "link": "",
+  "post_url": "https://gdg-project-sprint.devpost.com/",
+  "source": "Devpost",
+  "id": "ab2efb0eed",
+  "sources": [
+   "Devpost"
+  ],
+  "first_seen": "2026-11-24T04:12:16.468725+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Dev 2.0",
+  "kind": "hackathon",
+  "summary": "Онлайн-хакатон для новичков с призовым фондом в $300.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "2026-11-23",
+  "end_date": "2026-11-25",
+  "deadline": "2026-11-25",
+  "who": "Все желающие",
+  "prize": "$ 300",
+  "flags": [],
+  "is_freebie": false,
+  "score": 0,
+  "why": "Хакатон только по приглашению, пользователь не сможет принять участие.",
+  "link": "",
+  "post_url": "https://dev-2-0.devpost.com/",
+  "source": "Devpost",
+  "id": "9bcb30e2a2",
+  "sources": [
+   "Devpost"
+  ],
+  "first_seen": "2026-11-24T04:12:16.472557+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Tor Community Fellowship 2027",
+  "kind": "project",
+  "summary": "Это шестимесячная онлайн-программа для развития знаний и практических навыков в области цифровых прав, интернет-цензуры, онлайн-конфиденциальности и безопасности, с обучением и наставничеством от команды Tor Project.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "2027-02-01",
+  "end_date": "2027-07-31",
+  "deadline": "2026-12-17",
+  "who": "Правозащитники, журналисты, технологи, исследователи",
+  "prize": "Стипендия, обучение, наставничество",
+  "flags": [],
+  "is_freebie": false,
+  "score": 8,
+  "why": "Онлайн-формат, подходит для развития навыков в IT и смежных областях, есть стипендия и возможность получить опыт в проекте, который соответствует интересам пользователя в бизнесе и дизайне.",
+  "link": "https://nc.torproject.net/apps/forms/s/Dtk65kWacFaq8ejwsXYSsZmr",
+  "post_url": "https://opportunitydesk.org/2026/11/23/tor-community-fellowship-2027/",
+  "source": "Opportunity Desk",
+  "id": "87790c7eb6",
+  "sources": [
+   "Opportunity Desk",
+   "Opportunities for Youth"
+  ],
+  "first_seen": "2026-11-24T04:12:16.489934+00:00",
+  "sent_at": "2026-11-24T04:12:20.759941+00:00",
+  "reminded_at": null,
+  "feedback": null,
+  "tier": "top"
+ },
+ {
+  "title": "The Liveability Challenge 2027",
+  "kind": "startup",
+  "summary": "Глобальный конкурс для инноваторов, предпринимателей, стартапов и исследователей, предлагающих решения для городских и экологических проблем в тропических регионах, с возможностью получить финансирование и поддержку.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "",
+  "who": "Инноваторы, предприниматели, стартапы, исследователи",
+  "prize": "S$5.5 млн в виде финансирования и поддержки",
+  "flags": [
+   "needs_project"
+  ],
+  "is_freebie": false,
+  "score": 8,
+  "why": "Глобальный онлайн-конкурс с крупным призовым фондом, подходит для пользователя, который хочет попробовать бизнес и свой проект, даже если пока нет готового стартапа.",
+  "link": "https://www.theliveabilitychallenge.org/",
+  "post_url": "https://opportunitiesforyouth.org/2026/11/23/the-liveability-challenge-2027-global-call-for-innovative-sustainability-solutions-with-s5-5-million-in-catalytic-funding-and-support/",
+  "source": "Opportunities for Youth",
+  "id": "1070605bf0",
+  "sources": [
+   "Opportunities for Youth"
+  ],
+  "first_seen": "2026-11-24T04:12:16.507857+00:00",
+  "sent_at": "2026-11-24T04:12:20.759941+00:00",
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Diversity, Equity & Inclusion (DEI) Advocates Fellowship 2027",
+  "kind": "project",
+  "summary": "Глобальная онлайн-стипендия для тех, кто увлечен разнообразием, равенством и инклюзивностью, чтобы углубить понимание DEI-адвокации и укрепить уверенность в решении проблем угнетения и власти.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "2027-03-23",
+  "end_date": "2027-06-29",
+  "deadline": "2027-01-12",
+  "who": "Все желающие, кто уже занимался темами DEI",
+  "prize": "Опыт, развитие навыков",
+  "flags": [],
+  "is_freebie": false,
+  "score": 7,
+  "why": "Онлайн-формат, возможность получить ценный опыт и развить навыки, которые могут быть полезны в бизнесе и социальных проектах.",
+  "link": "https://www.tfaforms.com/5238543",
+  "post_url": "https://opportunitiesforyouth.org/2026/11/23/diversity-equity-inclusion-dei-advocates-fellowship-2027-apply-for-a-global-online-fellowship-by-teach-for-all/",
+  "source": "Opportunities for Youth",
+  "id": "67a1ead7dc",
+  "sources": [
+   "Opportunities for Youth"
+  ],
+  "first_seen": "2026-11-24T04:12:16.513828+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Вебинар: От идеи до запуска. Как выбрать серверную инфраструктуру для IT-проектов.",
+  "kind": "meetup",
+  "summary": "Вебинар от Astana Hub, где обсудят выбор серверной инфраструктуры для IT-проектов, различия между хостингами и как подбирать ресурсы по данным.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "2026-11-25",
+  "end_date": "2026-11-25",
+  "deadline": "",
+  "who": "IT-специалисты, стартаперы",
+  "prize": "Знания, опыт",
+  "flags": [],
+  "is_freebie": false,
+  "score": 6,
+  "why": "Онлайн-формат, полезная информация для IT-проектов, что соответствует интересам пользователя в бизнесе и программировании. Однако это лекция, а не активное участие.",
+  "link": "",
+  "post_url": "https://astanahub.com/ru/event/vebinar-ot-idei-do-zapuska-kak-vybrat-servernuiu-infrastrukturu-dlia-it-proektov",
+  "source": "Astana Hub (календарь)",
+  "id": "1aa2f5e2a1",
+  "sources": [
+   "Astana Hub (календарь)"
+  ],
+  "first_seen": "2026-11-24T04:12:16.525586+00:00",
   "sent_at": null,
   "reminded_at": null,
   "feedback": null
