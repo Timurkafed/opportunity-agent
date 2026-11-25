@@ -1,16 +1,16 @@
 {
- "last_run": "2026-11-25T04:11:01.189278+00:00",
- "gemini_calls_last_run": 9,
+ "last_run": "2026-11-25T13:12:55.031737+00:00",
+ "gemini_calls_last_run": 7,
  "tg_offset": 992753173,
  "chat_id": 841226328,
  "sources": {
   "Opportunity Desk": {
    "errors_in_row": 0,
-   "last_new": "2026-11-25T04:10"
+   "last_new": "2026-11-25T13:12"
   },
   "Devpost": {
    "errors_in_row": 0,
-   "last_new": "2026-11-25T04:10"
+   "last_new": "2026-11-25T13:12"
   },
   "@aieseckz": {
    "errors_in_row": 0
@@ -21,15 +21,16 @@
   },
   "@grants_scholarships": {
    "errors_in_row": 0,
-   "last_new": "2026-11-24T13:12"
+   "last_new": "2026-11-25T13:12"
   },
   "Astana Hub (календарь)": {
    "errors_in_row": 0,
-   "last_new": "2026-11-24T13:12"
+   "last_new": "2026-11-25T13:12"
   },
   "Opportunities for Youth": {
-   "errors_in_row": 0,
-   "last_new": "2026-11-25T04:10"
+   "errors_in_row": 1,
+   "last_new": "2026-11-25T04:10",
+   "last_error": "HTTP Error 403: Forbidden"
   },
   "@wwaikz": {
    "errors_in_row": 0
@@ -40,11 +41,11 @@
   },
   "@thetechkz": {
    "errors_in_row": 0,
-   "last_new": "2026-11-25T04:10"
+   "last_new": "2026-11-25T13:12"
   },
   "Taikai": {
    "errors_in_row": 0,
-   "last_new": "2026-11-25T04:10"
+   "last_new": "2026-11-25T13:12"
   },
   "@aiesecinalmaty": {
    "errors_in_row": 0
@@ -54,7 +55,7 @@
   },
   "@huntmeinternship": {
    "errors_in_row": 0,
-   "last_new": "2026-11-24T13:12"
+   "last_new": "2026-11-25T13:12"
   },
   "@datanomika": {
    "errors_in_row": 0,
@@ -62,15 +63,15 @@
   },
   "@asmsalmaty": {
    "errors_in_row": 0,
-   "last_new": "2026-11-23T13:12"
+   "last_new": "2026-11-25T13:12"
   },
   "@hackathonsrus": {
    "errors_in_row": 0,
-   "last_new": "2026-11-24T13:12"
+   "last_new": "2026-11-25T13:12"
   },
   "@startupchoyxona": {
    "errors_in_row": 0,
-   "last_new": "2026-11-24T04:12"
+   "last_new": "2026-11-25T13:12"
   },
   "Unstop": {
    "errors_in_row": 0,
@@ -88,7 +89,7 @@
   },
   "@uppertunity": {
    "errors_in_row": 0,
-   "last_new": "2026-11-20T12:14"
+   "last_new": "2026-11-25T13:12"
   },
   "@nuacmsc": {
    "errors_in_row": 0
@@ -103,7 +104,7 @@
   },
   "@techgardenalmaty": {
    "errors_in_row": 0,
-   "last_new": "2026-11-24T13:12"
+   "last_new": "2026-11-25T13:12"
   },
   "@nu_caseclub": {
    "errors_in_row": 0
@@ -116,7 +117,7 @@
   },
   "@mentoria_organization": {
    "errors_in_row": 0,
-   "last_new": "2026-11-25T04:10"
+   "last_new": "2026-11-25T13:12"
   },
   "@superteamkz": {
    "errors_in_row": 0,
@@ -124,7 +125,7 @@
   },
   "@codenrock": {
    "errors_in_row": 0,
-   "last_new": "2026-11-20T12:14"
+   "last_new": "2026-11-25T13:12"
   },
   "@astana_hub": {
    "errors_in_row": 0,
@@ -134,17 +135,16 @@
    "errors_in_row": 0
   },
   "ETHGlobal": {
-   "errors_in_row": 1,
-   "last_new": "2026-11-21T04:10",
-   "last_error": "HTTP Error 403: Forbidden"
+   "errors_in_row": 0,
+   "last_new": "2026-11-21T04:10"
   },
   "@dsmlkz_news": {
    "errors_in_row": 0,
-   "last_new": "2026-11-25T04:10"
+   "last_new": "2026-11-25T13:12"
   },
   "@techozimiz": {
    "errors_in_row": 0,
-   "last_new": "2026-11-24T04:12"
+   "last_new": "2026-11-25T13:12"
   },
   "@startup_course_com": {
    "errors_in_row": 0,
@@ -159,6 +159,6 @@
    "last_new": "2026-11-24T13:12"
   }
  },
- "saved_at": "2026-11-25T04:11:01.189298+00:00",
+ "saved_at": "2026-11-25T13:12:55.031757+00:00",
  "runner": "cloud"
 }
