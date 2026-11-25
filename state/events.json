@@ -226,7 +226,7 @@
    "The Tech: IT-афиша"
   ],
   "first_seen": "2026-11-19T12:23:22.005955+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-25T04:11:01.189235+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -1304,7 +1304,7 @@
    "@hackathonsrus"
   ],
   "first_seen": "2026-11-19T12:23:22.132719+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-25T04:11:01.189235+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -1931,7 +1931,8 @@
    "Astana Hub (календарь)",
    "@qazstartup",
    "The Tech: IT-афиша",
-   "@techozimiz"
+   "@techozimiz",
+   "@thetechkz"
   ],
   "first_seen": "2026-11-19T12:23:22.300842+00:00",
   "sent_at": "2026-11-20T12:15:01.060327+00:00",
@@ -2588,7 +2589,7 @@
    "Devpost"
   ],
   "first_seen": "2026-11-19T12:23:22.507627+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-25T04:11:01.189235+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -2642,7 +2643,7 @@
    "Devpost"
   ],
   "first_seen": "2026-11-19T12:23:22.515697+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-25T04:11:01.189235+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -3438,7 +3439,8 @@
   "id": "827064176c",
   "sources": [
    "@astana_hub",
-   "@hackathon_kz"
+   "@hackathon_kz",
+   "@qazstartup"
   ],
   "first_seen": "2026-11-20T12:14:51.197163+00:00",
   "sent_at": "2026-11-23T04:10:27.981964+00:00",
@@ -4240,10 +4242,11 @@
   "sources": [
    "@astana_hub",
    "The Tech: IT-афиша",
-   "Astana Hub (календарь)"
+   "Astana Hub (календарь)",
+   "@thetechkz"
   ],
   "first_seen": "2026-11-21T04:10:39.052447+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-25T04:11:01.189235+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -5251,7 +5254,7 @@
   ],
   "first_seen": "2026-11-22T04:10:51.602722+00:00",
   "sent_at": "2026-11-22T04:10:55.136253+00:00",
-  "reminded_at": null,
+  "reminded_at": "2026-11-25T04:11:01.189235+00:00",
   "feedback": null,
   "tier": "top"
  },
@@ -5828,7 +5831,7 @@
    "@qazstartup"
   ],
   "first_seen": "2026-11-23T04:10:20.223190+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-25T04:11:01.189235+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -6128,7 +6131,7 @@
    "Astana Hub (календарь)"
   ],
   "first_seen": "2026-11-23T13:12:58.424752+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-25T04:11:01.189235+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -6463,9 +6466,10 @@
    "@hackathon_kz"
   ],
   "first_seen": "2026-11-24T13:12:26.242309+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-25T04:11:01.189235+00:00",
   "reminded_at": null,
-  "feedback": null
+  "feedback": null,
+  "tier": "top"
  },
  {
   "title": "Radboud Scholarship Programme",
@@ -6691,9 +6695,10 @@
    "Astana Hub (календарь)"
   ],
   "first_seen": "2026-11-24T13:12:26.344449+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-25T04:11:01.189235+00:00",
   "reminded_at": null,
-  "feedback": null
+  "feedback": null,
+  "tier": "top"
  },
  {
   "title": "UNICEF UK Sport Advisory Board Member 2026",
@@ -6730,7 +6735,7 @@
   "online": false,
   "start_date": "2027-10-14",
   "end_date": "2027-10-29",
-  "deadline": "",
+  "deadline": "2027-02-28",
   "who": "Лидеры из разных стран, профессиональных сфер и сообществ",
   "prize": "",
   "flags": [
@@ -6744,7 +6749,8 @@
   "source": "Opportunities for Youth",
   "id": "296747e824",
   "sources": [
-   "Opportunities for Youth"
+   "Opportunities for Youth",
+   "Opportunity Desk"
   ],
   "first_seen": "2026-11-24T13:12:26.366768+00:00",
   "sent_at": null,
@@ -6862,6 +6868,454 @@
    "Opportunities for Youth"
   ],
   "first_seen": "2026-11-24T13:12:26.416660+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Хакатон Devpost: Build Day 2",
+  "kind": "hackathon",
+  "summary": "Хакатон по машинному обучению/ИИ и голосовым навыкам с призовым фондом £1,000, открытый для новичков.",
+  "city": "Durham",
+  "online": false,
+  "start_date": "2026-11-24",
+  "end_date": "2026-11-28",
+  "deadline": "2026-11-28",
+  "who": "Все желающие, особенно новички, интересующиеся ML/AI, голосовыми навыками",
+  "prize": "£ 1,000",
+  "flags": [],
+  "is_freebie": false,
+  "score": 4,
+  "why": "Очное мероприятие за рубежом, без оплаты дороги. Тематика подходит, но логистика делает участие маловероятным.",
+  "link": "",
+  "post_url": "https://build-day.devpost.com/",
+  "source": "Devpost",
+  "id": "4f2b78e903",
+  "sources": [
+   "Devpost"
+  ],
+  "first_seen": "2026-11-25T04:10:51.890272+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "UNDP Online Volunteer Opportunity 2026: 100 Digital Advocates Wanted to Fight Gender-Based Violence in Cameroon",
+  "kind": "volunteer",
+  "summary": "Онлайн-волонтёрство для поддержки цифровой кампании по борьбе с гендерным насилием в Камеруне, требующее 1-5 часов в неделю.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "",
+  "who": "Все желающие с интересом к социальным сетям, цифровым коммуникациям, правам человека, гендерному равенству",
+  "prize": "",
+  "flags": [],
+  "is_freebie": false,
+  "score": 5,
+  "why": "Онлайн-волонтёрство, но направлено на Камерун, что может быть менее интересно. Опыт полезен, но не соответствует основным приоритетам.",
+  "link": "https://app.unv.org/opportunities/1784888021274152",
+  "post_url": "https://opportunitiesforyouth.org/2026/11/25/undp-online-volunteer-opportunity-2026-100-digital-advocates-wanted-to-fight-gender-based-violence-in-cameroon-apply-for-this-12-week-international-volunteer-assignment/",
+  "source": "Opportunities for Youth",
+  "id": "3c31f9a5d3",
+  "sources": [
+   "Opportunities for Youth"
+  ],
+  "first_seen": "2026-11-25T04:10:51.913081+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Nestlé MILE 2027: Apply for Nestlé’s 3-Day Leadership Immersion and Learning Experience in the Philippines",
+  "kind": "internship",
+  "summary": "Трехдневный интенсивный буткемп по развитию лидерских качеств от Nestlé на Филиппинах для студентов последних курсов.",
+  "city": "Makati",
+  "online": false,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "",
+  "who": "Студенты последних курсов и выпускники, стремящиеся стать будущими бизнес-лидерами",
+  "prize": "Возможность дальнейшего трудоустройства",
+  "flags": [
+   "country_only"
+  ],
+  "is_freebie": false,
+  "score": 0,
+  "why": "Только для студентов на Филиппинах, не подходит по гражданству и местоположению.",
+  "link": "https://jobdetails.nestle.com/job/Makati-Nestl%C3%A9-MILE-1224/1453709933/",
+  "post_url": "https://opportunitiesforyouth.org/2026/11/25/nestle-mile-2027-apply-for-nestles-3-day-leadership-immersion-and-learning-experience-in-the-philippines-unlock-career-opportunities-with-a-global-company/",
+  "source": "Opportunities for Youth",
+  "id": "26936156a7",
+  "sources": [
+   "Opportunities for Youth"
+  ],
+  "first_seen": "2026-11-25T04:10:51.936390+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Gilman-McCain Scholarship 2027",
+  "kind": "other",
+  "summary": "Стипендия в размере $5,000 для обучения или стажировки за границей для семей военнослужащих США.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "",
+  "who": "Студенты бакалавриата, дети или супруги действующих военнослужащих США",
+  "prize": "$5,000",
+  "flags": [
+   "country_only"
+  ],
+  "is_freebie": false,
+  "score": 0,
+  "why": "Только для граждан США и их семей, не подходит.",
+  "link": "https://apply.gilmanapplication.org/apply/?sr=91ace6ed-44e0-44a7-8577-9730ca6d931b&aw=0",
+  "post_url": "https://opportunitiesforyouth.org/2026/11/25/gilman-mccain-scholarship-2027-receive-a-5000-award-to-study-or-intern-abroad-applications-now-open-for-u-s-military-families/",
+  "source": "Opportunities for Youth",
+  "id": "12214d7f5c",
+  "sources": [
+   "Opportunities for Youth"
+  ],
+  "first_seen": "2026-11-25T04:10:51.946791+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "UNDP Support Analyst Job 2026: Identity and Access Management Position",
+  "kind": "other",
+  "summary": "Вакансия аналитика поддержки в UNDP в Бонне, Германия, для специалистов по управлению идентификацией и доступом.",
+  "city": "Bonn",
+  "online": false,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "",
+  "who": "Технологические специалисты с опытом в управлении корпоративными приложениями, ИТ, кибербезопасности, IAM",
+  "prize": "",
+  "flags": [],
+  "is_freebie": false,
+  "score": 0,
+  "why": "Это вакансия, а не стажировка или конкурс. Не соответствует приоритетам пользователя.",
+  "link": "https://estm.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/38115/apply/email",
+  "post_url": "https://opportunitiesforyouth.org/2026/11/25/undp-support-analyst-job-2026-apply-for-the-identity-and-access-management-position-in-germany/",
+  "source": "Opportunities for Youth",
+  "id": "9f8a072831",
+  "sources": [
+   "Opportunities for Youth"
+  ],
+  "first_seen": "2026-11-25T04:10:51.964524+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "SVRI Early Career Research Fellowships 2027",
+  "kind": "other",
+  "summary": "Полностью финансируемые докторские и постдокторские стипендии до $20,500 для исследователей из стран с низким и средним уровнем дохода, изучающих насилие в отношении женщин и детей.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "",
+  "who": "Докторанты и постдокторанты из стран с низким и средним уровнем дохода",
+  "prize": "До $20,500",
+  "flags": [
+   "country_only"
+  ],
+  "is_freebie": false,
+  "score": 0,
+  "why": "Предложение для докторантов и постдокторантов, не соответствует профилю пользователя (20 лет, без стартапа).",
+  "link": "https://www.svri.org/svri-early-career-research-fellowships/",
+  "post_url": "https://opportunitiesforyouth.org/2026/11/25/svri-early-career-research-fellowships-2027-fully-funded-doctoral-and-postdoctoral-research-opportunities-worth-up-to-20500-for-researchers-in-low-and-middle-income-countries/",
+  "source": "Opportunities for Youth",
+  "id": "165e2d119d",
+  "sources": [
+   "Opportunities for Youth"
+  ],
+  "first_seen": "2026-11-25T04:10:51.977722+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Giving Women Project Circle 2027",
+  "kind": "social",
+  "summary": "Программа поддержки низовых организаций, работающих с женщинами и девочками, предоставляющая экспертное руководство и помощь в наращивании потенциала.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "",
+  "who": "Низовая организация, работающая с женщинами и девочками",
+  "prize": "Экспертное руководство и поддержка",
+  "flags": [
+   "needs_project"
+  ],
+  "is_freebie": false,
+  "score": 0,
+  "why": "Предложение для организаций, а не для индивидуального участия. Не подходит пользователю.",
+  "link": "https://forms.monday.com/forms/12bd21a2ac16a98231d1808ba0e3ad58?r=use1",
+  "post_url": "https://opportunitiesforyouth.org/2026/11/24/giving-women-project-circle-2027-applications-open-for-grassroots-organisations-supporting-women-and-girls-receive-free-expert-guidance-and-capacity-building-support/",
+  "source": "Opportunities for Youth",
+  "id": "cf20937869",
+  "sources": [
+   "Opportunities for Youth"
+  ],
+  "first_seen": "2026-11-25T04:10:51.988337+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Central Bank of Kenya Internship Program 2026",
+  "kind": "internship",
+  "summary": "Годовая программа стажировки в Центральном банке Кении для молодых выпускников, желающих получить опыт в банковском и финансовом секторе.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "2026-12-10",
+  "who": "Молодые кенийские выпускники",
+  "prize": "",
+  "flags": [
+   "country_only"
+  ],
+  "is_freebie": false,
+  "score": 0,
+  "why": "Только для граждан Кении, не подходит.",
+  "link": "https://careers.jkuates.co.ke/",
+  "post_url": "https://opportunitiesforyouth.org/2026/11/24/central-bank-of-kenya-internship-program-2026-apply-for-a-one-year-banking-and-financial-sector-internship/",
+  "source": "Opportunities for Youth",
+  "id": "122aa814c0",
+  "sources": [
+   "Opportunities for Youth"
+  ],
+  "first_seen": "2026-11-25T04:10:52.001812+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "University of Ghana–University of Manchester Fully Funded Dual PhD Scholarships 2027",
+  "kind": "other",
+  "summary": "Полностью финансируемые двойные стипендии PhD для исследований по развитию Африки, зеленой энергетике и цифровой трансформации.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "2027-09-01",
+  "end_date": "",
+  "deadline": "",
+  "who": "Аспиранты, заинтересованные в исследованиях по развитию Африки",
+  "prize": "Полное финансирование PhD",
+  "flags": [],
+  "is_freebie": false,
+  "score": 0,
+  "why": "Предложение для PhD, не соответствует профилю пользователя.",
+  "link": "https://media.licdn.com/dms/document/media/v2/D4D1FAQFk_99cOtz5rg/feedshare-document-sanitized-pdf/B4DaHpsnKHHIA8-/0/1794922149823?e=1795784400&v=beta&t=tBZ5FS78rdnLgGM2DnlvCzn_8zvdGGFaK4Clv3VNMjA",
+  "post_url": "https://opportunitiesforyouth.org/2026/11/24/university-of-ghana-university-of-manchester-fully-funded-dual-phd-scholarships-2027-in-development-studies-9-scholarships-for-research-on-africas-green-energy-and-digital-transition/",
+  "source": "Opportunities for Youth",
+  "id": "a352409b2c",
+  "sources": [
+   "Opportunities for Youth"
+  ],
+  "first_seen": "2026-11-25T04:10:52.011421+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "HSEMA Spring 2027 Internship Program",
+  "kind": "internship",
+  "summary": "Оплачиваемая очная стажировка в Вашингтоне, округ Колумбия, по управлению чрезвычайными ситуациями и национальной безопасности.",
+  "city": "Washington, DC",
+  "online": false,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "2026-12-16",
+  "who": "Студенты бакалавриата или магистратуры, интересующиеся управлением чрезвычайными ситуациями, национальной безопасностью, связями с общественностью или анализом разведданных",
+  "prize": "",
+  "flags": [
+   "paid"
+  ],
+  "is_freebie": false,
+  "score": 0,
+  "why": "Очная стажировка в США, без оплаты дороги, не подходит по гражданству.",
+  "link": "https://survey123.arcgis.com/share/e18a525614d04140b175ac0cb0305a20",
+  "post_url": "https://opportunitiesforyouth.org/2026/11/24/hsema-spring-2027-internship-program-paid-emergency-management-and-homeland-security-internships-in-washington-dc/",
+  "source": "Opportunities for Youth",
+  "id": "7616b8d487",
+  "sources": [
+   "Opportunities for Youth"
+  ],
+  "first_seen": "2026-11-25T04:10:52.022999+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Better Futures Fellowship 2027",
+  "kind": "project",
+  "summary": "9-недельная программа для тех, кто хочет сфокусироваться на работе по улучшению будущего человечества.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "2026-12-06",
+  "who": "Все желающие",
+  "prize": "",
+  "flags": [],
+  "is_freebie": false,
+  "score": 7,
+  "why": "Онлайн-программа, которая может дать ценный опыт и понимание в области \"better-futures work\", что соответствует желанию пользователя попробовать себя в новых сферах.",
+  "link": "",
+  "post_url": "https://opportunitydesk.org/2026/11/24/better-futures-fellowship-2027/",
+  "source": "Opportunity Desk",
+  "id": "46e8986d22",
+  "sources": [
+   "Opportunity Desk"
+  ],
+  "first_seen": "2026-11-25T04:10:52.044174+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Earth Observation (EO) Excellence Award 2027",
+  "kind": "contest",
+  "summary": "Награда до 15 000 евро для молодых специалистов, использующих спутниковые данные наблюдения Земли для развития науки и приложений.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "2027-01-22",
+  "who": "Молодые специалисты, использующие данные наблюдения Земли",
+  "prize": "До 15 000 €",
+  "flags": [],
+  "is_freebie": false,
+  "score": 6,
+  "why": "Международный онлайн-конкурс с денежным призом, подходит для программиста, но требует специфических знаний в области Earth Observation.",
+  "link": "",
+  "post_url": "https://opportunitydesk.org/2026/11/24/earth-observation-excellence-award-2027/",
+  "source": "Opportunity Desk",
+  "id": "6d1fc0b1a7",
+  "sources": [
+   "Opportunity Desk"
+  ],
+  "first_seen": "2026-11-25T04:10:52.057583+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "SparkUp Initiative Fellowship 2027",
+  "kind": "project",
+  "summary": "Программа для женских организаций, направленная на развитие навыков фандрайзинга.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "2026-12-20",
+  "who": "Женские организации",
+  "prize": "",
+  "flags": [
+   "women_only"
+  ],
+  "is_freebie": false,
+  "score": 0,
+  "why": "Программа предназначена только для женских организаций, что не соответствует профилю пользователя.",
+  "link": "",
+  "post_url": "https://opportunitydesk.org/2026/11/24/sparkup-initiative-fellowship-2027/",
+  "source": "Opportunity Desk",
+  "id": "a71c778efc",
+  "sources": [
+   "Opportunity Desk"
+  ],
+  "first_seen": "2026-11-25T04:10:52.068362+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "ANSO-CAS-TWAS/UNESCO PhD Scholarship 2026-2027",
+  "kind": "other",
+  "summary": "Стипендия для получения степени магистра или доктора наук в Китае.",
+  "city": "Китай",
+  "online": false,
+  "start_date": "2026-09-01",
+  "end_date": "",
+  "deadline": "2027-02-28",
+  "who": "Молодые ученые",
+  "prize": "Финансирование обучения",
+  "flags": [],
+  "is_freebie": false,
+  "score": 0,
+  "why": "Это стипендия для получения степени PhD, что не соответствует текущим целям пользователя (бизнес, дизайн, продажи, презентации, стажировки, проекты).",
+  "link": "",
+  "post_url": "https://opportunitydesk.org/2026/11/24/anso-cas-twas-unesco-phd-scholarship-2026-2027/",
+  "source": "Opportunity Desk",
+  "id": "6b3c8fc85f",
+  "sources": [
+   "Opportunity Desk"
+  ],
+  "first_seen": "2026-11-25T04:10:52.084771+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Robertson Foundation Global Governance Leadership Lab 2027",
+  "kind": "project",
+  "summary": "Полностью финансируемая 16-недельная виртуальная программа для укрепления лидерских навыков и изучения проблем управления.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "2027-01-08",
+  "who": "Robertson Fellows, выпускники и специалисты по государственной службе",
+  "prize": "Полное финансирование",
+  "flags": [],
+  "is_freebie": false,
+  "score": 7,
+  "why": "Полностью финансируемая онлайн-программа, которая поможет развить лидерские навыки и получить опыт в области управления, что соответствует интересам пользователя в бизнесе и презентациях.",
+  "link": "",
+  "post_url": "https://opportunitydesk.org/2026/11/24/robertson-foundation-global-governance-leadership-lab-2027/",
+  "source": "Opportunity Desk",
+  "id": "7250815d60",
+  "sources": [
+   "Opportunity Desk"
+  ],
+  "first_seen": "2026-11-25T04:10:52.101204+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Homeland Security and Emergency Management Agency (HSEMA) Internship Program 2027",
+  "kind": "internship",
+  "summary": "Программа стажировки в Агентстве по внутренней безопасности и управлению чрезвычайными ситуациями, предоставляющая реальный опыт в различных областях.",
+  "city": "США",
+  "online": false,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "2026-12-16",
+  "who": "Студенты бакалавриата и магистратуры",
+  "prize": "",
+  "flags": [
+   "country_only"
+  ],
+  "is_freebie": false,
+  "score": 0,
+  "why": "Стажировка в США, скорее всего, требует гражданства или вида на жительство США, что не подходит пользователю.",
+  "link": "",
+  "post_url": "https://opportunitydesk.org/2026/11/24/hsema-internship-program-2027/",
+  "source": "Opportunity Desk",
+  "id": "9e71f4444b",
+  "sources": [
+   "Opportunity Desk"
+  ],
+  "first_seen": "2026-11-25T04:10:52.121024+00:00",
   "sent_at": null,
   "reminded_at": null,
   "feedback": null
