@@ -1714,7 +1714,7 @@
    "Astana Hub (календарь)"
   ],
   "first_seen": "2026-11-19T12:23:22.238474+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-26T04:11:08.869872+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -1933,7 +1933,8 @@
    "The Tech: IT-афиша",
    "@techozimiz",
    "@thetechkz",
-   "@uppertunity"
+   "@uppertunity",
+   "@startup_course_com"
   ],
   "first_seen": "2026-11-19T12:23:22.300842+00:00",
   "sent_at": "2026-11-20T12:15:01.060327+00:00",
@@ -4897,7 +4898,7 @@
    "Unstop"
   ],
   "first_seen": "2026-11-21T13:13:14.972980+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-26T04:11:08.869872+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -4951,7 +4952,7 @@
    "Unstop"
   ],
   "first_seen": "2026-11-21T13:13:14.984021+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-26T04:11:08.869872+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -4978,7 +4979,7 @@
    "Unstop"
   ],
   "first_seen": "2026-11-21T13:13:14.987461+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-26T04:11:08.869872+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -5663,9 +5664,10 @@
    "@techozimiz"
   ],
   "first_seen": "2026-11-23T04:10:20.189991+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-26T04:11:08.869872+00:00",
   "reminded_at": null,
-  "feedback": null
+  "feedback": null,
+  "tier": "top"
  },
  {
   "title": "V региональный ITU Hackathon 2026",
@@ -5789,7 +5791,7 @@
   "city": "Алматы",
   "online": true,
   "start_date": "2026-11-28",
-  "end_date": "",
+  "end_date": "2026-11-28",
   "deadline": "2026-11-27",
   "who": "IT-специалисты",
   "prize": "Возможность трудоустройства",
@@ -5802,7 +5804,8 @@
   "source": "@startup_course_com",
   "id": "50fb53c104",
   "sources": [
-   "@startup_course_com"
+   "@startup_course_com",
+   "@astana_hub"
   ],
   "first_seen": "2026-11-23T04:10:20.218271+00:00",
   "sent_at": "2026-11-23T04:10:27.981964+00:00",
@@ -5944,7 +5947,7 @@
   ],
   "first_seen": "2026-11-23T13:12:58.353493+00:00",
   "sent_at": "2026-11-23T13:13:03.029942+00:00",
-  "reminded_at": null,
+  "reminded_at": "2026-11-26T04:11:08.869872+00:00",
   "feedback": null,
   "tier": "top"
  },
@@ -7402,7 +7405,7 @@
    "@grants_scholarships"
   ],
   "first_seen": "2026-11-25T13:12:49.096931+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-26T04:11:08.869872+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -7429,7 +7432,7 @@
    "@huntmeinternship"
   ],
   "first_seen": "2026-11-25T13:12:49.119638+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-26T04:11:08.869872+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -7456,7 +7459,7 @@
    "@huntmeinternship"
   ],
   "first_seen": "2026-11-25T13:12:49.146995+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-26T04:11:08.869872+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -7510,9 +7513,10 @@
    "@huntmeinternship"
   ],
   "first_seen": "2026-11-25T13:12:49.201821+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-26T04:11:08.869872+00:00",
   "reminded_at": null,
-  "feedback": null
+  "feedback": null,
+  "tier": "top"
  },
  {
   "title": "Стажер в Отдел цифровых продуктов в Beeline",
@@ -7624,7 +7628,7 @@
    "@mentoria_organization"
   ],
   "first_seen": "2026-11-25T13:12:49.292565+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-26T04:11:08.869872+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -7877,6 +7881,144 @@
    "Astana Hub (календарь)"
   ],
   "first_seen": "2026-11-25T13:12:49.450420+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Fanshawe Hacks",
+  "kind": "hackathon",
+  "summary": "Онлайн-хакатон по машинному обучению и искусственному интеллекту для практики разработки.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "2026-11-25",
+  "end_date": "2026-12-03",
+  "deadline": "2026-12-03",
+  "who": "все желающие, разработчики",
+  "prize": "",
+  "flags": [],
+  "is_freebie": false,
+  "score": 6,
+  "why": "Международный онлайн-хакатон по AI/ML, подходит для опыта и портфолио, но призовой фонд отсутствует.",
+  "link": "",
+  "post_url": "https://fanshawe-hacks.devpost.com/",
+  "source": "Devpost",
+  "id": "bd8be4a91a",
+  "sources": [
+   "Devpost"
+  ],
+  "first_seen": "2026-11-26T04:11:04.311033+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "WHO Academy Offers 400+ Free Online Courses for Health Workers Worldwide",
+  "kind": "freebie",
+  "summary": "Платформа WHO Academy предлагает более 400 бесплатных онлайн-курсов по здравоохранению на разных языках для медицинских работников.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "",
+  "who": "Медицинские работники",
+  "prize": "Бесплатные курсы и сертификаты",
+  "flags": [],
+  "is_freebie": true,
+  "score": 5,
+  "why": "Это бесплатные курсы, но они ориентированы на медицинских работников, что не соответствует основным интересам пользователя.",
+  "link": "https://whoacademy.org/",
+  "post_url": "https://opportunitiesforyouth.org/2026/11/25/who-academy-offers-400-free-online-courses-for-health-workers-worldwide-in-more-than-20-languages/",
+  "source": "Opportunities for Youth",
+  "id": "e66409a6d7",
+  "sources": [
+   "Opportunities for Youth"
+  ],
+  "first_seen": "2026-11-26T04:11:04.369006+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Microsoft Datacenter Academy 2026",
+  "kind": "project",
+  "summary": "Программа Microsoft Datacenter Academy предлагает бесплатное IT-обучение, практический опыт работы с дата-центрами, менторство, стажировки и стипендии для построения карьеры в IT.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "",
+  "who": "Студенты и начинающие IT-специалисты",
+  "prize": "Бесплатное обучение, менторство, стажировки, стипендии",
+  "flags": [],
+  "is_freebie": false,
+  "score": 9,
+  "why": "Отличная возможность для получения опыта и развития в IT, с возможностью стажировки и стипендии, что соответствует интересам пользователя в деньгах и опыте.",
+  "link": "https://forms.cloud.microsoft/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR1d6wCZXMv1Htb-XI2Og10ZUQkJEUzgxRTJJU1Q2RVNTVVhYVlhFWjJJUi4u&route=shorturl",
+  "post_url": "https://opportunitiesforyouth.org/2026/11/25/microsoft-datacenter-academy-2026-free-it-training-hands-on-datacenter-experience-mentorship-internships-scholarships-and-career-opportunities/",
+  "source": "Opportunities for Youth",
+  "id": "7fde676a54",
+  "sources": [
+   "Opportunities for Youth"
+  ],
+  "first_seen": "2026-11-26T04:11:04.392638+00:00",
+  "sent_at": "2026-11-26T04:11:08.869872+00:00",
+  "reminded_at": null,
+  "feedback": null,
+  "tier": "top"
+ },
+ {
+  "title": "ENGYRO Research Proposal Competition 2027",
+  "kind": "contest",
+  "summary": "Международный конкурс исследовательских предложений для школьников, посвященный инженерии и технологиям, с широким спектром областей.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "2026-12-07",
+  "who": "Школьники",
+  "prize": "",
+  "flags": [
+   "school_only"
+  ],
+  "is_freebie": false,
+  "score": 0,
+  "why": "Конкурс предназначен только для школьников, пользователь не подходит по возрасту.",
+  "link": "",
+  "post_url": "https://opportunitydesk.org/2026/11/25/engyro-research-proposal-competition-2027/",
+  "source": "Opportunity Desk",
+  "id": "e4bca03fa9",
+  "sources": [
+   "Opportunity Desk"
+  ],
+  "first_seen": "2026-11-26T04:11:04.418178+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Что нужно знать перед внедрением AI-процессов в разработку: базовый минимум",
+  "kind": "meetup",
+  "summary": "Вебинар для разработчиков, тимлидов и руководителей разработки о подготовке к внедрению AI в процессы разработки.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "2026-12-04",
+  "end_date": "2026-12-04",
+  "deadline": "",
+  "who": "Разработчики, тимлиды, руководители разработки",
+  "prize": "",
+  "flags": [],
+  "is_freebie": false,
+  "score": 7,
+  "why": "Полезный вебинар для развития технических навыков, связанных с AI, что соответствует интересам пользователя в программировании и IT.",
+  "link": "",
+  "post_url": "https://astanahub.com/ru/event/chto-nuzhno-znat-pered-vnedreniem-ai-protsessov-v-razrabotku-bazovyi-minimum",
+  "source": "Astana Hub (календарь)",
+  "id": "2d8431b22f",
+  "sources": [
+   "Astana Hub (календарь)"
+  ],
+  "first_seen": "2026-11-26T04:11:04.431831+00:00",
   "sent_at": null,
   "reminded_at": null,
   "feedback": null
