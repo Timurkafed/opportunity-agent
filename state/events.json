@@ -2699,7 +2699,7 @@
    "Devpost"
   ],
   "first_seen": "2026-11-19T12:23:22.523399+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-27T04:11:21.293045+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -2996,7 +2996,7 @@
    "Unstop"
   ],
   "first_seen": "2026-11-19T12:23:22.637303+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-27T04:11:21.293045+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -3050,7 +3050,7 @@
    "Unstop"
   ],
   "first_seen": "2026-11-19T12:23:22.660263+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-27T04:11:21.293045+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -5226,7 +5226,8 @@
   "source": "@mentoria_organization",
   "id": "5215cf75f7",
   "sources": [
-   "@mentoria_organization"
+   "@mentoria_organization",
+   "@grants_scholarships"
   ],
   "first_seen": "2026-11-22T04:10:51.580186+00:00",
   "sent_at": null,
@@ -6224,7 +6225,7 @@
   ],
   "first_seen": "2026-11-24T04:12:16.454381+00:00",
   "sent_at": "2026-11-24T04:12:20.759941+00:00",
-  "reminded_at": null,
+  "reminded_at": "2026-11-27T04:11:21.293045+00:00",
   "feedback": null,
   "tier": "top"
  },
@@ -7488,7 +7489,7 @@
    "@huntmeinternship"
   ],
   "first_seen": "2026-11-25T13:12:49.170630+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-27T04:11:21.293045+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -7543,7 +7544,7 @@
    "@huntmeinternship"
   ],
   "first_seen": "2026-11-25T13:12:49.228403+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-27T04:11:21.293045+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -8107,9 +8108,10 @@
    "@mentoria_organization"
   ],
   "first_seen": "2026-11-26T13:09:39.284340+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-27T04:11:21.293045+00:00",
   "reminded_at": null,
-  "feedback": null
+  "feedback": null,
+  "tier": "top"
  },
  {
   "title": "COSMO HACKS 2026",
@@ -8136,9 +8138,10 @@
    "@mentoria_organization"
   ],
   "first_seen": "2026-11-26T13:09:39.289289+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-27T04:11:21.293045+00:00",
   "reminded_at": null,
-  "feedback": null
+  "feedback": null,
+  "tier": "top"
  },
  {
   "title": "IT Winter Fest 2026",
@@ -8246,7 +8249,7 @@
    "Astana Hub (календарь)"
   ],
   "first_seen": "2026-11-26T13:09:39.341380+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-27T04:11:21.293045+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -8273,9 +8276,10 @@
    "Astana Hub (календарь)"
   ],
   "first_seen": "2026-11-26T13:09:39.351068+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-27T04:11:21.293045+00:00",
   "reminded_at": null,
-  "feedback": null
+  "feedback": null,
+  "tier": "top"
  },
  {
   "title": "Тьюринг-арена",
@@ -8300,6 +8304,396 @@
    "Astana Hub (календарь)"
   ],
   "first_seen": "2026-11-26T13:09:39.358215+00:00",
+  "sent_at": "2026-11-27T04:11:21.293045+00:00",
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "ИИшница X EzguSavdo: «Мастер-класс по автоматизации продаж в Instagram и Telegram с помощью искусственного интеллекта»",
+  "kind": "meetup",
+  "summary": "Практический мастер-класс по внедрению искусственного интеллекта в процессы продаж и взаимодействия с клиентами, который будет интересен предпринимателям и всем, кто хочет автоматизировать бизнес-процессы.",
+  "city": "Ташкент",
+  "online": true,
+  "start_date": "2026-11-28",
+  "end_date": "",
+  "deadline": "",
+  "who": "Предприниматели, владельцы интернет-магазинов, руководители отделов продаж",
+  "prize": "",
+  "flags": [
+   "sales_hr",
+   "paid"
+  ],
+  "is_freebie": false,
+  "score": 6,
+  "why": "Мастер-класс по автоматизации продаж с ИИ, что соответствует интересу пользователя к бизнесу и IT. Доступен онлайн, но платный и проходит в Ташкенте, что снижает приоритет.",
+  "link": "https://t.me/iishnicabot",
+  "post_url": "https://t.me/startupchoyxona/3979",
+  "source": "@startupchoyxona",
+  "id": "cd68ddb4b1",
+  "sources": [
+   "@startupchoyxona"
+  ],
+  "first_seen": "2026-11-27T04:11:15.771135+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "National Hackathon 2026: AWS Student Builder Group COMSATS Sahiwal × ILC×Devsinc",
+  "kind": "hackathon",
+  "summary": "Онлайн-хакатон по машинному обучению/ИИ и другим темам, где можно получить опыт и поработать над проектом.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "2026-11-26",
+  "end_date": "2026-11-30",
+  "deadline": "2026-11-30",
+  "who": "Все желающие",
+  "prize": "0",
+  "flags": [],
+  "is_freebie": false,
+  "score": 7,
+  "why": "Онлайн-хакатон, подходит для получения опыта в программировании и бизнесе, но без денежного приза.",
+  "link": "",
+  "post_url": "https://aws-sbg-cui-sahiwal-hack-2026.devpost.com/",
+  "source": "Devpost",
+  "id": "39434a5742",
+  "sources": [
+   "Devpost"
+  ],
+  "first_seen": "2026-11-27T04:11:15.793321+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "KickStart 2026",
+  "kind": "hackathon",
+  "summary": "Хакатон для начинающих и опытных участников с призовым фондом, который поможет получить опыт и, возможно, выиграть деньги.",
+  "city": "UBC Sauder",
+  "online": false,
+  "start_date": "2026-11-26",
+  "end_date": "2026-11-30",
+  "deadline": "2026-11-30",
+  "who": "Все желающие",
+  "prize": "CAD 1,500",
+  "flags": [],
+  "is_freebie": false,
+  "score": 4,
+  "why": "Есть денежный приз и подходит для получения опыта, но мероприятие очное и проходит за рубежом, без оплаты дороги.",
+  "link": "",
+  "post_url": "https://kickstart-2026.devpost.com/",
+  "source": "Devpost",
+  "id": "104683df68",
+  "sources": [
+   "Devpost"
+  ],
+  "first_seen": "2026-11-27T04:11:15.798661+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "ICRC Global Affairs Associate Traineeship",
+  "kind": "internship",
+  "summary": "Это 12-месячная стажировка в Женеве, Швейцария, для работы с Департаментом операций по анализу вооруженных групп и гуманитарной стратегии.",
+  "city": "Женева",
+  "online": false,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "2026-12-06",
+  "who": "Выпускники и исследователи на ранних этапах карьеры, интересующиеся гуманитарными вопросами.",
+  "prize": "",
+  "flags": [
+   "paid"
+  ],
+  "is_freebie": false,
+  "score": 5,
+  "why": "Это оплачиваемая стажировка за рубежом, но без оплаты дороги, что снижает приоритет. Тема гуманитарных вопросов может быть интересна, но не является основным фокусом пользователя.",
+  "link": "https://careers.icrc.org/job/Geneva-%28GVA%29-Global-Affairs-Associate-34135/1459453533/",
+  "post_url": "https://opportunitiesforyouth.org/2026/11/27/begin-your-humanitarian-career-in-geneva-inside-the-icrc-global-affairs-associate-traineeship/",
+  "source": "Opportunities for Youth",
+  "id": "b64e76661f",
+  "sources": [
+   "Opportunities for Youth"
+  ],
+  "first_seen": "2026-11-27T04:11:15.830682+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Amnesty International USA Board of Directors Mentorship Program 2027",
+  "kind": "project",
+  "summary": "Программа наставничества для молодых активистов в области прав человека, чтобы получить опыт лидерства в совете директоров Amnesty International USA.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "",
+  "who": "Молодые активисты в области прав человека, интересующиеся социальной справедливостью и лидерством.",
+  "prize": "",
+  "flags": [],
+  "is_freebie": false,
+  "score": 6,
+  "why": "Онлайн-формат и возможность получить опыт в международной организации делают это привлекательным, хотя тема прав человека не является основным интересом пользователя. Нет конкретного дедлайна, что снижает срочность.",
+  "link": "https://www.amnestyusa.org/board-of-directors-mentorship-program/#apply",
+  "post_url": "https://opportunitiesforyouth.org/2026/11/27/amnesty-international-usa-board-of-directors-mentorship-program-2027-an-exclusive-opportunity-for-young-human-rights-advocates-to-gain-boardroom-leadership-experience/",
+  "source": "Opportunities for Youth",
+  "id": "3ab2aef783",
+  "sources": [
+   "Opportunities for Youth"
+  ],
+  "first_seen": "2026-11-27T04:11:15.862284+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Pulitzer Center Gender Equality Grant 2026",
+  "kind": "contest",
+  "summary": "Грант для журналистов и новостных редакций на проведение расследований по вопросам гендерного равенства и прав женщин.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "",
+  "who": "Независимые журналисты, фрилансеры, медиа-профессионалы и новостные редакции.",
+  "prize": "Финансовая поддержка",
+  "flags": [
+   "needs_project"
+  ],
+  "is_freebie": false,
+  "score": 4,
+  "why": "Это грант для журналистов, что не соответствует профилю пользователя. Требуется готовый проект в области журналистики.",
+  "link": "https://pulitzercenter.org/grant-application",
+  "post_url": "https://opportunitiesforyouth.org/2026/11/27/pulitzer-center-gender-equality-grant-2026-funding-for-investigative-journalism-projects-promoting-womens-rights-and-gender-empowerment-worldwide/",
+  "source": "Opportunities for Youth",
+  "id": "1c8b076662",
+  "sources": [
+   "Opportunities for Youth"
+  ],
+  "first_seen": "2026-11-27T04:11:15.890024+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Global Fund for Children Northern Ireland Boys & Young Men Initiative 2027: Youth Steering Group",
+  "kind": "social",
+  "summary": "Присоединитесь к Молодежной руководящей группе, чтобы влиять на решения о финансировании и поддерживать организации, работающие с мальчиками и молодыми мужчинами в Северной Ирландии.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "2027-01-01",
+  "end_date": "2027-06-30",
+  "deadline": "",
+  "who": "Молодые люди 18-24 лет из Северной Ирландии.",
+  "prize": "£750",
+  "flags": [
+   "country_only",
+   "age_limit"
+  ],
+  "is_freebie": false,
+  "score": 0,
+  "why": "Ограничение по гражданству/месту жительства (только Северная Ирландия) делает это недоступным для пользователя.",
+  "link": "https://shorturl.at/sY541",
+  "post_url": "https://opportunitiesforyouth.org/2026/11/26/global-fund-for-children-northern-ireland-boys-young-men-initiative-2027-join-the-youth-steering-group-and-receive-750/",
+  "source": "Opportunities for Youth",
+  "id": "326c4882a5",
+  "sources": [
+   "Opportunities for Youth"
+  ],
+  "first_seen": "2026-11-27T04:11:15.911243+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "2027 Infectious Disease Sciences Summer Scholar Internship",
+  "kind": "internship",
+  "summary": "Восьминедельная летняя стажировка для студентов, интересующихся инфекционными заболеваниями, биомедицинскими исследованиями и клиническими науками.",
+  "city": "",
+  "online": false,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "",
+  "who": "Студенты, интересующиеся инфекционными заболеваниями, биомедицинскими исследованиями, клиническими науками и здравоохранением.",
+  "prize": "",
+  "flags": [],
+  "is_freebie": false,
+  "score": 4,
+  "why": "Тема стажировки (инфекционные заболевания) не соответствует интересам пользователя. Нет информации о местоположении и оплате дороги.",
+  "link": "https://bit.ly/4A2nSIe",
+  "post_url": "https://opportunitiesforyouth.org/2026/11/26/2027-infectious-disease-sciences-summer-scholar-internship-8-week-research-clinical-shadowing-and-mentorship-program/",
+  "source": "Opportunities for Youth",
+  "id": "08dcd4c807",
+  "sources": [
+   "Opportunities for Youth"
+  ],
+  "first_seen": "2026-11-27T04:11:15.945286+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Women’s World Banking Spring & Summer 2027 Leadership Training Programs Internships",
+  "kind": "internship",
+  "summary": "Удаленные стажировки для аспирантов, интересующихся финансовой инклюзией женщин, развитием лидерства и гендерным равенством.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "",
+  "who": "Аспиранты, интересующиеся финансовой инклюзией женщин, развитием лидерства, гендерным равенством и международным развитием.",
+  "prize": "",
+  "flags": [],
+  "is_freebie": false,
+  "score": 5,
+  "why": "Удаленный формат и возможность получить опыт в международной НПО привлекательны, но стажировка ориентирована на аспирантов и тему финансовой инклюзии женщин, что не является основным интересом пользователя.",
+  "link": "https://lnkd.in/ezCcd6gm",
+  "post_url": "https://opportunitiesforyouth.org/2026/11/26/womens-world-banking-spring-summer-2027-leadership-training-programs-internships-remote-graduate-student-opportunities/",
+  "source": "Opportunities for Youth",
+  "id": "69316c1ca0",
+  "sources": [
+   "Opportunities for Youth"
+  ],
+  "first_seen": "2026-11-27T04:11:15.987741+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "ECOSOC Youth Forum 2027 Virtual Briefing",
+  "kind": "forum",
+  "summary": "Виртуальный брифинг о Молодежном форуме Экономического и Социального Совета ООН (ЭКОСОС) 2027 года, объясняющий, как молодежные сети и заинтересованные стороны могут принять участие.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "2026-12-15",
+  "end_date": "2026-12-15",
+  "deadline": "",
+  "who": "Молодежные сети, молодежные организации, молодые люди и другие заинтересованные стороны.",
+  "prize": "",
+  "flags": [],
+  "is_freebie": false,
+  "score": 7,
+  "why": "Онлайн-формат и возможность узнать о крупном международном форуме ООН, а также потенциально внести свой вклад, делают это интересным для пользователя, который хочет попробовать себя в бизнесе и презентациях.",
+  "link": "https://docs.google.com/forms/d/e/1FAIpQLSdt9n8cK-a8BS47l2K1WwU8BwsGRpdObAufxQ-IQhyJL1Uq9A/viewform",
+  "post_url": "https://opportunitiesforyouth.org/2026/11/26/ecosoc-youth-forum-2027-virtual-briefing-how-youth-networks-and-stakeholders-can-get-involved-and-contribute/",
+  "source": "Opportunities for Youth",
+  "id": "5df4746f65",
+  "sources": [
+   "Opportunities for Youth"
+  ],
+  "first_seen": "2026-11-27T04:11:16.001078+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "PhD Positions in Economics in Sweden for 2027",
+  "kind": "other",
+  "summary": "До шести полностью финансируемых докторских позиций по экономике в Университете Гётеборга, Швеция, с началом обучения 1 сентября 2027 года.",
+  "city": "Гётеборг",
+  "online": false,
+  "start_date": "2027-09-01",
+  "end_date": "",
+  "deadline": "2027-02-01",
+  "who": "Квалифицированные кандидаты с соответствующим академическим образованием в области экономики или смежных дисциплин.",
+  "prize": "Полное финансирование",
+  "flags": [],
+  "is_freebie": false,
+  "score": 3,
+  "why": "Это академическая возможность (PhD) по экономике, что не соответствует интересам пользователя, который хочет попробовать бизнес и дизайн. Очно за рубежом без оплаты дороги.",
+  "link": "https://www.gu.se/en/work-at-the-university-of-gothenburg/how-to-apply-for-a-position",
+  "post_url": "https://opportunitiesforyouth.org/2026/11/26/university-of-gothenburg-opens-applications-for-up-to-six-fully-funded-phd-positions-in-economics-in-sweden-for-2027/",
+  "source": "Opportunities for Youth",
+  "id": "abf79f793f",
+  "sources": [
+   "Opportunities for Youth"
+  ],
+  "first_seen": "2026-11-27T04:11:16.015334+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "UNV Training Designers and Training Facilitators Roster 2027",
+  "kind": "other",
+  "summary": "Международная консультационная возможность для создания глобального пула опытных индивидуальных консультантов, которые могут внести свой вклад в разработку, проведение и оценку учебных программ для волонтеров ООН.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "2027-03-01",
+  "end_date": "",
+  "deadline": "",
+  "who": "Профессионалы, специализирующиеся на разработке тренингов, обучении взрослых, фасилитации, развитии потенциала, разработке учебных материалов и оценке обучения.",
+  "prize": "",
+  "flags": [],
+  "is_freebie": false,
+  "score": 6,
+  "why": "Онлайн-формат и возможность работать с ООН привлекательны. Пользователь хочет попробовать себя в презентациях и дизайне, что может быть связано с разработкой учебных программ.",
+  "link": "https://procurement-notices.undp.org/view_negotiation_dlink.cfm?nego_id=51385&utm_source=chatgpt.com",
+  "post_url": "https://opportunitiesforyouth.org/2026/11/26/unv-training-designers-and-training-facilitators-roster-2027-apply-for-a-three-year-united-nations-individual-consultancy-home-based-opportunity-open-worldwide/",
+  "source": "Opportunities for Youth",
+  "id": "ae0424f67f",
+  "sources": [
+   "Opportunities for Youth"
+  ],
+  "first_seen": "2026-11-27T04:11:16.028987+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "UN Global Youth Network for Human Rights",
+  "kind": "project",
+  "summary": "Присоединитесь к глобальной молодежной сети по правам человека и поделитесь своими взглядами на города прав человека.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "",
+  "who": "Молодые люди со всего мира.",
+  "prize": "",
+  "flags": [],
+  "is_freebie": false,
+  "score": 6,
+  "why": "Онлайн-формат и возможность участвовать в международной сети ООН привлекательны. Пользователь может получить опыт взаимодействия и презентации своих идей.",
+  "link": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=2zWeD09UYE-9zF6kFubccP_1g7sT-6tBqgRmZzatWPlUOFRUUTFEMUVDMjhJWU1HQTg5RVMzNU9FQS4u",
+  "post_url": "https://opportunitiesforyouth.org/2026/11/26/un-global-youth-network-for-human-rights-join-a-worldwide-network-and-share-your-views-on-human-rights-cities/",
+  "source": "Opportunities for Youth",
+  "id": "4c3b55627a",
+  "sources": [
+   "Opportunities for Youth"
+  ],
+  "first_seen": "2026-11-27T04:11:16.049147+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Google for Startups Accelerator: Sovereign AI 2027",
+  "kind": "startup",
+  "summary": "15-недельная гибридная программа для стартапов, создающих передовые решения в области ИИ для европейских регуляторных сред.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "2027-01-15",
+  "who": "Стартапы, создающие решения в области ИИ.",
+  "prize": "",
+  "flags": [
+   "needs_project"
+  ],
+  "is_freebie": false,
+  "score": 8,
+  "why": "Это акселератор от Google, что очень ценно для пользователя, который хочет попробовать бизнес. Хотя требуется свой проект, это отличная возможность для развития стартапа и получения опыта. Онлайн-формат делает его доступным.",
+  "link": "",
+  "post_url": "https://opportunitydesk.org/2026/11/26/google-for-startups-accelerator-sovereign-ai-2027/",
+  "source": "Opportunity Desk",
+  "id": "9733e851ae",
+  "sources": [
+   "Opportunity Desk"
+  ],
+  "first_seen": "2026-11-27T04:11:16.068883+00:00",
   "sent_at": null,
   "reminded_at": null,
   "feedback": null
