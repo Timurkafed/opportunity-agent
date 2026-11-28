@@ -1360,7 +1360,7 @@
    "@hackathonsrus"
   ],
   "first_seen": "2026-11-19T12:23:22.147184+00:00",
-  "sent_at": null,
+  "sent_at": "dupe",
   "reminded_at": null,
   "feedback": null
  },
@@ -4846,7 +4846,7 @@
    "Unstop"
   ],
   "first_seen": "2026-11-21T13:13:14.959322+00:00",
-  "sent_at": null,
+  "sent_at": "dupe",
   "reminded_at": null,
   "feedback": null
  },
@@ -6005,7 +6005,7 @@
    "Devpost"
   ],
   "first_seen": "2026-11-23T13:12:58.363821+00:00",
-  "sent_at": null,
+  "sent_at": "dupe",
   "reminded_at": null,
   "feedback": null
  },
@@ -7912,7 +7912,7 @@
    "Devpost"
   ],
   "first_seen": "2026-11-26T04:11:04.311033+00:00",
-  "sent_at": null,
+  "sent_at": "dupe",
   "reminded_at": null,
   "feedback": null
  },
@@ -8362,7 +8362,7 @@
    "Devpost"
   ],
   "first_seen": "2026-11-27T04:11:15.793321+00:00",
-  "sent_at": null,
+  "sent_at": "dupe",
   "reminded_at": null,
   "feedback": null
  },
@@ -8808,7 +8808,7 @@
    "Devpost"
   ],
   "first_seen": "2026-11-27T13:10:08.162676+00:00",
-  "sent_at": null,
+  "sent_at": "dupe",
   "reminded_at": null,
   "feedback": null
  },
@@ -9031,6 +9031,200 @@
   ],
   "first_seen": "2026-11-28T04:10:29.506287+00:00",
   "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Бесплатное обучение в TUMO Astana на 2027 год",
+  "kind": "project",
+  "summary": "Подростки от 12 до 18 лет могут бесплатно освоить технологические и творческие направления, получить опыт и реализовать проекты.",
+  "city": "Астана",
+  "online": false,
+  "start_date": "2027-01-01",
+  "end_date": "",
+  "deadline": "",
+  "who": "Подростки 12-18 лет",
+  "prize": "Бесплатное обучение",
+  "flags": [
+   "age_limit",
+   "school_only"
+  ],
+  "is_freebie": true,
+  "score": 0,
+  "why": "Пользователь не подходит по возрасту (20 лет) и является студентом, а не школьником.",
+  "link": "https://the-tech.kz/v-tumo-astana-otkryt-nabor-na-besplatnoe-obuchenie-na-2027-god/",
+  "post_url": "https://t.me/thetechkz/12595",
+  "source": "@thetechkz",
+  "id": "94332d5966",
+  "sources": [
+   "@thetechkz"
+  ],
+  "first_seen": "2026-11-28T13:11:13.512608+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Hack iN Home 2026",
+  "kind": "hackathon",
+  "summary": "Ежегодный студенческий хакатон, где можно превратить идею в работающий проект, решить реальные задачи от компаний и представить решения экспертам.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "2026-12-04",
+  "end_date": "2026-12-06",
+  "deadline": "",
+  "who": "Студенты любых вузов",
+  "prize": "Дипломы, призы и сюрпризы от партнёров",
+  "flags": [
+   "needs_project"
+  ],
+  "is_freebie": false,
+  "score": 9,
+  "why": "Отличная возможность для получения опыта в программировании, бизнесе и дизайне, есть призы, можно участвовать онлайн, подходит по возрасту и навыкам.",
+  "link": "https://hackrus.ru/1402",
+  "post_url": "https://t.me/hackathonsrus/1655",
+  "source": "@hackathonsrus",
+  "id": "98fba284f6",
+  "sources": [
+   "@hackathonsrus"
+  ],
+  "first_seen": "2026-11-28T13:11:13.519312+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Uzum Future Makers — идеатон и вайбкодинг",
+  "kind": "hackathon",
+  "summary": "Идеатон и вайбкодинг для студентов в Ташкенте, где команды за один день найдут проблему, придумают решение, соберут прототип с ИИ и представят его экспертам.",
+  "city": "Ташкент",
+  "online": false,
+  "start_date": "2026-12-06",
+  "end_date": "",
+  "deadline": "2026-12-02",
+  "who": "Студенты",
+  "prize": "10 000 000 сум",
+  "flags": [],
+  "is_freebie": false,
+  "score": 7,
+  "why": "Хорошая возможность для получения опыта в бизнесе и дизайне, есть призовой фонд, но мероприятие очное в Ташкенте, что менее приоритетно.",
+  "link": "https://uzum-hackathon.com/",
+  "post_url": "https://t.me/startupchoyxona/3984",
+  "source": "@startupchoyxona",
+  "id": "a795c0c8c2",
+  "sources": [
+   "@startupchoyxona"
+  ],
+  "first_seen": "2026-11-28T13:11:13.528455+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "HackEPS2026",
+  "kind": "hackathon",
+  "summary": "Хакатон с темами, дружелюбными для новичков, машинным обучением/ИИ и вебом.",
+  "city": "Universitat de Lleida",
+  "online": false,
+  "start_date": "2026-11-28",
+  "end_date": "2026-11-29",
+  "deadline": "2026-11-29",
+  "who": "Все желающие",
+  "prize": "€ 0",
+  "flags": [],
+  "is_freebie": false,
+  "score": 4,
+  "why": "Хакатон очный и проходит за рубежом, без оплаты дороги, что делает его менее доступным. Призовой фонд отсутствует.",
+  "link": "",
+  "post_url": "https://hackeps2026.devpost.com/",
+  "source": "Devpost",
+  "id": "85e92171e3",
+  "sources": [
+   "Devpost"
+  ],
+  "first_seen": "2026-11-28T13:11:13.533841+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Alan x Qovery x AWS: AI Health Hack 2",
+  "kind": "hackathon",
+  "summary": "Хакатон по теме здоровья с использованием ИИ.",
+  "city": "Alan HQ",
+  "online": false,
+  "start_date": "2026-11-28",
+  "end_date": "",
+  "deadline": "2026-11-28",
+  "who": "По приглашению",
+  "prize": "€ 4,700",
+  "flags": [],
+  "is_freebie": false,
+  "score": 0,
+  "why": "Участие только по приглашению, что делает его недоступным для пользователя.",
+  "link": "",
+  "post_url": "https://ai-health-hack-2.devpost.com/",
+  "source": "Devpost",
+  "id": "8a8c1c7d44",
+  "sources": [
+   "Devpost"
+  ],
+  "first_seen": "2026-11-28T13:11:13.544574+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Build AI on Kaspa",
+  "kind": "hackathon",
+  "summary": "Хакатон по созданию ИИ на Kaspa, дружелюбный для новичков, с темами блокчейна и машинного обучения/ИИ.",
+  "city": "EPITA Kremlin-Bicêtre",
+  "online": false,
+  "start_date": "2026-11-28",
+  "end_date": "",
+  "deadline": "2026-11-28",
+  "who": "Все желающие",
+  "prize": "€ 1,000",
+  "flags": [],
+  "is_freebie": false,
+  "score": 4,
+  "why": "Хакатон очный и проходит за рубежом, без оплаты дороги, что делает его менее доступным. Призовой фонд есть, но не очень большой.",
+  "link": "",
+  "post_url": "https://build-ai-on-kaspa.devpost.com/",
+  "source": "Devpost",
+  "id": "72d22b69f6",
+  "sources": [
+   "Devpost"
+  ],
+  "first_seen": "2026-11-28T13:11:13.551921+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Agents that act. Systems that answer.",
+  "kind": "hackathon",
+  "summary": "Онлайн-хакатон по темам образования, машинного обучения/ИИ и открытым задачам.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "2026-11-28",
+  "end_date": "2026-12-01",
+  "deadline": "2026-12-01",
+  "who": "Все желающие",
+  "prize": "$ 0",
+  "flags": [],
+  "is_freebie": false,
+  "score": 7,
+  "why": "Онлайн-хакатон, подходит по интересам пользователя (программирование, ИИ), но нет призового фонда.",
+  "link": "",
+  "post_url": "https://accountable-agents.devpost.com/",
+  "source": "Devpost",
+  "id": "7478bf220b",
+  "sources": [
+   "Devpost"
+  ],
+  "first_seen": "2026-11-28T13:11:13.561293+00:00",
+  "sent_at": "dupe",
   "reminded_at": null,
   "feedback": null
  }

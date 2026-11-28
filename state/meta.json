@@ -1,6 +1,6 @@
 {
- "last_run": "2026-11-28T04:10:37.113042+00:00",
- "gemini_calls_last_run": 9,
+ "last_run": "2026-11-28T13:11:19.577177+00:00",
+ "gemini_calls_last_run": 6,
  "tg_offset": 992753173,
  "chat_id": 841226328,
  "sources": {
@@ -10,7 +10,7 @@
   },
   "Devpost": {
    "errors_in_row": 0,
-   "last_new": "2026-11-28T04:10"
+   "last_new": "2026-11-28T13:11"
   },
   "@aieseckz": {
    "errors_in_row": 0
@@ -40,11 +40,11 @@
   },
   "@thetechkz": {
    "errors_in_row": 0,
-   "last_new": "2026-11-27T13:10"
+   "last_new": "2026-11-28T13:11"
   },
   "Taikai": {
    "errors_in_row": 0,
-   "last_new": "2026-11-28T04:10"
+   "last_new": "2026-11-28T13:11"
   },
   "@aiesecinalmaty": {
    "errors_in_row": 0
@@ -62,15 +62,15 @@
   },
   "@asmsalmaty": {
    "errors_in_row": 0,
-   "last_new": "2026-11-27T13:10"
+   "last_new": "2026-11-28T13:11"
   },
   "@hackathonsrus": {
    "errors_in_row": 0,
-   "last_new": "2026-11-27T13:10"
+   "last_new": "2026-11-28T13:11"
   },
   "@startupchoyxona": {
    "errors_in_row": 0,
-   "last_new": "2026-11-27T13:10"
+   "last_new": "2026-11-28T13:11"
   },
   "Unstop": {
    "errors_in_row": 0,
@@ -95,7 +95,7 @@
   },
   "dev.events (Казахстан)": {
    "errors_in_row": 0,
-   "last_new": "2026-11-28T04:10"
+   "last_new": "2026-11-28T13:11"
   },
   "@digitaljuz": {
    "errors_in_row": 0,
@@ -134,7 +134,7 @@
    "errors_in_row": 0
   },
   "ETHGlobal": {
-   "errors_in_row": 1,
+   "errors_in_row": 2,
    "last_new": "2026-11-21T04:10",
    "last_error": "HTTP Error 403: Forbidden"
   },
@@ -159,6 +159,6 @@
    "last_new": "2026-11-28T04:10"
   }
  },
- "saved_at": "2026-11-28T04:10:37.113058+00:00",
+ "saved_at": "2026-11-28T13:11:19.577197+00:00",
  "runner": "cloud"
 }
