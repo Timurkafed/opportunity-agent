@@ -2020,9 +2020,10 @@
    "@startupchoyxona"
   ],
   "first_seen": "2026-11-19T12:23:22.337532+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-28T04:10:37.113007+00:00",
   "reminded_at": null,
-  "feedback": null
+  "feedback": null,
+  "tier": "top"
  },
  {
   "title": "Startup Roast в Ташкенте",
@@ -4411,7 +4412,7 @@
    "Astana Hub (календарь)"
   ],
   "first_seen": "2026-11-21T04:10:39.094733+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-28T04:10:37.113007+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -6031,7 +6032,7 @@
    "Opportunities for Youth"
   ],
   "first_seen": "2026-11-23T13:12:58.391246+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-28T04:10:37.113007+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -6085,7 +6086,7 @@
    "Astana Hub (календарь)"
   ],
   "first_seen": "2026-11-23T13:12:58.409705+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-28T04:10:37.113007+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -6112,7 +6113,7 @@
    "Astana Hub (календарь)"
   ],
   "first_seen": "2026-11-23T13:12:58.416004+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-28T04:10:37.113007+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -7690,7 +7691,7 @@
    "@mentoria_organization"
   ],
   "first_seen": "2026-11-25T13:12:49.313764+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-28T04:10:37.113007+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -7884,7 +7885,7 @@
    "Astana Hub (календарь)"
   ],
   "first_seen": "2026-11-25T13:12:49.450420+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-28T04:10:37.113007+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -8049,7 +8050,7 @@
    "@huntmeinternship"
   ],
   "first_seen": "2026-11-26T13:09:39.270255+00:00",
-  "sent_at": null,
+  "sent_at": "2026-11-28T04:10:37.113007+00:00",
   "reminded_at": null,
   "feedback": null
  },
@@ -8079,7 +8080,7 @@
   ],
   "first_seen": "2026-11-26T13:09:39.278196+00:00",
   "sent_at": "2026-11-26T13:09:43.700252+00:00",
-  "reminded_at": null,
+  "reminded_at": "2026-11-28T04:10:37.113007+00:00",
   "feedback": null,
   "tier": "top"
  },
@@ -8109,7 +8110,7 @@
   ],
   "first_seen": "2026-11-26T13:09:39.284340+00:00",
   "sent_at": "2026-11-27T04:11:21.293045+00:00",
-  "reminded_at": null,
+  "reminded_at": "2026-11-28T04:10:37.113007+00:00",
   "feedback": null,
   "tier": "top"
  },
@@ -8834,6 +8835,201 @@
    "Astana Hub (календарь)"
   ],
   "first_seen": "2026-11-27T13:10:08.201404+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Global Game Jam ® Astana 2027",
+  "kind": "hackathon",
+  "summary": "Прими участие в 48-часовом хакатоне по разработке игр на секретную тему, который пройдет в гибридном формате в Astana Hub и онлайн по Казахстану.",
+  "city": "Астана",
+  "online": true,
+  "start_date": "2027-01-29",
+  "end_date": "2027-01-31",
+  "deadline": "2027-01-27",
+  "who": "Все желающие",
+  "prize": "",
+  "flags": [],
+  "is_freebie": false,
+  "score": 9,
+  "why": "Отличная возможность получить опыт в разработке игр, поработать в команде и проявить креативность, доступно онлайн из Алматы.",
+  "link": "https://hackathon.kz/event?slug=global-game-jam-astana-2027-astana-2027",
+  "post_url": "https://t.me/hackathon_kz/166",
+  "source": "@hackathon_kz",
+  "id": "c709d88491",
+  "sources": [
+   "@hackathon_kz"
+  ],
+  "first_seen": "2026-11-28T04:10:29.449449+00:00",
+  "sent_at": "2026-11-28T04:10:37.113007+00:00",
+  "reminded_at": null,
+  "feedback": null,
+  "tier": "top"
+ },
+ {
+  "title": "XCELERATE - 24-часовой хакатон от AIESEC",
+  "kind": "hackathon",
+  "summary": "Реши реальный IT-кейс от крупной компании за один интенсивный день, прокачай навыки и получи прямой фидбек от бизнеса на хакатоне от AIESEC.",
+  "city": "Алматы",
+  "online": false,
+  "start_date": "2026-12-12",
+  "end_date": "2026-12-13",
+  "deadline": "",
+  "who": "Абитуриенты, студенты, недавние выпускники, начинающие специалисты",
+  "prize": "Практический опыт, развитие навыков, нетворкинг, новые возможности",
+  "flags": [],
+  "is_freebie": false,
+  "score": 10,
+  "why": "Идеально подходит для получения практического опыта, развития бизнес-навыков и нетворкинга в Алматы, что соответствует интересам пользователя.",
+  "link": "http://myaiesec.tilda.ws/xcelerate26?&utm_source=startup.vg",
+  "post_url": "https://t.me/startup_course_com/6439",
+  "source": "@startup_course_com",
+  "id": "378d8df64a",
+  "sources": [
+   "@startup_course_com"
+  ],
+  "first_seen": "2026-11-28T04:10:29.456455+00:00",
+  "sent_at": "2026-11-28T04:10:37.113007+00:00",
+  "reminded_at": null,
+  "feedback": null,
+  "tier": "top"
+ },
+ {
+  "title": "hackaTUM 2026",
+  "kind": "hackathon",
+  "summary": "Хакатон от Технического университета Мюнхена, ориентированный на новичков, образование и корпоративные решения.",
+  "city": "Munich",
+  "online": false,
+  "start_date": "2026-11-27",
+  "end_date": "2026-11-28",
+  "deadline": "2026-11-28",
+  "who": "Все желающие",
+  "prize": "€ 0",
+  "flags": [],
+  "is_freebie": false,
+  "score": 4,
+  "why": "Дедлайн сегодня, очное участие в Мюнхене без оплаты дороги, призов нет. Подходит по формату, но не по условиям.",
+  "link": "",
+  "post_url": "https://hackatum26.devpost.com/",
+  "source": "Devpost",
+  "id": "fc661fd399",
+  "sources": [
+   "Devpost"
+  ],
+  "first_seen": "2026-11-28T04:10:29.463817+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Mosque & Madrassah Hackathon 2026",
+  "kind": "hackathon",
+  "summary": "Хакатон, посвященный социальным проектам, образованию и новичкам, пройдет в Лондоне.",
+  "city": "London",
+  "online": false,
+  "start_date": "2026-11-27",
+  "end_date": "2026-11-29",
+  "deadline": "2026-11-29",
+  "who": "Все желающие",
+  "prize": "£ 0",
+  "flags": [],
+  "is_freebie": false,
+  "score": 4,
+  "why": "Очное участие в Лондоне без оплаты дороги, призов нет. Дедлайн завтра. Подходит по формату, но не по условиям.",
+  "link": "",
+  "post_url": "https://mosque-expo-hackathon-2026.devpost.com/",
+  "source": "Devpost",
+  "id": "2084024ce4",
+  "sources": [
+   "Devpost"
+  ],
+  "first_seen": "2026-11-28T04:10:29.469898+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Eastern Partnership Civil Society Fellowship Programme 2027",
+  "kind": "social",
+  "summary": "Программа стипендий для гражданских активистов из стран Восточного партнерства, предлагающая финансовую поддержку, менторство и нетворкинг для реализации социальных проектов.",
+  "city": "Онлайн",
+  "online": true,
+  "start_date": "",
+  "end_date": "",
+  "deadline": "",
+  "who": "Гражданские активисты из стран Восточного партнерства",
+  "prize": "€5,000",
+  "flags": [
+   "country_only"
+  ],
+  "is_freebie": false,
+  "score": 0,
+  "why": "Программа только для стран Восточного партнерства, Казахстан не входит в этот список.",
+  "link": "https://euneighbourseast.eu/opportunities/civil-society-fellowship-programme-opens-applications-for-2027/?fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAads7YOheoIkwa-ebTe1OHgAiAbWh_LXM7JcEA8cAmyl3wdTwXgduoq0MBwFPg_aem_cQ1puhTkQ5EsZXP7ivpzzg",
+  "post_url": "https://opportunitiesforyouth.org/2026/11/27/eastern-partnership-civil-society-fellowship-programme-2027/",
+  "source": "Opportunities for Youth",
+  "id": "ccf27c5c2b",
+  "sources": [
+   "Opportunities for Youth"
+  ],
+  "first_seen": "2026-11-28T04:10:29.487847+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Ohio State University Summer Research Opportunities Program (SROP) 2027",
+  "kind": "internship",
+  "summary": "Летняя исследовательская программа для студентов бакалавриата в США, предлагающая стипендию, жилье и оплату проезда для получения опыта в исследованиях.",
+  "city": "Ohio",
+  "online": false,
+  "start_date": "2027-05-24",
+  "end_date": "2027-07-23",
+  "deadline": "",
+  "who": "Студенты бакалавриата в США",
+  "prize": "$6,000 стипендия, бесплатное жилье, оплата проезда",
+  "flags": [
+   "country_only"
+  ],
+  "is_freebie": false,
+  "score": 0,
+  "why": "Программа предназначена только для студентов бакалавриата в США.",
+  "link": "https://apps.btaa.org/srop/apply",
+  "post_url": "https://opportunitiesforyouth.org/2026/11/27/ohio-state-university-summer-research-opportunities-program-srop-2027-6000-stipend-free-on-campus-housing-travel-support-and-graduate-research-opportunities-for-undergraduate-students/",
+  "source": "Opportunities for Youth",
+  "id": "9c650ecb7a",
+  "sources": [
+   "Opportunities for Youth"
+  ],
+  "first_seen": "2026-11-28T04:10:29.497902+00:00",
+  "sent_at": null,
+  "reminded_at": null,
+  "feedback": null
+ },
+ {
+  "title": "Volt Europa European Parliament Traineeships 2027",
+  "kind": "internship",
+  "summary": "Четыре оплачиваемые стажировки в Европейском парламенте в Брюсселе по направлениям политики, коммуникаций и ИИ.",
+  "city": "Brussels",
+  "online": false,
+  "start_date": "2027-02-15",
+  "end_date": "",
+  "deadline": "2026-12-06",
+  "who": "Все желающие",
+  "prize": "€1,856 ежемесячно",
+  "flags": [],
+  "is_freebie": false,
+  "score": 5,
+  "why": "Оплачиваемая стажировка с хорошим призом, но очное участие в Брюсселе без оплаты дороги. Дедлайн 6 декабря.",
+  "link": "https://volteuropa.org/ep-vacancy-envi",
+  "post_url": "https://opportunitiesforyouth.org/2026/11/27/volt-europa-european-parliament-traineeships-2027-four-paid-policy-communications-and-ai-trainee-positions-in-brussels/",
+  "source": "Opportunities for Youth",
+  "id": "bb0fb366ef",
+  "sources": [
+   "Opportunities for Youth"
+  ],
+  "first_seen": "2026-11-28T04:10:29.506287+00:00",
   "sent_at": null,
   "reminded_at": null,
   "feedback": null
